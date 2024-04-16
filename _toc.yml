@@ -1,0 +1,72 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book  # jb-book tells Jupyter Book to expect chapters and parts terminology
+
+root: 0_preambule.md  # The first page of your book, all paths for chapters/sections will be relative to this root document.
+
+# defaults:  # The defaults key will be applied to all chapters and sub-sections
+# titlesonly: true
+# numbered: true
+
+parts:
+  - caption: Cours
+    chapters:
+      - file: ressources/1_Cours_Chapitre_1.md
+      - file: ressources/1_Cours_Chapitre_2.md
+      - file: ressources/1_Cours_Chapitre_3.md
+      - file: ressources/1_Cours_Chapitre_4.md
+      - file: ressources/1_Cours_Chapitre_5.md
+      - file: ressources/1_Cours_Chapitre_6.md
+      - file: ressources/1_Cours_Annexes.md
+        sections:
+          - file: ressources/1_Cours_Annexes_1.md
+          - file: ressources/1_Cours_Annexes_2.md
+          - file: ressources/1_Cours_Annexes_3.md
+          - file: ressources/1_Cours_Annexes_4.md
+      - file: ressources/1_Cours_References.md
+  - caption: Travaux Dirigés
+    chapters:
+      - file: ressources/2_TD_1.md
+        sections: 
+          - file: ressources/2_TD_1_corrige.md
+      - file: ressources/2_TD_2.md
+        sections: 
+          - file: ressources/2_TD_2_corrige.md
+      - file: ressources/2_TD_3.md
+        sections: 
+          - file: ressources/2_TD_3_corrige.md
+      - file: ressources/2_TD_4.md
+        sections: 
+          - file: ressources/2_TD_4_corrige.md
+  - caption: Travaux Pratiques
+    chapters:
+      - file: ressources/4_TP_UR10.md
+      - file: ressources/4_TP_Mitsubishi.md
+      - file: ressources/4_TP_Spiderbot.md
+      - file: ressources/4_TP_Falcon.md
+  - caption: Examens
+    chapters:
+      - file: ressources/5_Examen_SPA_2022_2023.md
+        sections: 
+          - file: ressources/5_Examen_SPA_2022_2023_corrige.md
+      - file: ressources/5_Examen_SPA_2023_2024.md
+        sections: 
+          - file: ressources/5_Examen_SPA_2023_2024_corrige.md
+  - caption: Projets
+    chapters:
+      - file: ressources/10_Projet_1_Robot_Axis.md
+# examen 
+# exercice
+# projets
+# Autres ressources  
+
+
+  # examen 
+  # exercice
+  # projets
+  # Autres ressources  
+
+  # Commented out the following code
+
+

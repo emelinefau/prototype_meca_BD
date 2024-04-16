@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Examen de Système Poly-Articulés - 2023/2024 &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/5_Examen_SPA_2023_2024';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Correction de l’examen de Système Poly-Articulés - 2023/2024" href="5_Examen_SPA_2023_2024_corrige.html" />
+    <link rel="prev" title="Correction de l’examen de Système Poly-Articulés - 2022/2023" href="5_Examen_SPA_2022_2023_corrige.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    M1 SPA : Systèmes Poly-Articulés
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_3.html">Modélisation géométrique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="4_TP_UR10.html">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Spiderbot.html">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Falcon.html">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Examen de Système Poly-Articulés - 2023/2024</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/5_Examen_SPA_2023_2024.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Examen de Système Poly-Articulés - 2023/2024</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-d-une-jambe-modele-geometrique-direct">Étude d’une jambe : modèle géométrique direct</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-d-une-jambe-modele-geometrique-inverse">Étude d’une jambe : modèle géométrique inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-preliminaire-du-systeme-complet">Étude préliminaire du système complet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-du-bras-articule-additionnel-sans-la-pince">Étude du bras articulé additionnel sans la pince</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexes">Annexes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-articulaires">Limites articulaires :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations">Équations :</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="examen-de-systeme-poly-articules-2023-2024">
+<h1>Examen de Système Poly-Articulés - 2023/2024<a class="headerlink" href="#examen-de-systeme-poly-articules-2023-2024" title="Link to this heading">#</a></h1>
+<p>On s’intéresse au robot spot produit par la société Boston Dynamics. Ce robot est composé de quatre jambes comprenant chacune 3 articulations. Le robot peut également être complété par un bras articulé au bout duquel se trouve une pince. Spot est un robot mobile agile qui navigue sur le terrain avec une mobilité sans précédent. Il permet ainsi d’automatiser des tâches d’inspection de routine et la capture de données de manière sûre, précise et fréquente.</p>
+<p>Une description des composants du robot et de la pince sont donnés en annexe.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/spot-payloads-mobile.png"><img alt="../_images/spot-payloads-mobile.png" src="../_images/spot-payloads-mobile.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 79 </span><span class="caption-text">Robot Spot + bras articulé</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="etude-d-une-jambe-modele-geometrique-direct">
+<h2>Étude d’une jambe : modèle géométrique direct<a class="headerlink" href="#etude-d-une-jambe-modele-geometrique-direct" title="Link to this heading">#</a></h2>
+<p>Le robot est composé de 4 jambes identiques. Ces 4 jambes sont reliées au corps du robot et sont chacune composées d’une hanche (hip), d’une jambe supérieure et d’une jambe inférieure (cf. <a class="reference internal" href="#spot1"><span class="std std-numref">Fig. 84</span></a>). Les jambes ainsi que leurs composants sont désignés par leurs positions sur le robot « <span class="math notranslate nohighlight">\(fl\)</span> » pour front left « <span class="math notranslate nohighlight">\(bl\)</span> » pour back left et idem pour « <span class="math notranslate nohighlight">\(fr\)</span> » et « <span class="math notranslate nohighlight">\(br\)</span> ». Ces dénominations seront utilisées dans le paramétrage du robot. La distance entre les centres des articulations de la hanche (rouge) est nommée <span class="math notranslate nohighlight">\(h_1\)</span>, la distance entre les articulations de la jambe supérieure (bleu) est notée <span class="math notranslate nohighlight">\(h_2\)</span> et la distance entre l’articulation et le pied (vert) est notée <span class="math notranslate nohighlight">\(h_3\)</span>. La position du point <span class="math notranslate nohighlight">\(O_{fl}\)</span> dans le repère (<span class="math notranslate nohighlight">\(O_{0}, \overrightarrow{x_0}, \overrightarrow{y_0}, \overrightarrow{z_0}\)</span>) est notée (<span class="math notranslate nohighlight">\(a_{fl}, b_{fl}, c_{fl}\)</span>). Les pieds sont considérés comme des portions de sphère et leurs centres sont désignés par les points <span class="math notranslate nohighlight">\(F_{fl}\)</span>, <span class="math notranslate nohighlight">\(F_{bl}\)</span> …</p>
+<figure class="align-default" id="spot2">
+<a class="reference internal image-reference" href="../_images/spot2.png"><img alt="../_images/spot2.png" src="../_images/spot2.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Spot : schéma cinématique partiel</span><a class="headerlink" href="#spot2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Question 1.1 :</strong> Construire sur le document réponse le paramétrage au sens de Denavit Hartenberg modifié (DHm) en partant du point <span class="math notranslate nohighlight">\(O_{fl}\)</span>. On considèrera le repère de base de la jambe comme étant (<span class="math notranslate nohighlight">\(O_{fl}, \overrightarrow{x_0}, \overrightarrow{y_0}, \overrightarrow{z_0}\)</span>).</p>
+<figure class="align-default" id="spot3">
+<a class="reference internal image-reference" href="../_images/spot3.png"><img alt="../_images/spot3.png" src="../_images/spot3.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 81 </span><span class="caption-text">Spot : schéma cinématique jambe avant gauche.</span><a class="headerlink" href="#spot3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>À titre indicatif : dans la <a class="reference internal" href="#spot3"><span class="std std-numref">Fig. 81</span></a> le trait en pointillé passant par <span class="math notranslate nohighlight">\(O_{fl}\)</span> est parallèle au vecteur <span class="math notranslate nohighlight">\(\overrightarrow{x_0}\)</span>.</p>
+<p><strong>Question 1.2 :</strong> Synthétiser les résultats dans le tableau DHm associé. Dessiner également les figures de changement de repère en représentant les différents paramètres articulaires comme étant positif.</p>
+<p><strong>Question 1.3 :</strong> Déterminer les matrices homogènes de transformation <span class="math notranslate nohighlight">\(T_{ij}\)</span> entre les différents corps.</p>
+<p><strong>Question 1.4 :</strong> En déduire l’expression du modèle géométrique direct (MGD) permettant d’exprimer la position du pied avant gauche (<span class="math notranslate nohighlight">\(x_{fl},y_{fl},z_{fl}\)</span>) dans le repère du robot (<span class="math notranslate nohighlight">\(O_{fl}, \overrightarrow{x_0}, \overrightarrow{y_0}, \overrightarrow{z_0}\)</span>). Rappeler quels sont les paramètres de l’espace des tâches et les paramètres de l’espace articulaire.</p>
+<p><strong>Question 1.5 :</strong> Déterminer par le calcul les singularités de cette structure. Expliquer les solutions trouvées par des croquis pour expliquer le sens physique.</p>
+</section>
+<section id="etude-d-une-jambe-modele-geometrique-inverse">
+<h2>Étude d’une jambe : modèle géométrique inverse<a class="headerlink" href="#etude-d-une-jambe-modele-geometrique-inverse" title="Link to this heading">#</a></h2>
+<p><strong>Question 2.1 :</strong> En vous aidant de l’annexe 5.2, déterminer le modèle géométrique inverse en position uniquement permettant de relier les valeurs de <span class="math notranslate nohighlight">\(\theta_i\)</span> aux valeurs (<span class="math notranslate nohighlight">\(x_{fl},y_{fl},z_{fl}\)</span>).</p>
+<p><strong>Question 2.2 :</strong> Donner le nombre de configurations articulaires possibles pour une même position de l’effecteur (pied) sans tenir compte des limites articulaires. N’hésitez pas à expliquer votre raisonnement par des figures si nécessaire.</p>
+<p><strong>Question 2.3 :</strong> Les limites de chaque articulation sont données par le constructeur en annexe 5.1. En vous appuyant sur ces données, déterminez les relations entre les paramètres articulaires constructeurs et vos paramètres articulaires.</p>
+<p><strong>Question 2.4 :</strong> En tenant compte des limites articulaires, donner le nombre de configurations articulaires possibles pour une même position de l’effecteur (pied) (<span class="math notranslate nohighlight">\(x_{fl},y_{fl},z_{fl}\)</span>) dans le repère du robot (<span class="math notranslate nohighlight">\(O_{fl}, \overrightarrow{x_0}, \overrightarrow{y_0}, \overrightarrow{z_0}\)</span>).</p>
+</section>
+<section id="etude-preliminaire-du-systeme-complet">
+<h2>Étude préliminaire du système complet<a class="headerlink" href="#etude-preliminaire-du-systeme-complet" title="Link to this heading">#</a></h2>
+<p>On s’intéresse maintenant au robot en considérant les pieds comme fixes. On souhaite orienter et positionner le corps du robot (<span class="math notranslate nohighlight">\(O_{0}, \overrightarrow{x_0}, \overrightarrow{y_0}, \overrightarrow{z_0}\)</span>) par rapport a un repère <span class="math notranslate nohighlight">\(\mathcal{R}_f\)</span> fixe liée au sol (<span class="math notranslate nohighlight">\(O_{f}, \overrightarrow{x_f}, \overrightarrow{y_f}, \overrightarrow{z_f}\)</span>). Les positions des 4 points F dans le repère <span class="math notranslate nohighlight">\(\mathcal{R}_f\)</span> sont connues. On considère que le MGI et le MGD des jambes sont connus.</p>
+<p><strong>Question 3.1 :</strong> Donner les paramètres de l’espace des taches et les paramètres de l’espace articulaire puis décrire de manière détaillée sans faire de calcul la méthode permettant d’obtenir le MGI du système entier (sans prendre en compte le bras articulé et la pince).</p>
+<p><strong>Question 3.2 :</strong> Le paramétrage permettant de définir l’orientation du corps du robot dans son environnement correspond à un paramétrage au sens de Tait Bryan (rotations X, Y”, Z””). S’agit-il d’un paramétrage extrinsèque ou intrinsèque ? Justifier.</p>
+<p><strong>Question 3.3 :</strong> Le fait d’assimiler le pied à un point présente-t-il un problème dans le paramétrage du robot. Justifier votre réponse.</p>
+</section>
+<section id="etude-du-bras-articule-additionnel-sans-la-pince">
+<h2>Étude du bras articulé additionnel sans la pince<a class="headerlink" href="#etude-du-bras-articule-additionnel-sans-la-pince" title="Link to this heading">#</a></h2>
+<p>Dans cette dernière partie on s’intéresse uniquement au bras articulé représenté dans les <a class="reference internal" href="#arm2"><span class="std std-numref">Fig. 82</span></a> et <a class="reference internal" href="#arm1"><span class="std std-numref">Fig. 83</span></a>.</p>
+<p><strong>Question 4.1 :</strong> Combien de degrés de liberté possède le bras articulé sans tenir compte de la pince.</p>
+<p><strong>Question 4.2 :</strong> En supposant connues toutes les matrices de transformation (<span class="math notranslate nohighlight">\(T_{ij}\)</span>) permettant de décrire le paramétrage géométrique du bras au sens de DHm, décrire précisément la démarche de résolution du MGI sans faire de calcul.</p>
+</section>
+<section id="annexes">
+<h2>Annexes<a class="headerlink" href="#annexes" title="Link to this heading">#</a></h2>
+<section id="limites-articulaires">
+<h3>Limites articulaires :<a class="headerlink" href="#limites-articulaires" title="Link to this heading">#</a></h3>
+<p>Limites articulaires de chaque jambe (les notations utilisées dans ce paragraphe ne sont utiles que pour la question 2.3):</p>
+<ul class="simple">
+<li><p>articulation 1 entre le corps et la hanche  <span class="math notranslate nohighlight">\(\theta_h\)</span> : <span class="math notranslate nohighlight">\(\pm\)</span> 45 degrés par rapport au plan <span class="math notranslate nohighlight">\((O_{fl},\overrightarrow{x_0},\overrightarrow{y_0})\)</span></p></li>
+<li><p>articulation 2 entre la hanche et la jambe supérieure <span class="math notranslate nohighlight">\(\theta_u\)</span> : entre + 41 et - 141 degrés par rapport à l’horizontale lorsque l’articulation 1 est a <span class="math notranslate nohighlight">\(\theta_h = 0\)</span>.</p></li>
+<li><p>articulation 3 au niveau du genou entre la jambe supérieure et la jambe inférieure <span class="math notranslate nohighlight">\(\theta_l\)</span>: entre -14 et - 160 degrés par rapport à la jambe tendue (flexion/extension de 14 à 160 degrés)</p></li>
+</ul>
+</section>
+<section id="equations">
+<h3>Équations :<a class="headerlink" href="#equations" title="Link to this heading">#</a></h3>
+<p><strong>Inverse d’une matrice homogène :</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\mathbf{T}_{ij} = 
+		\begin{bmatrix}
+		 &amp; &amp; &amp;  \\
+		 &amp;  \mathbf{R}_{ij} &amp;  &amp; \mathbf{t}_{ij} \\
+		 &amp; &amp;  &amp;  \\
+		0 &amp; 0 &amp; 0 &amp; 1\\
+    	\end{bmatrix}
+\longrightarrow  
+ \mathbf{T}_{ji} =
+		\begin{bmatrix}
+		 &amp; &amp; &amp;  \\
+		 &amp;  \mathbf{R}_{ij} ^t &amp;  &amp; -\mathbf{R}_{ij} ^t \mathbf{t}_{ij} \\
+		 &amp; &amp;  &amp;  \\
+		0 &amp; 0 &amp; 0 &amp; 1\\
+    	\end{bmatrix}	
+\end{equation*}
+\end{split}\]</div>
+<p><strong>Solutions de l’équation de type 2 :</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+X \text{S}\theta_i + Y \text{C}\theta_i = Z
+\end{equation*}
+\]</div>
+<p>Solution :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\theta_i = 
+\begin{cases}
+\text{atan2}(\pm \sqrt{1 - \text{C}^2\theta_i},\, \text{C}\theta_i) \quad &amp; \text{si} \quad X = 0 \text{ et } Y \ne 0 \\
+\text{atan2}(\text{S}\theta_i, \, \pm \sqrt{1 - \text{S}^2\theta_i}) \quad &amp; \text{si} \quad X \ne 0 \text{ et } Y = 0 \\
+\begin{cases}
+\theta_{i1} = \text{atan2}(-Y,X) \\
+\theta_{i2} = \theta_{i1} + 180\deg
+\end{cases}  \quad &amp; \text{si} \quad X \ne 0 \text{ et } Y \ne 0 \text{ et } Z = 0 \\
+\text{atan2}(\text{S}\theta_i, \, \text{C}\theta_i) \quad &amp; \text{si} \quad X \ne 0 \text{ et } Y \ne 0 \text{ et } Z \ne 0 \text{ et } X^2+Y^2 \geq Z^2 \\
+\text{configuration singulière} \quad &amp; \text{si} \quad X \ne 0 \text{ et } Y \ne 0 
+\end{cases}
+\end{align*}
+\end{split}\]</div>
+<p>Dans le cas où <span class="math notranslate nohighlight">\(X \ne 0\)</span> et <span class="math notranslate nohighlight">\(Y \ne 0\)</span> et <span class="math notranslate nohighlight">\(Z \ne 0\)</span>, l’équation est résolue en élevant l’expression au carré : en remplaçant les termes en sinus par les fonctions équivalentes en cosinus, on aboutit à une équation du second degré à résoudre donnant la valeur du cosinus. Un raisonnement analogue est mené pour déterminer  le terme en sinus :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\begin{cases}
+\text{C}\theta_i = \dfrac{YZ - \varepsilon X \sqrt{X^2+Y^2-Z^2}}{X^2 + Y^2} \\
+\text{S}\theta_i = \dfrac{XZ + \varepsilon Y \sqrt{X^2+Y^2-Z^2}}{X^2 + Y^2} \\
+\end{cases}
+\qquad \text{avec} \qquad \varepsilon = \pm 1
+\end{equation*}
+\end{split}\]</div>
+<p>Dans ce cas, la résolution de l’équation donne deux solutions, correspondant aux valeurs de <span class="math notranslate nohighlight">\(\varepsilon\)</span>.</p>
+<p><strong>Solutions de l’équation de type 6 :</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\begin{cases}
+W\text{S}\theta_j = X\text{C}\theta_i + Y \text{S}\theta_i + Z_1 \\
+W\text{C}\theta_j = X\text{S}\theta_i - Y \text{C}\theta_i + Z_2 \\
+\end{cases}
+\end{equation*}
+\end{split}\]</div>
+<p>Solution :
+Elle consiste à élever au carré chaque équation pour faire disparaître <span class="math notranslate nohighlight">\(\theta_j\)</span> en les additionnant.<span class="math notranslate nohighlight">\(\theta_i\)</span> est alors résolu par une équation de type 2. Ensuite, connaissant <span class="math notranslate nohighlight">\(\theta_i\)</span>, <span class="math notranslate nohighlight">\(\theta_j\)</span> est déterminé par un système d’équations de type 3.</p>
+<p><strong>Solutions de l’équation de type 3 :</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\begin{cases}
+X_1\text{s}\theta_i + Y_1 \text{c}\theta_i = Z_1 \\
+X_2\text{S}\theta_i + Y_2 \text{C}\theta_i = Z_2 \\
+\end{cases}
+\end{equation*}
+\end{split}\]</div>
+<p>Dans le cas où <span class="math notranslate nohighlight">\(X_1 Y_2 - X_2 Y_1 \neq 0\)</span>, les termes en cosinus et sinus sont obtenus par
+combinaison linaire des deux équations pour éliminer respectivement les termes sinus et
+cosinus :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\begin{cases}
+\text{C}\theta_i = \dfrac{Z_2 X_1 - Z_1 X_2}{X_1 Y_2 - X_2 Y_1} \\
+\text{S}\theta_i = \dfrac{Z_1 Y_2 - Z_2 Y_1}{X_1 Y_2 - X_2 Y_1} \\
+\end{cases}
+\end{equation*}
+\end{split}\]</div>
+<p>Dans le cas où <span class="math notranslate nohighlight">\(X_1 Y_2 - X_2 Y_1 = 0\)</span> alors, les équations ne sont plus indépendantes ; on
+choisit alors l’une des deux équations que l’on résout en équation de type 2.
+Solution :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\theta_i = 
+\begin{cases}
+\text{atan2}(\text{S}\theta_i, \, \text{C}\theta_i) \quad  &amp; \text{si} X_1 Y_2 - X_2 Y_1 \neq 0 \\\text{atan2}(\dfrac{Z_1}{X_1} \, \dfrac{Z_2}{Y_2} ) \quad  &amp; \text{si} Y_1 = 0 \text{ et } X_2 = 0 \\
+\end{cases}
+\end{align*}
+\end{split}\]</div>
+<figure class="align-default" id="arm2">
+<a class="reference internal image-reference" href="../_images/arm-diagrams-02.png"><img alt="../_images/arm-diagrams-02.png" src="../_images/arm-diagrams-02.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Bras articulé : vue de dessus et vue de face</span><a class="headerlink" href="#arm2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="arm1">
+<a class="reference internal image-reference" href="../_images/arm-diagrams-03.png"><img alt="../_images/arm-diagrams-03.png" src="../_images/arm-diagrams-03.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Bras articulé : vue de côté</span><a class="headerlink" href="#arm1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=9.0cm]{spotanatomy.png}
+\caption{Spot : description des composants}
+\label{spot1}
+\end{center}
+\end{figure}</p>
+<figure class="align-default" id="spot1">
+<a class="reference internal image-reference" href="../_images/spotanatomy.png"><img alt="../_images/spotanatomy.png" src="../_images/spotanatomy.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Spot : description des composants</span><a class="headerlink" href="#spot1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="ex-2024-dhm">
+<a class="reference internal image-reference" href="../_images/DHm1.png"><img alt="../_images/DHm1.png" src="../_images/DHm1.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Paramétrage de DHm</span><a class="headerlink" href="#ex-2024-dhm" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/spot3.png"><img alt="../_images/spot3.png" src="../_images/spot3.png" style="width: 300px;" /></a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/spot3.png"><img alt="../_images/spot3.png" src="../_images/spot3.png" style="width: 300px;" /></a>
+</figure>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="5_Examen_SPA_2022_2023_corrige.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Correction de l’examen de Système Poly-Articulés - 2022/2023</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="5_Examen_SPA_2023_2024_corrige.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Correction de l’examen de Système Poly-Articulés - 2023/2024</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-d-une-jambe-modele-geometrique-direct">Étude d’une jambe : modèle géométrique direct</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-d-une-jambe-modele-geometrique-inverse">Étude d’une jambe : modèle géométrique inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-preliminaire-du-systeme-complet">Étude préliminaire du système complet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-du-bras-articule-additionnel-sans-la-pince">Étude du bras articulé additionnel sans la pince</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexes">Annexes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-articulaires">Limites articulaires :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations">Équations :</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Kevin Godineau, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

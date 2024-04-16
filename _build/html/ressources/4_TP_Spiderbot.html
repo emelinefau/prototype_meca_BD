@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TP : Étude d’un robot parallèle - Spiderbot &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/4_TP_Spiderbot';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="TP : Étude d’un robot parallèle - Falcon" href="4_TP_Falcon.html" />
+    <link rel="prev" title="TP : Étude d’un robot sériel - Misubishi RV-4FL" href="4_TP_Mitsubishi.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    M1 SPA : Systèmes Poly-Articulés
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_3.html">Modélisation géométrique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="4_TP_UR10.html">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Falcon.html">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/4_TP_Spiderbot.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TP : Étude d’un robot parallèle - Spiderbot</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-des-modeles-geometriques-inverse-et-direct">Étude des modèles géométriques inverse et direct</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-cinematique">Schéma cinématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-inverse">Modèle géométrique inverse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-direct">Modèle géométrique direct</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-de-l-influence-d-un-defaut-geometrique-sur-le-comportement-du-systeme">Étude de l’influence d’un défaut géométrique sur le comportement du système</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impression-d-une-piece-avec-defauts-1h30-avant-la-fin-du-tp">Impression d’une pièce avec défauts (1h30 avant la fin du TP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-de-l-influence-d-un-defaut">Analyse de l’influence d’un défaut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s-il-vous-reste-du-temps">S’il vous reste du temps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tp-etude-d-un-robot-parallele-spiderbot">
+<h1>TP : Étude d’un robot parallèle - Spiderbot<a class="headerlink" href="#tp-etude-d-un-robot-parallele-spiderbot" title="Link to this heading">#</a></h1>
+<p>Le robot SpiderBot (<a class="reference internal" href="#photosupport"><span class="std std-numref">Fig. 58</span></a>) est une imprimante 3D possédant une architecture de type « delta ». L’enveloppe de travail de ce système est contenue dans un espace cylindrique de rayon <span class="math notranslate nohighlight">\(90 mm\)</span> et de hauteur <span class="math notranslate nohighlight">\(200 mm\)</span>. Son architecture particulière dite « delta » permet d’obtenir des déplacements rapides et des accélérations de niveau élevé. Ce type d’architecture permet également de diminuer le coût de fabrication de la machine du fait des 3 jambes identiques.</p>
+<figure class="align-default" id="photosupport">
+<a class="reference internal image-reference" href="../_images/PhotoSupport.png"><img alt="../_images/PhotoSupport.png" src="../_images/PhotoSupport.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 58 </span><span class="caption-text">robot Spiderbot</span><a class="headerlink" href="#photosupport" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="decouverte-et-prise-en-main-du-systeme">
+<h2>Découverte et prise en main du système<a class="headerlink" href="#decouverte-et-prise-en-main-du-systeme" title="Link to this heading">#</a></h2>
+<p>L’objectif de cette partie est de découvrir le système, son fonctionnement et les quelques solutions technologiques particulières au travers de manipulation et d’analyse des documents ressources.</p>
+<p><strong>Question 1.1 :</strong> Effectuer la procédure de démarrage de l’imprimante 3D fournie dans les documents ressources à la fin du sujet.</p>
+<p><strong>Question 1.2 :</strong> Réaliser quelques déplacements manuels de faible amplitude pour repérer les différents corps et assimiler les mouvements et liaisons ; <strong>faire attention aux collisions</strong>.</p>
+<p><strong>Question 1.3 :</strong> Analyser la solution technologique mise en place pour réaliser la liaison entre une barre et l’ensemble tête d’impression 3D (<a class="reference internal" href="#barre-tete"><span class="std std-numref">Fig. 59</span></a>).</p>
+<p><strong>Question 1.4 :</strong> Déterminer la stratégie retenue par le constructeur pour connaître la position de la tête d’impression dans le référentiel du plateau.</p>
+</section>
+<section id="etude-des-modeles-geometriques-inverse-et-direct">
+<h2>Étude des modèles géométriques inverse et direct<a class="headerlink" href="#etude-des-modeles-geometriques-inverse-et-direct" title="Link to this heading">#</a></h2>
+<section id="schema-cinematique">
+<h3>Schéma cinématique<a class="headerlink" href="#schema-cinematique" title="Link to this heading">#</a></h3>
+<p>L’objet de cette partie est de mettre en place un paramétrage sur le mécanisme permettant de repérer les
+positions de chaque composant en vue de la construction des modèles géométrique inverse et direct.</p>
+<p><strong>Question 2.1 :</strong> Proposer un modèle cinématique de l’ensemble en ne considérant qu’une seule jambe.</p>
+<p><strong>Question 2.2 :</strong> En utilisant les <a class="reference internal" href="#para-x-y"><span class="std std-numref">Fig. 60</span></a> et <a class="reference internal" href="#para-y-z"><span class="std std-numref">Fig. 61</span></a> proposer un paramétrage géométrique minimal de la structure.</p>
+<p><strong>Question 2.3 :</strong> Pour ce robot, préciser :</p>
+<ul class="simple">
+<li><p>les variables de l’espace des tâches</p>
+<ul>
+<li><p>le paramétrage en position est-il de type cartésien ? polaire ? sphérique ?</p></li>
+<li><p>le paramétrage en orientation est-il de type Euler ? Bryan ? quaternions ? extrinsèque ? intrinsèque ?</p></li>
+</ul>
+</li>
+<li><p>les variables de l’espace articulaire</p></li>
+<li><p>les autres paramètres considérés comme constantes géométriques</p></li>
+</ul>
+</section>
+<section id="modele-geometrique-inverse">
+<h3>Modèle géométrique inverse<a class="headerlink" href="#modele-geometrique-inverse" title="Link to this heading">#</a></h3>
+<p>L’objectif de cette partie est de proposer, d’implémenter et de valider un modèle géométrique inverse.</p>
+<p><strong>Question 2.4 :</strong> En utilisant le paramétrage défini précédemment, déterminer les équations du modèle géométrique inverse.</p>
+<p><strong>Question 2.5 :</strong> Implémenter le modèle géométrique inverse déterminé à la question précédente sur dans le fichier Matlab nommé <em>ecriture_equations_MGI_symbolique.m</em>, sur les lignes 8 à 10. Déclarer chaque paramètre en tant que variable symbolique sur la ligne 5 de ce même fichier.</p>
+<p><strong>Question 2.6 :</strong> Mesurer les dimensions des paramètres qui sont des constantes géométriques pour ce modèle. Saisir dans le fichier <em>ecriture_vecteurs_parametres.m</em> à la ligne 3 les noms des variables symboliques représentant ces constantes géométriques. Saisir ensuite, dans le même ordre, leur valeurs numériques à la ligne 5. Donner à la ligne 8 l’index du paramètre de longueur de barre, dans le vecteur de paramètre construit précédemment (ligne 3).</p>
+<p><strong>Question 2.7 :</strong> Valider expérimentalement votre modèle en effectuant une mesure sur la machine à l’aide d’un réglet. Pour cela :</p>
+<ul class="simple">
+<li><p>se déplacer à une position quelconque dans l’espace des tâches et mesurer les valeurs articulaires correspondantes</p></li>
+<li><p>rentrer la position de l’espace des tâches dans le fichier <em>donnees_point.m</em> à la place des valeurs présentes</p></li>
+<li><p>sélectionner le cas étudié nommé « point » en dé-commentant la ligne 44 du fichier <em>Main.m</em> et en mettant en commentaire les autres cas d’étude</p></li>
+<li><p>comparer les positions articulaires issues des mesures expérimentales et celles issues du modèle après exécution du fichier <em>Main.m</em></p></li>
+</ul>
+</section>
+<section id="modele-geometrique-direct">
+<h3>Modèle géométrique direct<a class="headerlink" href="#modele-geometrique-direct" title="Link to this heading">#</a></h3>
+<p><strong>Question 2.8 :</strong> Proposer une démarche afin de calculer le modèle géométrique direct.</p>
+<p><strong>Question 2.9 :</strong> Analyser qualitativement la solution retenue dans le fichier <em>definition_fonction_TGD.m</em> pour résoudre le modèle géométrique direct.</p>
+</section>
+</section>
+<section id="etude-de-l-influence-d-un-defaut-geometrique-sur-le-comportement-du-systeme">
+<h2>Étude de l’influence d’un défaut géométrique sur le comportement du système<a class="headerlink" href="#etude-de-l-influence-d-un-defaut-geometrique-sur-le-comportement-du-systeme" title="Link to this heading">#</a></h2>
+<p>L’objectif de cette partie est de prédire la géométrie d’une pièce produite via l’imprimante 3D en considérant que les paramètres géométriques de celle-ci sont mal connus. Pour ce faire, nous allons modifier un paramètre géométrique (la longueur des barres) et nous analyserons ensuite les résultats issus de la simulation et de la mesure de la pièce réalisée.</p>
+<section id="impression-d-une-piece-avec-defauts-1h30-avant-la-fin-du-tp">
+<h3>Impression d’une pièce avec défauts (1h30 avant la fin du TP)<a class="headerlink" href="#impression-d-une-piece-avec-defauts-1h30-avant-la-fin-du-tp" title="Link to this heading">#</a></h3>
+<p>Avec l’aide du professeur exécuter la procédure suivante pour modifier les paramètres de la machine :</p>
+<ul class="simple">
+<li><p>démarrer le logiciel <em>Repetier.host</em></p></li>
+<li><p>connecter l’imprimante 3D et attendre quelques secondes que la connexion s’établisse</p></li>
+<li><p>en utilisant l’outil eeprom depuis le menu, modifier les paramètres suivants :</p>
+<ul>
+<li><p><em>diagonal rod length</em> (initialement <span class="math notranslate nohighlight">\(255.55 mm\)</span>) devient <span class="math notranslate nohighlight">\(245.55 mm\)</span></p></li>
+<li><p><em>Z max length</em> (initialement <span class="math notranslate nohighlight">\(251.205 mm\)</span>) devient <span class="math notranslate nohighlight">\(251.700 mm\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Question 3.1 :</strong> Expliquer ce qui a été réalisé et pourquoi deux paramètres ont été modifiés.</p>
+</section>
+<section id="analyse-de-l-influence-d-un-defaut">
+<h3>Analyse de l’influence d’un défaut<a class="headerlink" href="#analyse-de-l-influence-d-un-defaut" title="Link to this heading">#</a></h3>
+<p><strong>Question 3.2 :</strong> Modifier le fichier <em>ecriture_vecteurs_parametres.m</em>, ligne 5 pour saisir la « valeur vraie » de longueur de barre; le défaut d’identification de cette valeur est saisi sur la ligne 7.</p>
+<p><strong>Question 3.3 :</strong> Exécuter le fichier <em>Main.m</em> pour les deux cas d’étude pré-programmés, nommés « grille » et « cercle » en les dé-commentant / commentant successivement (lignes 44 à 46). Analyser les affichages réalisés dans la fenêtre de commande Matlab ainsi qu’au travers des différentes figures.</p>
+<p><strong>Question 3.4 :</strong> Mesurer le défaut dimensionnel sur la pièce et le comparer par rapport à la simulation issue du modèle. Comparer également le défaut de circularité donné par mesure sur le Talyrond (<a class="reference internal" href="#photo-mesure-talyrond"><span class="std std-numref">Fig. 62</span></a> et <a class="reference internal" href="#photo-resultat-talyrond"><span class="std std-numref">Fig. 63</span></a>) à la simulation de ce défaut.</p>
+</section>
+<section id="s-il-vous-reste-du-temps">
+<h3>S’il vous reste du temps<a class="headerlink" href="#s-il-vous-reste-du-temps" title="Link to this heading">#</a></h3>
+<p><strong>Question 3.5 :</strong> Calculer de manière analytique l’écart entre deux points diamétralement opposés du cercle précédent tracé.</p>
+<p><strong>Question 3.6 :</strong> Simuler l’effet d’un autre défaut et analyser la cartographie d’erreur.</p>
+</section>
+</section>
+<section id="documents-ressources">
+<h2>Documents ressources<a class="headerlink" href="#documents-ressources" title="Link to this heading">#</a></h2>
+<p>Les pages suivantes regroupent un certain nombre de documents permettant d’appréhender le fonctionnement du système ainsi que ses composants technologiques.</p>
+<p><a class="reference download internal" download="" href="../_downloads/c94a8555c0b3b4d30f2ff5fb28fff50d/procedure_exploitation.pdf"><span class="xref download myst">Notice d’allumage/arrêt du robot Spiderbot + Notice de changement des paramètres eeprom</span></a></p>
+<figure class="align-default" id="barre-tete">
+<a class="reference internal image-reference" href="../_images/barre_tete.png"><img alt="../_images/barre_tete.png" src="../_images/barre_tete.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 59 </span><span class="caption-text">Liaison entre les barres et la tête d’impression</span><a class="headerlink" href="#barre-tete" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="para-x-y">
+<a class="reference internal image-reference" href="../_images/para_X_Y.png"><img alt="../_images/para_X_Y.png" src="../_images/para_X_Y.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 60 </span><span class="caption-text">Schéma de l’architecture de l’imprimante vue de dessus</span><a class="headerlink" href="#para-x-y" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="para-y-z">
+<a class="reference internal image-reference" href="../_images/para_Y_Z.png"><img alt="../_images/para_Y_Z.png" src="../_images/para_Y_Z.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Schéma de l’architecture de l’imprimante vue dans un plan latéral</span><a class="headerlink" href="#para-y-z" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="photo-mesure-talyrond">
+<a class="reference internal image-reference" href="../_images/photo_mesure_talyrond.jpg"><img alt="../_images/photo_mesure_talyrond.jpg" src="../_images/photo_mesure_talyrond.jpg" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Photo de mesure de circularité au Talyrond</span><a class="headerlink" href="#photo-mesure-talyrond" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="photo-resultat-talyrond">
+<a class="reference internal image-reference" href="../_images/photo_resultat_talyrond.jpg"><img alt="../_images/photo_resultat_talyrond.jpg" src="../_images/photo_resultat_talyrond.jpg" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 63 </span><span class="caption-text">Zoom sur le résultat de circularité</span><a class="headerlink" href="#photo-resultat-talyrond" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="4_TP_Mitsubishi.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">TP : Étude d’un robot sériel - Misubishi RV-4FL</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="4_TP_Falcon.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">TP : Étude d’un robot parallèle - Falcon</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-des-modeles-geometriques-inverse-et-direct">Étude des modèles géométriques inverse et direct</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-cinematique">Schéma cinématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-inverse">Modèle géométrique inverse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-direct">Modèle géométrique direct</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-de-l-influence-d-un-defaut-geometrique-sur-le-comportement-du-systeme">Étude de l’influence d’un défaut géométrique sur le comportement du système</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impression-d-une-piece-avec-defauts-1h30-avant-la-fin-du-tp">Impression d’une pièce avec défauts (1h30 avant la fin du TP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-de-l-influence-d-un-defaut">Analyse de l’influence d’un défaut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s-il-vous-reste-du-temps">S’il vous reste du temps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Kevin Godineau, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

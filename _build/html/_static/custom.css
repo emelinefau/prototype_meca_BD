@@ -1,0 +1,14 @@
+html[data-theme="light"] {
+    --pst-color-primary: rgb(87, 154, 202);
+    --pst-color-secondary: rgb(202, 135, 87);
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: rgb(87, 154, 202);
+    --pst-color-secondary: rgb(202, 135, 87);
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(87 154 202 / 30%) !important;
+}
