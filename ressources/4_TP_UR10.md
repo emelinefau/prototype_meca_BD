@@ -20,7 +20,7 @@ Réaliser quelques déplacements manuels pour assimiler les différents corps et
 - dans le mode articulaire ;
 - dans le repère de base du robot ;
 - dans le repère associé à l'outil (effecteur).
-- 
+
 **Question 1.2 :** En déduire comment sont situés le référentiel de base du robot et le référentiel associé à l'outil.
 
 **Question 1.3 :** Réaliser quelques déplacements en mode apprentissage pour découvrir le côté "collaboratif".
@@ -91,7 +91,7 @@ frames bigger »), déterminer le paramétrage et système d'axes du modèle de 
 
 Les pages suivantes regroupent un certain nombre de documents permettant d'appréhender le fonctionnement du système ainsi que ses composants technologiques.
 
-[Notice d'allumage/arrêt du robot Spiderbot + Notice de changement des paramètres eeprom](img/TP_UR10/UR10dem.pdf)
+[Notice d'allumage/arrêt du robot UR10](img/TP_UR10/UR10dem.pdf)
 
 ```{figure} img/TP_UR10/UR10para.png
 ---

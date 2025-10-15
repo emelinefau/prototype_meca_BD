@@ -8,54 +8,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modèle cinématique &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+    <title>Modèle cinématique &#8212; Donnons du sens physique à nos équations</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=72dce1d2"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
-    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -77,27 +78,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Haut de page
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,8 +116,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -144,6 +146,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../0_preambule.html">
   
@@ -156,8 +160,8 @@
       
     
     
-    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
-    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
   
   
 </a></div>
@@ -165,7 +169,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Recherche</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -184,39 +188,26 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_3.html">Modélisation géométrique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modèle cinématique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
 <ul class="nav bd-sidenav">
@@ -227,14 +218,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +238,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -263,14 +247,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -348,10 +332,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -359,14 +343,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -427,9 +411,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modele-cinematique">
-<h1>Modèle cinématique<a class="headerlink" href="#modele-cinematique" title="Link to this heading">#</a></h1>
+<h1>Modèle cinématique<a class="headerlink" href="#modele-cinematique" title="Lien vers cette rubrique">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">#</a></h2>
 <p>La modélisation des positions des différents segments d’une structure articulée est un problème purement géométrique. Elle ne permet pas de décrire directement les variations de la géométrie de façon continue. Pour cela, on peut utiliser la dérivée du modèle géométrique : le modèle cinématique. Ce modèle, basé sur la matrice jacobienne, permet de mener de nombreuses méthodes et analyses :</p>
 <ul class="simple">
 <li><p>le calcul de la solution locale des variables articulaires <span class="math notranslate nohighlight">\(\mathbf{q}\)</span> à partir des coordonnées opérationnelles <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>;</p></li>
@@ -439,7 +423,7 @@ document.write(`
 </ul>
 </section>
 <section id="matrice-jacobienne">
-<h2>Matrice Jacobienne<a class="headerlink" href="#matrice-jacobienne" title="Link to this heading">#</a></h2>
+<h2>Matrice Jacobienne<a class="headerlink" href="#matrice-jacobienne" title="Lien vers cette rubrique">#</a></h2>
 <p>Soit <span class="math notranslate nohighlight">\(f_1\)</span> une fonction permettant, à partir de données articulaires <span class="math notranslate nohighlight">\(q_i\)</span> d’exprimer une composante de l’espace des tâches :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -456,7 +440,7 @@ dx_1 = \frac{\partial f_1}{\partial q_1}dq_1 + \frac{\partial f_1}{\partial q_2}
 \]</div>
 <p>En écrivant les différentielles de chaque composante de l’espace des tâches, on arrive à :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-3">
-<span class="eqno">(14)<a class="headerlink" href="#equation-eq-5-3" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(12)<a class="headerlink" href="#equation-eq-5-3" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \mathbf{dX} = \mathbf{J}(\mathbf{q})\mathbf{dq} \quad \text{avec} \quad \mathbf{J}(\mathbf{q}) = \begin{bmatrix}
 \frac{\partial f_1}{\partial q_1} &amp; \frac{\partial f_1}{\partial q_2} &amp; \cdots &amp; \frac{\partial f_1}{\partial q_n} \\
@@ -478,7 +462,7 @@ Dans cette écriture, les coordonnées opérationnelles (ou configuration du rep
 \end{split}\]</div>
 <p>où les éléments <span class="math notranslate nohighlight">\(\mathbf{X}_r\)</span> et <span class="math notranslate nohighlight">\(\mathbf{X}_p\)</span> désignent respectivement l’orientation et la position.</p>
 <section id="modele-differentiel">
-<h3>Modèle différentiel<a class="headerlink" href="#modele-differentiel" title="Link to this heading">#</a></h3>
+<h3>Modèle différentiel<a class="headerlink" href="#modele-differentiel" title="Lien vers cette rubrique">#</a></h3>
 <p>Il permet de faire le lien entre les variations de coordonnées de l’effecteur <span class="math notranslate nohighlight">\(\Delta x\)</span> et les variations articulaires correspondantes <span class="math notranslate nohighlight">\(\Delta q\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -487,7 +471,7 @@ Dans cette écriture, les coordonnées opérationnelles (ou configuration du rep
 \end{equation}
 \]</div>
 <section id="remarques">
-<h4>Remarques<a class="headerlink" href="#remarques" title="Link to this heading">#</a></h4>
+<h4>Remarques<a class="headerlink" href="#remarques" title="Lien vers cette rubrique">#</a></h4>
 <ul>
 <li><p>un des avantages est d’avoir une expression des défauts <span class="math notranslate nohighlight">\(\Delta x\)</span> linéaire par rapport aux <span class="math notranslate nohighlight">\(\Delta q\)</span>,</p></li>
 <li><p>le modèle différentiel présente un caractère local, car la valeur des différentielles <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial q}\)</span> dépend de la configuration de la structure donc des <span class="math notranslate nohighlight">\(q_i\)</span>,</p></li>
@@ -506,29 +490,29 @@ Dans cette écriture, les coordonnées opérationnelles (ou configuration du rep
 </section>
 </section>
 <section id="id1">
-<h2>Modèle cinématique<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>Modèle cinématique<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h2>
 <section id="definition">
-<h3>Définition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h3>
+<h3>Définition<a class="headerlink" href="#definition" title="Lien vers cette rubrique">#</a></h3>
 <p>Le modèle cinématique décrit les vitesses de l’organe terminal en fonction des vitesses articulaires :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-7">
-<span class="eqno">(15)<a class="headerlink" href="#equation-eq-5-7" title="Link to this equation">#</a></span>\[
+<span class="eqno">(13)<a class="headerlink" href="#equation-eq-5-7" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{\dot{X}} = \mathbf{J}(\mathbf{q}) \mathbf{\dot{q}}
 \end{equation}
 \]</div>
 </section>
 <section id="calcul-du-modele-cinematique">
-<h3>Calcul du modèle cinématique<a class="headerlink" href="#calcul-du-modele-cinematique" title="Link to this heading">#</a></h3>
+<h3>Calcul du modèle cinématique<a class="headerlink" href="#calcul-du-modele-cinematique" title="Lien vers cette rubrique">#</a></h3>
 <section id="par-derivation">
-<h4>Par dérivation<a class="headerlink" href="#par-derivation" title="Link to this heading">#</a></h4>
-<p>Dans le cas des robots simples, souvent jusqu’à trois d.d.l., il est facile de calculer la matrice jacobienne <span class="math notranslate nohighlight">\(\mathbf{J}(\mathbf{q})\)</span> par dérivation du modèle géométrique direct (i.e. par dérivation au sens de la définition équation <a class="reference internal" href="#equation-eq-5-3">(14)</a>).</p>
+<h4>Par dérivation<a class="headerlink" href="#par-derivation" title="Lien vers cette rubrique">#</a></h4>
+<p>Dans le cas des robots simples, souvent jusqu’à trois d.d.l., il est facile de calculer la matrice jacobienne <span class="math notranslate nohighlight">\(\mathbf{J}(\mathbf{q})\)</span> par dérivation du modèle géométrique direct (i.e. par dérivation au sens de la définition équation <a class="reference internal" href="#equation-eq-5-3">(12)</a>).</p>
 </section>
 <section id="par-calcul-du-jacobien-de-base">
-<h4>Par calcul du jacobien de base<a class="headerlink" href="#par-calcul-du-jacobien-de-base" title="Link to this heading">#</a></h4>
+<h4>Par calcul du jacobien de base<a class="headerlink" href="#par-calcul-du-jacobien-de-base" title="Lien vers cette rubrique">#</a></h4>
 <p>Pour des robots à plus de trois d.d.l., la matrice jacobienne <span class="math notranslate nohighlight">\(\mathbf{J}(\mathbf{q})\)</span> peut être déterminée par le calcul direct (méthodes de calcul cinématiques usuelles de la mécanique du solide) des expressions reliant les vitesses et vecteurs rotations de chaque repère en fonction de la géométrie et des paramètres articulaires.</p>
 <p>Pour cela, on exprime d’abord ces relations indépendamment du paramétrage choisi (i.e. cosinus directeurs, Euler ou Briant, intrinsèque - extrinsèque). Cette formulation est nommée « jacobien de base » <span class="math notranslate nohighlight">\(\mathbf{J}_n\)</span>. Sous forme différentielle, l’expression correspond à :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-8">
-<span class="eqno">(16)<a class="headerlink" href="#equation-eq-5-8" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(14)<a class="headerlink" href="#equation-eq-5-8" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \begin{bmatrix}
 \delta_n \\ \mathbf{d}_n
@@ -538,7 +522,7 @@ Dans cette écriture, les coordonnées opérationnelles (ou configuration du rep
 <p>où <span class="math notranslate nohighlight">\(\mathbf{d}_n\)</span> représente le vecteur de translation différentiel et <span class="math notranslate nohighlight">\(\delta_n\)</span> le vecteur de rotation différentielle.
 Sous forme cinématique, l’expression correspond à :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-9">
-<span class="eqno">(17)<a class="headerlink" href="#equation-eq-5-9" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(15)<a class="headerlink" href="#equation-eq-5-9" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \begin{bmatrix}
 \omega_n \\ \mathbf{V}_n
@@ -572,7 +556,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 </section>
 </section>
 <section id="expression-du-jacobien-de-base-mathbf-j-n">
-<h3>Expression du jacobien de base <span class="math notranslate nohighlight">\(\mathbf{J}_n\)</span><a class="headerlink" href="#expression-du-jacobien-de-base-mathbf-j-n" title="Link to this heading">#</a></h3>
+<h3>Expression du jacobien de base <span class="math notranslate nohighlight">\(\mathbf{J}_n\)</span><a class="headerlink" href="#expression-du-jacobien-de-base-mathbf-j-n" title="Lien vers cette rubrique">#</a></h3>
 <p>Le calcul de <span class="math notranslate nohighlight">\(\mathbf{J}_n\)</span> peut être facilement effectué en utilisant les relations de composition de mouvement ; cette méthode est donc naturellement particulièrement adaptée aux architectures simples ouvertes.</p>
 <p>Composition des vecteurs rotations :</p>
 <div class="math notranslate nohighlight">
@@ -619,7 +603,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 <p>avec selon le paramétrage de Denavit et Hartenberg modifié <span class="math notranslate nohighlight">\(\dot{q_k} = \dot{r_k}\)</span>.</p>
 </li>
 </ul>
-<p>Par identification des deux expressions précédentes avec l’équation <a class="reference internal" href="#equation-eq-5-9">(17)</a>, le jacobien de base prend alors une expression de la forme :</p>
+<p>Par identification des deux expressions précédentes avec l’équation <a class="reference internal" href="#equation-eq-5-9">(15)</a>, le jacobien de base prend alors une expression de la forme :</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation}
@@ -651,9 +635,9 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{split}\]</div>
 </section>
 <section id="expression-de-la-matrice-omega-selon-le-parametrage-en-orientation">
-<h3>Expression de la matrice <span class="math notranslate nohighlight">\(\Omega\)</span> selon le paramétrage en orientation<a class="headerlink" href="#expression-de-la-matrice-omega-selon-le-parametrage-en-orientation" title="Link to this heading">#</a></h3>
+<h3>Expression de la matrice <span class="math notranslate nohighlight">\(\Omega\)</span> selon le paramétrage en orientation<a class="headerlink" href="#expression-de-la-matrice-omega-selon-le-parametrage-en-orientation" title="Lien vers cette rubrique">#</a></h3>
 <section id="expression-generale-de-la-matrice-omega">
-<h4>Expression générale de la matrice <span class="math notranslate nohighlight">\(\Omega\)</span><a class="headerlink" href="#expression-generale-de-la-matrice-omega" title="Link to this heading">#</a></h4>
+<h4>Expression générale de la matrice <span class="math notranslate nohighlight">\(\Omega\)</span><a class="headerlink" href="#expression-generale-de-la-matrice-omega" title="Lien vers cette rubrique">#</a></h4>
 <p>La matrice <span class="math notranslate nohighlight">\(\mathbf{\Omega}_p\)</span> permet de faire le lien entre la vitesse linéaire <span class="math notranslate nohighlight">\(\mathbf{V}_n\)</span> du repère <span class="math notranslate nohighlight">\(\mathcal{R}_n\)</span> et la vitesse linéaire <span class="math notranslate nohighlight">\(\mathbf{\dot{X}}_p\)</span> des coordonnées opérationnelles :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -663,7 +647,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 \]</div>
 <p>La plupart du temps, le jacobien de base global <span class="math notranslate nohighlight">\(\mathbf{J}_n\)</span> est exprimé dans le repère de base <span class="math notranslate nohighlight">\(\mathcal{R}_0\)</span>, soit <span class="math notranslate nohighlight">\(^0\mathbf{J}_n\)</span>. <span class="math notranslate nohighlight">\(\mathbf{\Omega}_p\)</span> se réduit donc à la matrice identité.</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-22">
-<span class="eqno">(18)<a class="headerlink" href="#equation-eq-5-22" title="Link to this equation">#</a></span>\[
+<span class="eqno">(16)<a class="headerlink" href="#equation-eq-5-22" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{\Omega}_p  = \mathbf{I}_3
 \end{equation}
@@ -675,7 +659,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 \mathbf{\dot{X}}_r = \mathbf{\Omega}_r \ ^0 \omega_n
 \end{equation}
 \]</div>
-<p>Étant donné la remarque de l’équation <a class="reference internal" href="#equation-eq-5-22">(18)</a>, la formulation de la matrice globale devient :</p>
+<p>Étant donné la remarque de l’équation <a class="reference internal" href="#equation-eq-5-22">(16)</a>, la formulation de la matrice globale devient :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{equation}
@@ -717,10 +701,10 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{split}\]</div>
 </section>
 <section id="expression-de-omega-r-pour-un-parametrage-par-les-cosinus-directeurs">
-<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les cosinus directeurs<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-cosinus-directeurs" title="Link to this heading">#</a></h4>
+<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les cosinus directeurs<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-cosinus-directeurs" title="Lien vers cette rubrique">#</a></h4>
 <p>Les dérivées des trois vecteurs élémentaires définissant la base <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> par rapport au temps dans la base <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> s’écrivent :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-28">
-<span class="eqno">(19)<a class="headerlink" href="#equation-eq-5-28" title="Link to this equation">#</a></span>\[
+<span class="eqno">(17)<a class="headerlink" href="#equation-eq-5-28" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 ^0 \mathbf{\dot{x}}_n = \frac{d\ ^0 \mathbf{\dot{x}}_n}{dt}_{\vert \mathcal{B}_0} = \ ^0\omega_n \wedge \ ^0\mathbf{\dot{x}}_n
 \end{equation}
@@ -732,7 +716,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{equation}
 \]</div>
 <div class="math notranslate nohighlight" id="equation-eq-5-30">
-<span class="eqno">(20)<a class="headerlink" href="#equation-eq-5-30" title="Link to this equation">#</a></span>\[
+<span class="eqno">(18)<a class="headerlink" href="#equation-eq-5-30" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 ^0 \mathbf{\dot{z}}_n = \frac{d\ ^0\mathbf{\dot{z}}_n}{dt}_{\vert \mathcal{B}_0} = \ ^0\omega_n \wedge \ ^0\mathbf{\dot{z}}_n
 \end{equation}
@@ -765,7 +749,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{split}\]</div>
 </section>
 <section id="expression-de-omega-r-pour-un-parametrage-par-les-angles-d-euler">
-<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les angles d’Euler<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-angles-d-euler" title="Link to this heading">#</a></h4>
+<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les angles d’Euler<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-angles-d-euler" title="Lien vers cette rubrique">#</a></h4>
 <p>Le paragraphe 2.2.2 définit le paramétrage d’Euler. En traduisant, d’un point de vue cinématique, les rotations successives autour de vecteurs projetés dans la base de référence <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span>, le vecteur rotation de <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> par rapport à <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> s’écrit :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -789,7 +773,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 <p>Dans cette expression on retrouve la singularité de représentation par les angles d’Euler (pour <span class="math notranslate nohighlight">\(\theta = 0\)</span> ou <span class="math notranslate nohighlight">\(\pi\)</span>), comme vu au paragraphe 2.2.2.</p>
 </section>
 <section id="expression-de-omega-r-pour-un-parametrage-par-les-angles-de-bryan">
-<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les angles de Bryan<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-angles-de-bryan" title="Link to this heading">#</a></h4>
+<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les angles de Bryan<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-angles-de-bryan" title="Lien vers cette rubrique">#</a></h4>
 <p>Le même raisonnement que précédemment appliqué au paramétrage de Bryan, défini au paragraphe 2.2.3, aboutit à :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -813,8 +797,8 @@ Sous forme cinématique, l’expression correspond à :</p>
 <p>qui fait réapparaître la singularité de représentation par les angles de Bryan (pour <span class="math notranslate nohighlight">\(\theta = \pm \frac{\pi}{2}\)</span>).</p>
 </section>
 <section id="expression-de-omega-r-pour-un-parametrage-par-les-quaternions">
-<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les quaternions<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-quaternions" title="Link to this heading">#</a></h4>
-<p>En dérivant la matrice <a class="reference internal" href="1_Cours_Chapitre_2.html#equation-eq-2-32">(8)</a> par rapport au temps, et en utilisant les formulations <a class="reference internal" href="#equation-eq-5-28">(19)</a> à <a class="reference internal" href="#equation-eq-5-30">(20)</a>  on peut écrire :</p>
+<h4>Expression de <span class="math notranslate nohighlight">\(\Omega_r\)</span> pour un paramétrage par les quaternions<a class="headerlink" href="#expression-de-omega-r-pour-un-parametrage-par-les-quaternions" title="Lien vers cette rubrique">#</a></h4>
+<p>En dérivant la matrice <a class="reference internal" href="1_Cours_Chapitre_2.html#equation-eq-2-32">(6)</a> par rapport au temps, et en utilisant les formulations <a class="reference internal" href="#equation-eq-5-28">(17)</a> à <a class="reference internal" href="#equation-eq-5-30">(18)</a>  on peut écrire :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -826,7 +810,7 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{split}\]</div>
 <p>Sur cette égalité de matrices, l’identification des termes diagonaux mène au système de trois équations :</p>
 <div class="math notranslate nohighlight" id="equation-eq-5-46">
-<span class="eqno">(21)<a class="headerlink" href="#equation-eq-5-46" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(19)<a class="headerlink" href="#equation-eq-5-46" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \begin{cases}
 2(Q_1\dot{Q}_1+Q_2\dot{Q}_2)=(Q_2Q_4-Q_1Q_3)\ ^0\omega_n \cdot \mathbf{y}_0 -(Q_2Q_3+Q_1Q_4)\ ^0\omega_n \cdot \mathbf{z}_0 \\
@@ -835,14 +819,14 @@ Sous forme cinématique, l’expression correspond à :</p>
 \end{cases}
 \end{equation}
 \end{split}\]</div>
-<p>La dérivation de l’équation <a class="reference internal" href="1_Cours_Chapitre_2.html#equation-eq-2-31">(7)</a> aboutit à :</p>
+<p>La dérivation de l’équation <a class="reference internal" href="1_Cours_Chapitre_2.html#equation-eq-2-31">(5)</a> aboutit à :</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation}
 Q_1\dot{Q}_1+Q_2\dot{Q}_2 +Q_3\dot{Q}_3+Q_4\dot{Q}_4 =0
 \end{equation}
 \]</div>
-<p>Ce qui permet, avec le système d’équations <a class="reference internal" href="#equation-eq-5-46">(21)</a> d’aboutir à :</p>
+<p>Ce qui permet, avec le système d’équations <a class="reference internal" href="#equation-eq-5-46">(19)</a> d’aboutir à :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{equation}
@@ -877,8 +861,8 @@ Q_1\dot{Q}_1+Q_2\dot{Q}_2 +Q_3\dot{Q}_3+Q_4\dot{Q}_4 =0
 </section>
 </section>
 <section id="modele-cinematique-du-second-ordre">
-<h2>Modèle cinématique du second ordre<a class="headerlink" href="#modele-cinematique-du-second-ordre" title="Link to this heading">#</a></h2>
-<p>Il permet de calculer les accélérations de l’espace des tâches en fonction des positions, vitesses et accélérations des paramètres articulaires. Par dérivation du modèle cinématique (équation <a class="reference internal" href="#equation-eq-5-7">(15)</a>) :</p>
+<h2>Modèle cinématique du second ordre<a class="headerlink" href="#modele-cinematique-du-second-ordre" title="Lien vers cette rubrique">#</a></h2>
+<p>Il permet de calculer les accélérations de l’espace des tâches en fonction des positions, vitesses et accélérations des paramètres articulaires. Par dérivation du modèle cinématique (équation <a class="reference internal" href="#equation-eq-5-7">(13)</a>) :</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation}
@@ -887,7 +871,7 @@ Q_1\dot{Q}_1+Q_2\dot{Q}_2 +Q_3\dot{Q}_3+Q_4\dot{Q}_4 =0
 \]</div>
 </section>
 <section id="singularite">
-<h2>Singularité<a class="headerlink" href="#singularite" title="Link to this heading">#</a></h2>
+<h2>Singularité<a class="headerlink" href="#singularite" title="Lien vers cette rubrique">#</a></h2>
 <p>Soit m le nombre de degrés de liberté (d.d.l.) de l’espace opérationnel donné par le robot. Dans le cas classique des structures 6 axes, il vaut 6 et correspond aux 3 translations et 3 rotations de l’espace qu’il est possible de faire faire à l’effecteur par rapport à un référentiel de base.</p>
 <p>Pour une configuration donnée <span class="math notranslate nohighlight">\(\mathbf{q}\)</span>, on nomme <span class="math notranslate nohighlight">\(r\)</span> le rang de la matrice jacobienne <span class="math notranslate nohighlight">\(\mathbf{J}\)</span> :</p>
 <div class="math notranslate nohighlight">
@@ -916,11 +900,12 @@ r = \text{rg}(\mathbf{J}(\mathbf{q}))
 \exists \mathbf{q} \in \mathbb{R}^n, \text{det}(\mathbf{J}\mathbf{J}^t) = 0
 \end{equation}
 \]</div>
-<p>La <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 19</span></a> présente les deux singularités pour le robot 5R Denso VP5243. Il s’agit d’une singularité dite d” « épaule » (image de gauche) où les liaisons 1 et 5 sont coaxiales et de « coude » (image de droite) où les axes des liaisons 2, 3 et 4 sont coplanaires.</p>
+<p>La <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 12</span></a> présente les deux singularités pour le robot 5R Denso VP5243. Il s’agit d’une singularité dite d” « épaule » (image de gauche) où les liaisons 1 et 5 sont coaxiales et de « coude » (image de droite) où les axes des liaisons 2, 3 et 4 sont coplanaires.</p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/5_1.png"><img alt="../_images/5_1.png" src="../_images/5_1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/5_1.png"><img alt="../_images/5_1.png" src="../_images/5_1.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Les deux singularités d’un robot 5 axes RRRRR</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Les deux singularités d’un robot 5 axes RRRRR</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -953,7 +938,7 @@ r = \text{rg}(\mathbf{J}(\mathbf{q}))
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1032,7 +1017,7 @@ r = \text{rg}(\mathbf{J}(\mathbf{q}))
   <div class="footer-item">
     
 <p class="component-author">
-Par Kevin Godineau, ENS Paris-Saclay
+Par Emeline Faugere, ENS Paris-Saclay
 </p>
 
   </div>
@@ -1042,7 +1027,7 @@ Par Kevin Godineau, ENS Paris-Saclay
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
@@ -1066,8 +1051,8 @@ Par Kevin Godineau, ENS Paris-Saclay
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -8,54 +8,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modélisation géométrique &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+    <title>Modélisation géométrique &#8212; Donnons du sens physique à nos équations</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=72dce1d2"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
-    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -77,27 +78,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Haut de page
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,8 +116,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -144,6 +146,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../0_preambule.html">
   
@@ -156,8 +160,8 @@
       
     
     
-    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
-    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
   
   
 </a></div>
@@ -165,7 +169,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Recherche</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -184,39 +188,26 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modélisation géométrique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
 <ul class="nav bd-sidenav">
@@ -227,14 +218,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +238,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -263,14 +247,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -348,10 +332,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -359,14 +343,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -416,12 +400,12 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modelisation-geometrique">
-<h1>Modélisation géométrique<a class="headerlink" href="#modelisation-geometrique" title="Link to this heading">#</a></h1>
+<h1>Modélisation géométrique<a class="headerlink" href="#modelisation-geometrique" title="Lien vers cette rubrique">#</a></h1>
 <section id="modeles-geometriques-et-structures-mecaniques">
-<h2>Modèles géométriques et structures mécaniques<a class="headerlink" href="#modeles-geometriques-et-structures-mecaniques" title="Link to this heading">#</a></h2>
+<h2>Modèles géométriques et structures mécaniques<a class="headerlink" href="#modeles-geometriques-et-structures-mecaniques" title="Lien vers cette rubrique">#</a></h2>
 <section id="structures-mecaniques">
-<h3>Structures mécaniques<a class="headerlink" href="#structures-mecaniques" title="Link to this heading">#</a></h3>
-<p>Les structures mécaniques peuvent être classées en quatre catégories principales (<a class="reference internal" href="#class-struc"><span class="std std-numref">Fig. 12</span></a>) :</p>
+<h3>Structures mécaniques<a class="headerlink" href="#structures-mecaniques" title="Lien vers cette rubrique">#</a></h3>
+<p>Les structures mécaniques peuvent être classées en quatre catégories principales (<a class="reference internal" href="#class-struc"><span class="std std-numref">Fig. 5</span></a>) :</p>
 <ul class="simple">
 <li><p>les structures simples ouvertes : il existe une chaîne cinématique ouverte ;</p></li>
 <li><p>les structures simples fermées : il existe une chaîne cinématique fermée ;</p></li>
@@ -429,17 +413,18 @@ document.write(`
 <li><p>les structures hybrides (ouvertes) : c’est une composition des catégories précédentes.</p></li>
 </ul>
 <figure class="align-default" id="class-struc">
-<a class="reference internal image-reference" href="../_images/3_1.png"><img alt="../_images/3_1.png" src="../_images/3_1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/3_1.png"><img alt="../_images/3_1.png" src="../_images/3_1.png" style="width: 500px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Classification des structures mécaniques</span><a class="headerlink" href="#class-struc" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Classification des structures mécaniques</span><a class="headerlink" href="#class-struc" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="parametrage-des-structures-ouvertes-simples">
-<h2>Paramétrage des structures ouvertes simples<a class="headerlink" href="#parametrage-des-structures-ouvertes-simples" title="Link to this heading">#</a></h2>
+<h2>Paramétrage des structures ouvertes simples<a class="headerlink" href="#parametrage-des-structures-ouvertes-simples" title="Lien vers cette rubrique">#</a></h2>
 <section id="convention-de-denavit-et-hartenberg-modifiee">
-<h3>Convention de Denavit et Hartenberg modifiée<a class="headerlink" href="#convention-de-denavit-et-hartenberg-modifiee" title="Link to this heading">#</a></h3>
+<h3>Convention de Denavit et Hartenberg modifiée<a class="headerlink" href="#convention-de-denavit-et-hartenberg-modifiee" title="Lien vers cette rubrique">#</a></h3>
 <p>Soient deux solides <span class="math notranslate nohighlight">\(\S_{i-1}\)</span> et <span class="math notranslate nohighlight">\(S_i\)</span> en liaison. On définit le positionnement du repère <span class="math notranslate nohighlight">\(\mathcal{R}_i\)</span> associé au solide <span class="math notranslate nohighlight">\(S_i\)</span> à partir du repère  <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> :</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\overrightarrow{z_i}\)</span> vecteur unitaire selon l’axe caractéristique de la liaison entre <span class="math notranslate nohighlight">\(S_{i-1}\)</span> et <span class="math notranslate nohighlight">\(S_i\)</span></p></li>
@@ -460,9 +445,10 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(\theta_i\)</span> : angle entre les axes <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{x_{i}}\)</span>, mesurée autour de l’axe <span class="math notranslate nohighlight">\(\overrightarrow{z_i}\)</span></p></li>
 </ul>
 <figure class="align-default" id="dhm-vector">
-<a class="reference internal image-reference" href="../_images/3_2.png"><img alt="../_images/3_2.png" src="../_images/3_2.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/3_2.png"><img alt="../_images/3_2.png" src="../_images/3_2.png" style="width: 500px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Paramétrisation selon la convention de DH modifiée</span><a class="headerlink" href="#dhm-vector" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Paramétrisation selon la convention de DH modifiée</span><a class="headerlink" href="#dhm-vector" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <p>Le passage du repère <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> au repère <span class="math notranslate nohighlight">\(\mathcal{R}_{i}\)</span> fait apparaître 4 transformations :</p>
@@ -508,7 +494,7 @@ document.write(`
 \end{equation}
 \end{split}\]</div>
 <p>Les valeurs des paramètres, constantes géométriques ou variables selon la nature de la liaison, sont souvent formalisées dans un tableau de la forme :</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(d_i\)</span></p></th>
@@ -538,6 +524,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>L’expression d’un point <span class="math notranslate nohighlight">\(P\)</span> appartenant au solide <span class="math notranslate nohighlight">\(n\)</span> (repère <span class="math notranslate nohighlight">\(\mathcal{R}_n\)</span>), peut donc se faire dans le Repère <span class="math notranslate nohighlight">\(\mathcal{R}_0\)</span> (bâti par exemple) par :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -556,25 +543,27 @@ document.write(`
 </section>
 </section>
 <section id="parametrage-des-structures-fermees">
-<h2>Paramétrage des structures fermées<a class="headerlink" href="#parametrage-des-structures-fermees" title="Link to this heading">#</a></h2>
+<h2>Paramétrage des structures fermées<a class="headerlink" href="#parametrage-des-structures-fermees" title="Lien vers cette rubrique">#</a></h2>
 <section id="problematique">
-<h3>Problématique<a class="headerlink" href="#problematique" title="Link to this heading">#</a></h3>
+<h3>Problématique<a class="headerlink" href="#problematique" title="Lien vers cette rubrique">#</a></h3>
 <p>Il existe, suivant les structures de machines, plusieurs solutions pour décrire la transformation géométrique directe. Par exemple, pour la plateforme de Gough-Stewart, il en existe quatre, c’est-à-dire qu’à une configuration correspond quatre positionnements différents de l’effecteur. Une approche numérique est nécessaire pour déterminer de proche en proche la solution souhaitée.</p>
 <figure class="align-default" id="meme-config">
-<a class="reference internal image-reference" href="../_images/3_3.png"><img alt="../_images/3_3.png" src="../_images/3_3.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/3_3.png"><img alt="../_images/3_3.png" src="../_images/3_3.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Illustration des 4 solutions existantes pour une même configuration</span><a class="headerlink" href="#meme-config" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Illustration des 4 solutions existantes pour une même configuration</span><a class="headerlink" href="#meme-config" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <p>Les difficultés de modélisation sont inversées par rapport aux structures sérielles : il est plus aisé de déterminer les valeurs des paramètres articulaires pour respecter un positionnement de l’effecteur que de déterminer le positionnement de l’effecteur pour une configuration articulaire donnée.
 Dans la suite du document, la méthode de Merlet, méthode spécifique aux architectures parallèles, est présentée. Elle permet une démarche systématique pour paramétrer et poser le problème.</p>
 </section>
 <section id="modelisation-geometrique-methode-de-merlet">
-<h3>Modélisation géométrique : Méthode de Merlet<a class="headerlink" href="#modelisation-geometrique-methode-de-merlet" title="Link to this heading">#</a></h3>
+<h3>Modélisation géométrique : Méthode de Merlet<a class="headerlink" href="#modelisation-geometrique-methode-de-merlet" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-default" id="param-struc-para">
-<a class="reference internal image-reference" href="../_images/3_4.png"><img alt="../_images/3_4.png" src="../_images/3_4.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/3_4.png"><img alt="../_images/3_4.png" src="../_images/3_4.png" style="width: 250px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Paramétrisation de la structure mécanique</span><a class="headerlink" href="#param-struc-para" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Paramétrisation de la structure mécanique</span><a class="headerlink" href="#param-struc-para" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -588,7 +577,7 @@ De même, la géométrie <span class="math notranslate nohighlight">\(\overright
 <li><p>soit <span class="math notranslate nohighlight">\(\overrightarrow{X}\)</span> le positionnement de l’effecteur de la plateforme mobile dans <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span></p></li>
 </ul>
 <section id="relations-geometriques">
-<h4>Relations géométriques<a class="headerlink" href="#relations-geometriques" title="Link to this heading">#</a></h4>
+<h4>Relations géométriques<a class="headerlink" href="#relations-geometriques" title="Lien vers cette rubrique">#</a></h4>
 <p>L’écriture se fait par fermeture géométrique pour chaque jambe :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -612,10 +601,10 @@ De même, la géométrie <span class="math notranslate nohighlight">\(\overright
 \]</div>
 </section>
 <section id="matrice-de-transformation-homogene">
-<h4>Matrice de transformation homogène<a class="headerlink" href="#matrice-de-transformation-homogene" title="Link to this heading">#</a></h4>
+<h4>Matrice de transformation homogène<a class="headerlink" href="#matrice-de-transformation-homogene" title="Lien vers cette rubrique">#</a></h4>
 <p>Dans le cas des structures parallèles, il existe une seule transformation <span class="math notranslate nohighlight">\(\mathbf{T}_{mp}\)</span> permettant d’exprimer directement le positionnement du repère associé à la plateforme mobile <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span> par rapport au repère associé à la base fixe <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span>. L’expression du positionnement de l’effecteur <span class="math notranslate nohighlight">\(^m\mathbf{P}_{eff}\)</span> exprimé dans le repère <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span> s’exprime en fonction de son expression dans <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span>, <span class="math notranslate nohighlight">\(^p\mathbf{P}_{eff}\)</span> par la relation :</p>
 <div class="math notranslate nohighlight" id="equation-eq-3-7">
-<span class="eqno">(9)<a class="headerlink" href="#equation-eq-3-7" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-3-7" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 ^m\mathbf{P}_{eff} = \mathbf{T}_{mp}  \ ^p\mathbf{P}_{eff}
 \end{equation}
@@ -652,7 +641,7 @@ De même, la géométrie <span class="math notranslate nohighlight">\(\overright
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -720,7 +709,7 @@ De même, la géométrie <span class="math notranslate nohighlight">\(\overright
   <div class="footer-item">
     
 <p class="component-author">
-Par Kevin Godineau, ENS Paris-Saclay
+Par Emeline Faugere, ENS Paris-Saclay
 </p>
 
   </div>
@@ -730,7 +719,7 @@ Par Kevin Godineau, ENS Paris-Saclay
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
@@ -754,8 +743,8 @@ Par Kevin Godineau, ENS Paris-Saclay
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

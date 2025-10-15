@@ -10,14 +10,10 @@ root: 0_preambule.md  # The first page of your book, all paths for chapters/sect
 # numbered: true
 
 parts:
-  - caption: Cours
+  - caption: méca géné
     chapters:
-      - file: ressources/1_Cours_Chapitre_1.md
-      - file: ressources/1_Cours_Chapitre_2.md
-      - file: ressources/1_Cours_Chapitre_3.md
-      - file: ressources/1_Cours_Chapitre_4.md
-      - file: ressources/1_Cours_Chapitre_5.md
-      - file: ressources/1_Cours_Chapitre_6.md
+      - file: ressources/1_hyperstatisme.md
+
       - file: ressources/1_Cours_Annexes.md
         sections:
           - file: ressources/1_Cours_Annexes_1.md
@@ -25,20 +21,20 @@ parts:
           - file: ressources/1_Cours_Annexes_3.md
           - file: ressources/1_Cours_Annexes_4.md
       - file: ressources/1_Cours_References.md
-  - caption: Travaux Dirigés
+  - caption: mmc
     chapters:
       - file: ressources/2_TD_1.md
-        sections: 
-          - file: ressources/2_TD_1_corrige.md
+#        sections: 
+#          - file: ressources/2_TD_1_corrige.md
       - file: ressources/2_TD_2.md
-        sections: 
-          - file: ressources/2_TD_2_corrige.md
+#        sections: 
+#          - file: ressources/2_TD_2_corrige.md
       - file: ressources/2_TD_3.md
-        sections: 
-          - file: ressources/2_TD_3_corrige.md
+#        sections: 
+#          - file: ressources/2_TD_3_corrige.md
       - file: ressources/2_TD_4.md
-        sections: 
-          - file: ressources/2_TD_4_corrige.md
+#        sections: 
+#          - file: ressources/2_TD_4_corrige.md
   - caption: Travaux Pratiques
     chapters:
       - file: ressources/4_TP_UR10.md
@@ -47,12 +43,12 @@ parts:
       - file: ressources/4_TP_Falcon.md
   - caption: Examens
     chapters:
-      - file: ressources/5_Examen_SPA_2022_2023.md
-        sections: 
-          - file: ressources/5_Examen_SPA_2022_2023_corrige.md
+#      - file: ressources/5_Examen_SPA_2022_2023.md
+#        sections: 
+#          - file: ressources/5_Examen_SPA_2022_2023_corrige.md
       - file: ressources/5_Examen_SPA_2023_2024.md
-        sections: 
-          - file: ressources/5_Examen_SPA_2023_2024_corrige.md
+#        sections: 
+#          - file: ressources/5_Examen_SPA_2023_2024_corrige.md
   - caption: Projets
     chapters:
       - file: ressources/10_Projet_1_Robot_Axis.md

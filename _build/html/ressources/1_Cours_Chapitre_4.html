@@ -8,54 +8,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modèles Géométriques Inverse et Direct - Résolution &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+    <title>Modèles Géométriques Inverse et Direct - Résolution &#8212; Donnons du sens physique à nos équations</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=72dce1d2"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
-    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -77,27 +78,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Haut de page
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,8 +116,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -144,6 +146,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../0_preambule.html">
   
@@ -156,8 +160,8 @@
       
     
     
-    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
-    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
   
   
 </a></div>
@@ -165,7 +169,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Recherche</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -184,39 +188,26 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_3.html">Modélisation géométrique</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modèles Géométriques Inverse et Direct - Résolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
 <ul class="nav bd-sidenav">
@@ -227,14 +218,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +238,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -263,14 +247,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -348,10 +332,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -359,14 +343,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -428,20 +412,21 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modeles-geometriques-inverse-et-direct-resolution">
-<h1>Modèles Géométriques Inverse et Direct - Résolution<a class="headerlink" href="#modeles-geometriques-inverse-et-direct-resolution" title="Link to this heading">#</a></h1>
+<h1>Modèles Géométriques Inverse et Direct - Résolution<a class="headerlink" href="#modeles-geometriques-inverse-et-direct-resolution" title="Lien vers cette rubrique">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique">#</a></h2>
 <section id="espace-des-taches-espace-articulaire">
-<h3>Espace des tâches - Espace articulaire<a class="headerlink" href="#espace-des-taches-espace-articulaire" title="Link to this heading">#</a></h3>
+<h3>Espace des tâches - Espace articulaire<a class="headerlink" href="#espace-des-taches-espace-articulaire" title="Lien vers cette rubrique">#</a></h3>
 <p><strong>Espace des tâches :</strong> lieu, géométriquement repéré où intervient l’effecteur pour effectuer la tâche ou opération. Cet espace est aussi nommé « espace opérationnel ».  C’est un espace de dimension 6, constitué de 3 paramètres pour la position d’un point et de 3 paramètres pour l’orientation d’une base par rapport à une autre.</p>
 <p><strong>Espace articulaire :</strong> en robotique où un degré de liberté entre deux organes consécutifs est appelé une « articulation ». L’amplitude de ce mouvement est la valeur du « paramètre articulaire ». Cet espace est de dimension égale au nombre de degrés de liberté de la structure.</p>
 </section>
 <section id="modeles-geometriques-direct-et-inverse">
-<h3>Modèles géométriques direct et inverse<a class="headerlink" href="#modeles-geometriques-direct-et-inverse" title="Link to this heading">#</a></h3>
+<h3>Modèles géométriques direct et inverse<a class="headerlink" href="#modeles-geometriques-direct-et-inverse" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-default" id="mgd-mgi-ch3">
-<a class="reference internal image-reference" href="../_images/4_1.png"><img alt="../_images/4_1.png" src="../_images/4_1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/4_1.png"><img alt="../_images/4_1.png" src="../_images/4_1.png" style="width: 300px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Modèles géométriques direct et inverse</span><a class="headerlink" href="#mgd-mgi-ch3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Modèles géométriques direct et inverse</span><a class="headerlink" href="#mgd-mgi-ch3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <p>Le modèle géométrique direct (MGD) permet d’exprimer le positionnement de l’effecteur <span class="math notranslate nohighlight">\(\mathbf{X} = (x_{eff}, y_{eff}, z_{eff}, \phi, \theta, \psi)\)</span> défini dans le repère de la tâche <span class="math notranslate nohighlight">\(\mathcal{R}_{tâche}\)</span> en fonction de la configuration articulaire <span class="math notranslate nohighlight">\(\mathbf{q} = (q_1, q_2, \cdots , q_n)\)</span> commandée et des paramètres géométriques décrivant la structure <span class="math notranslate nohighlight">\(\xi\)</span> :</p>
@@ -453,7 +438,7 @@ document.write(`
 \]</div>
 <p>Le modèle géométrique inverse (MGI) exprime la configuration articulaire <span class="math notranslate nohighlight">\(\mathbf{q} = (q_1, q_2, \cdots , q_n)\)</span> commandée en fonction du positionnement de l’effecteur <span class="math notranslate nohighlight">\(\mathbf{X} = (x_{eff}, y_{eff}, z_{eff}, \phi, \theta, \psi)\)</span> dans le repère de la tâche et des paramètres géométriques décrivant la structure <span class="math notranslate nohighlight">\(\xi\)</span> :</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-2">
-<span class="eqno">(10)<a class="headerlink" href="#equation-eq-4-2" title="Link to this equation">#</a></span>\[
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-4-2" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{q} = \text{MGI}(\mathbf{X},\xi)
 \end{equation}
@@ -461,7 +446,7 @@ document.write(`
 </section>
 </section>
 <section id="structures-serielles">
-<h2>Structures sérielles<a class="headerlink" href="#structures-serielles" title="Link to this heading">#</a></h2>
+<h2>Structures sérielles<a class="headerlink" href="#structures-serielles" title="Lien vers cette rubrique">#</a></h2>
 <p>En général, la tâche est définie dans un repère spécifique <span class="math notranslate nohighlight">\(\mathcal{R}_{tâche}\)</span>, défini pour l’opération attendue, qui est différent du repère de base du robot <span class="math notranslate nohighlight">\(\mathcal{R}_{0}\)</span>. Le passage entre ces deux repères est construit par une matrice de transformation homogène <span class="math notranslate nohighlight">\(\mathbf{T}_{tâche\, 0}\)</span> dont les paramètres sont évalués par identification, après fixation relative du robot et de la zone locale d’intérêt pour la tâche.</p>
 <p>A l’autre extrémité du robot, côté effecteur, il est utile de définir un nouveau repère lié à l’effecteur <span class="math notranslate nohighlight">\(\mathcal{R}_{eff}\)</span> pour programmer plus simplement les mouvements. Ainsi, la mesure de l’effecteur vis à vis de sa fixation sur l’organe terminal du robot permet d’associer une nouvelle transformation homogène <span class="math notranslate nohighlight">\(\mathbf{T}_{n\, eff}\)</span> entre <span class="math notranslate nohighlight">\(\mathcal{R}_{eff}\)</span> et le repère du corps à extrémité du robot <span class="math notranslate nohighlight">\(\mathcal{R}_{n}\)</span>.</p>
 <p>La transformation globale entre le repère de la tâche et le repère de l’effecteur s’écrit alors :</p>
@@ -473,27 +458,28 @@ document.write(`
 \]</div>
 <p>Pour un robot permettant de positionner librement l’effecteur dans l’espace, il est possible d’inverser la relation précédente, les transformations <span class="math notranslate nohighlight">\(\mathbf{T}_{tâche\, 0}\)</span> et <span class="math notranslate nohighlight">\(\mathbf{T}_{n\, eff}\)</span> étant des constantes saisie dans le contrôleur du robot :</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-4">
-<span class="eqno">(11)<a class="headerlink" href="#equation-eq-4-4" title="Link to this equation">#</a></span>\[
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-4-4" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{T}_{0n}(q) = \mathbf{T}_{tâche\, 0}^{-1} \mathbf{T}_{tâche\, eff} \mathbf{T}_{n\, eff}^{-1}
 \end{equation} 
 \]</div>
-<p>Pour réaliser le positionnement souhaité de l’effecteur dans le repère de la tâche, le problème consiste alors à trouver les différentes valeurs des variables articulaires <span class="math notranslate nohighlight">\(q\)</span>, c’est à dire le membre de gauche de l’équation <a class="reference internal" href="#equation-eq-4-4">(11)</a>.</p>
+<p>Pour réaliser le positionnement souhaité de l’effecteur dans le repère de la tâche, le problème consiste alors à trouver les différentes valeurs des variables articulaires <span class="math notranslate nohighlight">\(q\)</span>, c’est à dire le membre de gauche de l’équation <a class="reference internal" href="#equation-eq-4-4">(9)</a>.</p>
 <p>Pour les structures sérielles, le MGD est obtenu directement lors du paramétrage de la géométrie et des liaisons. Le Modèle géométrique inverse nécessite lui d’extraire les variables articulaires de chaque transformation pour les exprimer directement en fonction de la tâche à accomplir. Pour cela, différentes solutions sont classiquement utilisées, choisies en fonction de la structure et de sa complexité.</p>
-<p>D’un point de vue pratique, il peut exister plusieurs solutions <span class="math notranslate nohighlight">\(\mathbf{q}_i\)</span> à l’équation <a class="reference internal" href="#equation-eq-4-2">(10)</a>. Cela correspond alors aux différentes configurations articulaires permettant de réaliser le même positionnement de l’effecteur dans le référentiel de base. La figure <a class="reference internal" href="#config-arti"><span class="std std-numref">Fig. 17</span></a> présente les 4 solutions du MGI pour un robot sériel de type 5 axes (5R).</p>
+<p>D’un point de vue pratique, il peut exister plusieurs solutions <span class="math notranslate nohighlight">\(\mathbf{q}_i\)</span> à l’équation <a class="reference internal" href="#equation-eq-4-2">(8)</a>. Cela correspond alors aux différentes configurations articulaires permettant de réaliser le même positionnement de l’effecteur dans le référentiel de base. La figure <a class="reference internal" href="#config-arti"><span class="std std-numref">Fig. 10</span></a> présente les 4 solutions du MGI pour un robot sériel de type 5 axes (5R).</p>
 <figure class="align-default" id="config-arti">
-<a class="reference internal image-reference" href="../_images/4_2.png"><img alt="../_images/4_2.png" src="../_images/4_2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/4_2.png"><img alt="../_images/4_2.png" src="../_images/4_2.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Les 4 configurations articulaires solutions du MGI pour un même positionnement de l’effecteur - robot 5R Denso VP5243</span><a class="headerlink" href="#config-arti" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Les 4 configurations articulaires solutions du MGI pour un même positionnement de l’effecteur - robot 5R Denso VP5243</span><a class="headerlink" href="#config-arti" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <section id="calcul-trigonometrique-simple">
-<h3>Calcul trigonométrique simple<a class="headerlink" href="#calcul-trigonometrique-simple" title="Link to this heading">#</a></h3>
+<h3>Calcul trigonométrique simple<a class="headerlink" href="#calcul-trigonometrique-simple" title="Lien vers cette rubrique">#</a></h3>
 <p>Pour les structures relativement simples possédant moins de six liaisons ou restant dans un plan, il est possible d’exprimer directement les MGI et MGD par construction géométrique et trigonométrique sans avoir à définir de façon explicite toutes les transformations entre repère associés aux différents corps.
 Les astuces de résolution consistent alors à isoler les variables articulaires puis à les résoudre à l’aide des relations trigonométriques usuelles.</p>
 </section>
 <section id="methode-de-paul">
-<h3>Méthode de Paul<a class="headerlink" href="#methode-de-paul" title="Link to this heading">#</a></h3>
+<h3>Méthode de Paul<a class="headerlink" href="#methode-de-paul" title="Lien vers cette rubrique">#</a></h3>
 <p>Soit un robot de structure ouverte simple possédant n corps et liaisons. La modélisation géométrique abouti à une transformation homogène globale de la forme :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -501,7 +487,7 @@ Les astuces de résolution consistent alors à isoler les variables articulaires
 \mathbf{T}_{0n}(q) = \mathbf{T}_{01}(q_1) \mathbf{T}_{12}(q_2) \mathbf{T}_{23}(q_3) \cdots \mathbf{T}_{(n-1)n}(q_n)
 \end{equation}
 \]</div>
-<p>Le positionnement de l’effecteur est connu ; ramené au positionnement du dernier corps du robot, il est possible de l’exprimer dans la base du robot à l’aide de l’équation <a class="reference internal" href="#equation-eq-4-4">(11)</a> :</p>
+<p>Le positionnement de l’effecteur est connu ; ramené au positionnement du dernier corps du robot, il est possible de l’exprimer dans la base du robot à l’aide de l’équation <a class="reference internal" href="#equation-eq-4-4">(9)</a> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{equation}
@@ -513,21 +499,21 @@ r_{31} &amp; r_{32} &amp; r_{33} &amp; P_z \\
 \end{bmatrix}
 \end{equation}
 \end{split}\]</div>
-<p>Résoudre le modèle géométrique inverse revient à résoudre l’équation <a class="reference internal" href="#equation-eq-4-7">(12)</a> en <span class="math notranslate nohighlight">\(q\)</span> :</p>
+<p>Résoudre le modèle géométrique inverse revient à résoudre l’équation <a class="reference internal" href="#equation-eq-4-7">(10)</a> en <span class="math notranslate nohighlight">\(q\)</span> :</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-7">
-<span class="eqno">(12)<a class="headerlink" href="#equation-eq-4-7" title="Link to this equation">#</a></span>\[
+<span class="eqno">(10)<a class="headerlink" href="#equation-eq-4-7" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 ^0 \mathbf{X} = \mathbf{T}_{01}(q_1) \mathbf{T}_{12}(q_2) \mathbf{T}_{23}(q_3) \cdots \mathbf{T}_{(n-1)n}(q_n)
 \end{equation}
 \]</div>
-<p>La méthodologie proposée par Paul consiste à multiplier successivement à gauche les deux membres de l’équation <a class="reference internal" href="#equation-eq-4-7">(12)</a> par les matrices <span class="math notranslate nohighlight">\(\mathbf{T}_{ii-1}(q_i)\)</span>, pour <span class="math notranslate nohighlight">\(i\)</span> variant de <span class="math notranslate nohighlight">\(1\)</span> à <span class="math notranslate nohighlight">\(n-1\)</span>. Ainsi, les variables articulaires se trouvent isolées une à une dans le membre de gauche, tandis que le membre de droite peut être exprimé à partir du MGD.</p>
+<p>La méthodologie proposée par Paul consiste à multiplier successivement à gauche les deux membres de l’équation <a class="reference internal" href="#equation-eq-4-7">(10)</a> par les matrices <span class="math notranslate nohighlight">\(\mathbf{T}_{ii-1}(q_i)\)</span>, pour <span class="math notranslate nohighlight">\(i\)</span> variant de <span class="math notranslate nohighlight">\(1\)</span> à <span class="math notranslate nohighlight">\(n-1\)</span>. Ainsi, les variables articulaires se trouvent isolées une à une dans le membre de gauche, tandis que le membre de droite peut être exprimé à partir du MGD.</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-8">
-<span class="eqno">(13)<a class="headerlink" href="#equation-eq-4-8" title="Link to this equation">#</a></span>\[
+<span class="eqno">(11)<a class="headerlink" href="#equation-eq-4-8" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{T}_{10}(q_1)\ ^0 \mathbf{X} =  \mathbf{T}_{12}(q_2) \mathbf{T}_{23}(q_3) \cdots \mathbf{T}_{(n-1)n}(q_n)
 \end{equation}
 \]</div>
-<p>L’identification terme à terme de l’équation <a class="reference internal" href="#equation-eq-4-8">(13)</a> permet d’isoler une à deux équations scalaires faisant intervenir uniquement la variable articulaire <span class="math notranslate nohighlight">\(q_1\)</span> ainsi que des constantes géométriques du système et les paramètres du positionnement de l’effecteur <span class="math notranslate nohighlight">\(^0 X\)</span>. En procédant de proche en proche, la méthode mène aux équations suivantes :</p>
+<p>L’identification terme à terme de l’équation <a class="reference internal" href="#equation-eq-4-8">(11)</a> permet d’isoler une à deux équations scalaires faisant intervenir uniquement la variable articulaire <span class="math notranslate nohighlight">\(q_1\)</span> ainsi que des constantes géométriques du système et les paramètres du positionnement de l’effecteur <span class="math notranslate nohighlight">\(^0 X\)</span>. En procédant de proche en proche, la méthode mène aux équations suivantes :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -540,7 +526,7 @@ r_{31} &amp; r_{32} &amp; r_{33} &amp; P_z \\
 <p>La forme de chacune des équation scalaire obtenue peut être résolue de façon plus ou moins simple. Ces équations sont classés en type, selon leur forme.</p>
 </section>
 <section id="methode-de-pieper">
-<h3>Méthode de Pieper<a class="headerlink" href="#methode-de-pieper" title="Link to this heading">#</a></h3>
+<h3>Méthode de Pieper<a class="headerlink" href="#methode-de-pieper" title="Lien vers cette rubrique">#</a></h3>
 <p>Cette méthode est particulièrement adaptée aux structures dites « découplables », c’est à dire, dont le problème de résolution du MGI peut être traité en deux sous problèmes à trois inconnues chacun. Pour un robot à 6 axes, il s’agit de structures comportant :</p>
 <ul class="simple">
 <li><p>soit trois liaisons pivot successives d’axe concourants formant ainsi une rotule. Il s’agit par exemple des structures de type XXX(RRR), XX(RRR)X, X(RRR)X … (où R représente une liaison pivot, et X une liaison pivot ou rotule)</p></li>
@@ -548,12 +534,13 @@ r_{31} &amp; r_{32} &amp; r_{33} &amp; P_z \\
 </ul>
 <p>Cette méthode conduit à résoudre des équations de type 1, 2, 3, 9, 10 et 11 (paragraphe D).</p>
 <section id="principe-de-resolution-pour-des-robots-avec-poignet">
-<h4>Principe de résolution pour des robots avec poignet<a class="headerlink" href="#principe-de-resolution-pour-des-robots-avec-poignet" title="Link to this heading">#</a></h4>
-<p>Le centre du poignet est l’intersection des axes de rotation concourants des trois dernières liaisons pivots du robot présentant cette particularité (<a class="reference internal" href="#poignet"><span class="std std-numref">Fig. 18</span></a>).</p>
+<h4>Principe de résolution pour des robots avec poignet<a class="headerlink" href="#principe-de-resolution-pour-des-robots-avec-poignet" title="Lien vers cette rubrique">#</a></h4>
+<p>Le centre du poignet est l’intersection des axes de rotation concourants des trois dernières liaisons pivots du robot présentant cette particularité (<a class="reference internal" href="#poignet"><span class="std std-numref">Fig. 11</span></a>).</p>
 <figure class="align-default" id="poignet">
-<a class="reference internal image-reference" href="../_images/4_3.png"><img alt="../_images/4_3.png" src="../_images/4_3.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/4_3.png"><img alt="../_images/4_3.png" src="../_images/4_3.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Exemple structures de poignets à trois articulations concourantes</span><a class="headerlink" href="#poignet" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Exemple structures de poignets à trois articulations concourantes</span><a class="headerlink" href="#poignet" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <p>La position de ce point caractéristique ne dépend donc que des trois premières variables articulaires <span class="math notranslate nohighlight">\(q_1\)</span>, <span class="math notranslate nohighlight">\(q_2\)</span> et <span class="math notranslate nohighlight">\(q_3\)</span>. Il y a donc un découplage entre la position de ce point caractéristique et l’orientation du poignet. Le problème peut donc se séparer en deux problèmes à 3 équations et 3 inconnues.</p>
@@ -605,14 +592,14 @@ P_{z\ rot} \\
 </section>
 </section>
 <section id="quelques-autres-methodes">
-<h3>Quelques autres méthodes…<a class="headerlink" href="#quelques-autres-methodes" title="Link to this heading">#</a></h3>
+<h3>Quelques autres méthodes…<a class="headerlink" href="#quelques-autres-methodes" title="Lien vers cette rubrique">#</a></h3>
 <p>Parmi les autres méthodes existantes, on peut citer deux autres techniques usuelles :</p>
 <section id="methode-de-raghavan-et-roth">
-<h4>Méthode de Raghavan et Roth<a class="headerlink" href="#methode-de-raghavan-et-roth" title="Link to this heading">#</a></h4>
+<h4>Méthode de Raghavan et Roth<a class="headerlink" href="#methode-de-raghavan-et-roth" title="Lien vers cette rubrique">#</a></h4>
 <p>Cette méthode est basée sur la résolution d’un système d’équations non linéaires baptisée « élimination dyalitique ». Elle consiste à déterminer au travers d’un polynôme nommé « polynôme caractéristique » toutes les solutions possibles du MGI par le calcul des valeurs correspondantes d’une première variable articulaire. Les variables articulaires suivantes sont déterminées alors pour chaque cas de façon unique.</p>
 </section>
 <section id="methode-numerique">
-<h4>Méthode numérique<a class="headerlink" href="#methode-numerique" title="Link to this heading">#</a></h4>
+<h4>Méthode numérique<a class="headerlink" href="#methode-numerique" title="Lien vers cette rubrique">#</a></h4>
 <p>Parmi les méthodes numériques, on retiendra l’algorithme de Newton-Raphson, extension de la méthode de Newton. Par itérations successives, elle permet de résoudre un système d’équations (non linéaires) en recherchant les zéros de fonctions continûment dérivables.
 Soit <span class="math notranslate nohighlight">\(\mathbf{X}^*\)</span> la configuration connue que le robot doit atteindre par les valeurs articulaires <span class="math notranslate nohighlight">\(\mathbf{q}^*\)</span> qui sont à déterminer. L’inversion du modèle direct :</p>
 <div class="math notranslate nohighlight">
@@ -633,13 +620,13 @@ Soit <span class="math notranslate nohighlight">\(\mathbf{X}^*\)</span> la confi
 </section>
 </section>
 <section id="structures-paralleles">
-<h2>Structures parallèles<a class="headerlink" href="#structures-paralleles" title="Link to this heading">#</a></h2>
+<h2>Structures parallèles<a class="headerlink" href="#structures-paralleles" title="Lien vers cette rubrique">#</a></h2>
 <section id="resolution-du-mgd">
-<h3>Résolution du MGD<a class="headerlink" href="#resolution-du-mgd" title="Link to this heading">#</a></h3>
-<p>Dans le cas des structures parallèles, le MGD est bien plus difficile à obtenir que pour les structures sérielles. Pour cela, on utilise des méthodes numériques d’optimisation de type « Newton-Raphson » pour résoudre le système d’équations non linéaires formé par la relation de fermeture géométrique donnée en équation <a class="reference internal" href="1_Cours_Chapitre_3.html#equation-eq-3-7">(9)</a>.</p>
+<h3>Résolution du MGD<a class="headerlink" href="#resolution-du-mgd" title="Lien vers cette rubrique">#</a></h3>
+<p>Dans le cas des structures parallèles, le MGD est bien plus difficile à obtenir que pour les structures sérielles. Pour cela, on utilise des méthodes numériques d’optimisation de type « Newton-Raphson » pour résoudre le système d’équations non linéaires formé par la relation de fermeture géométrique donnée en équation <a class="reference internal" href="1_Cours_Chapitre_3.html#equation-eq-3-7">(7)</a>.</p>
 </section>
 <section id="resolution-du-mgi">
-<h3>Résolution du MGI<a class="headerlink" href="#resolution-du-mgi" title="Link to this heading">#</a></h3>
+<h3>Résolution du MGI<a class="headerlink" href="#resolution-du-mgi" title="Lien vers cette rubrique">#</a></h3>
 <p>Les variables articulaires <span class="math notranslate nohighlight">\(q_i\)</span> se déterminent indépendamment les unes des autres. Le MGI doit aboutir à une équation scalaire pour chaque variable articulaire :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -655,7 +642,7 @@ q_i = \text{MGI}(\mathbf{X},\xi)
 \end{equation}
 \]</div>
 <section id="ecriture-vectorielle">
-<h4>Écriture vectorielle<a class="headerlink" href="#ecriture-vectorielle" title="Link to this heading">#</a></h4>
+<h4>Écriture vectorielle<a class="headerlink" href="#ecriture-vectorielle" title="Lien vers cette rubrique">#</a></h4>
 <p>L’équation 3.5 de fermeture géométrique peut se réécrire :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -672,7 +659,7 @@ q_i^2 = \lVert \overrightarrow{A_i O_m}_{\mathcal{B}_m} + \overrightarrow{O_m O_
 \]</div>
 </section>
 <section id="ecriture-matricielle">
-<h4>Écriture matricielle<a class="headerlink" href="#ecriture-matricielle" title="Link to this heading">#</a></h4>
+<h4>Écriture matricielle<a class="headerlink" href="#ecriture-matricielle" title="Lien vers cette rubrique">#</a></h4>
 <p>Sous forme de transformations homogènes, ce problème peut s’écrire de la façon suivante : connaissant la transformation <span class="math notranslate nohighlight">\(\mathbf{T}_{mp}\)</span> passant du repère fixe <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span> au repère de la plateforme mobile <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span>, ainsi que les expressions des positions des points <span class="math notranslate nohighlight">\(B_i\)</span> dans <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span> (<span class="math notranslate nohighlight">\(^p\mathbf{B}_i\)</span>) et <span class="math notranslate nohighlight">\(A_i\)</span> dans <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span> (<span class="math notranslate nohighlight">\(^m\mathbf{A}_i\)</span>), les coordonnées des points <span class="math notranslate nohighlight">\(B_i\)</span> dans <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span> se calculent par :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -691,7 +678,7 @@ q_i^2 &amp;= \mathbf{A}_i \mathbf{B}_i^t \mathbf{A}_i \mathbf{B}_i \\
 \end{split}\]</div>
 </section>
 <section id="remarque">
-<h4>Remarque<a class="headerlink" href="#remarque" title="Link to this heading">#</a></h4>
+<h4>Remarque<a class="headerlink" href="#remarque" title="Lien vers cette rubrique">#</a></h4>
 <p>Pour les structures hybrides, il est possible de coupler les deux approches :</p>
 <ul class="simple">
 <li><p>Denavit-Hartenberg pour la partie sérielle,</p></li>
@@ -729,7 +716,7 @@ q_i^2 &amp;= \mathbf{A}_i \mathbf{B}_i^t \mathbf{A}_i \mathbf{B}_i \\
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -809,7 +796,7 @@ q_i^2 &amp;= \mathbf{A}_i \mathbf{B}_i^t \mathbf{A}_i \mathbf{B}_i \\
   <div class="footer-item">
     
 <p class="component-author">
-Par Kevin Godineau, ENS Paris-Saclay
+Par Emeline Faugere, ENS Paris-Saclay
 </p>
 
   </div>
@@ -819,7 +806,7 @@ Par Kevin Godineau, ENS Paris-Saclay
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
@@ -843,8 +830,8 @@ Par Kevin Godineau, ENS Paris-Saclay
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

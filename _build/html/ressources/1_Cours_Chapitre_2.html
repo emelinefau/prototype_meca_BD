@@ -8,54 +8,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramétrage des positionnements &#8212; M1 MIP &amp; MMS - Systèmes Poly-Articulés</title>
+    <title>Paramétrage des positionnements &#8212; Donnons du sens physique à nos équations</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=72dce1d2"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
-    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -67,7 +68,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Modélisation géométrique" href="1_Cours_Chapitre_3.html" />
-    <link rel="prev" title="Éléments mathématiques" href="1_Cours_Chapitre_1.html" />
+    <link rel="prev" title="M1 SPA : Systèmes Poly-Articulés" href="../0_preambule.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -77,27 +78,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Haut de page
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -119,8 +116,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -144,6 +146,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../0_preambule.html">
   
@@ -156,8 +160,8 @@
       
     
     
-    <img src="../_static/image_titre.png" class="logo__image only-light" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>
-    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="M1 MIP & MMS - Systèmes Poly-Articulés - Home"/>`);</script>
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
   
   
 </a></div>
@@ -165,7 +169,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Recherche</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -184,39 +188,26 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_1.html">Éléments mathématiques</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramétrage des positionnements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_3.html">Modélisation géométrique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_1_corrige.html">Correction du TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_2_corrige.html">Correction du TD n°2 : MGI par la méthode de Paul, singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_3_corrige.html">Correction du TD n°3 : Modélisations cinématiques - Singularités</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_TD_4_corrige.html">Correction du TD n°4 : Modes d’interpolation des trajets</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
 <ul class="nav bd-sidenav">
@@ -227,14 +218,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2022_2023.html">Examen de Système Poly-Articulés - 2022/2023</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2022_2023_corrige.html">Correction de l’examen de Système Poly-Articulés - 2022/2023</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="5_Examen_SPA_2023_2024_corrige.html">Correction de l’examen de Système Poly-Articulés - 2023/2024</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +238,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -263,14 +247,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -348,10 +332,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -359,14 +343,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -423,13 +407,13 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="parametrage-des-positionnements">
-<h1>Paramétrage des positionnements<a class="headerlink" href="#parametrage-des-positionnements" title="Link to this heading">#</a></h1>
+<h1>Paramétrage des positionnements<a class="headerlink" href="#parametrage-des-positionnements" title="Lien vers cette rubrique">#</a></h1>
 <section id="description-des-positions">
-<h2>Description des positions<a class="headerlink" href="#description-des-positions" title="Link to this heading">#</a></h2>
+<h2>Description des positions<a class="headerlink" href="#description-des-positions" title="Lien vers cette rubrique">#</a></h2>
 <p>Pour quasiment tous les constructeurs de robots, la position de l’effecteur est représentée par les coordonnées cartésiennes <span class="math notranslate nohighlight">\((x, y, z)\)</span>. Très peu utilisent la représentation par coordonnées cylindriques ou sphériques (bien que parfois plus intéressant).</p>
 </section>
 <section id="description-des-orientations">
-<h2>Description des orientations<a class="headerlink" href="#description-des-orientations" title="Link to this heading">#</a></h2>
+<h2>Description des orientations<a class="headerlink" href="#description-des-orientations" title="Lien vers cette rubrique">#</a></h2>
 <p>Pour décrire l’orientation de l’effecteur, on trouve classiquement quatre représentations :</p>
 <ul class="simple">
 <li><p>les cosinus directeurs ;</p></li>
@@ -438,7 +422,7 @@ document.write(`
 <li><p>les paramètres de Rodrigues (quaternions).</p></li>
 </ul>
 <section id="cosinus-directeurs">
-<h3>Cosinus directeurs<a class="headerlink" href="#cosinus-directeurs" title="Link to this heading">#</a></h3>
+<h3>Cosinus directeurs<a class="headerlink" href="#cosinus-directeurs" title="Lien vers cette rubrique">#</a></h3>
 <p>Soient deux bases : <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> supposée fixée et <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> liée au corps à paramétrer en orientation. Pour un vecteur particulier <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, les cosinus directeurs de ce vecteur sont ses coordonnées exprimées dans <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -455,12 +439,13 @@ document.write(`
 \end{split}\]</div>
 </section>
 <section id="angles-d-euler">
-<h3>Angles d’Euler<a class="headerlink" href="#angles-d-euler" title="Link to this heading">#</a></h3>
-<p>La transformation permettant de passer de <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> à <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> est faite par les trois rotations successives suivantes, passant par les bases intermédiaires <span class="math notranslate nohighlight">\(\mathcal{B}_i\)</span> et <span class="math notranslate nohighlight">\(\mathcal{B}_{ii}\)</span> (<a class="reference internal" href="#angles-euler"><span class="std std-numref">Fig. 8</span></a>) :</p>
+<h3>Angles d’Euler<a class="headerlink" href="#angles-d-euler" title="Lien vers cette rubrique">#</a></h3>
+<p>La transformation permettant de passer de <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> à <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> est faite par les trois rotations successives suivantes, passant par les bases intermédiaires <span class="math notranslate nohighlight">\(\mathcal{B}_i\)</span> et <span class="math notranslate nohighlight">\(\mathcal{B}_{ii}\)</span> (<a class="reference internal" href="#angles-euler"><span class="std std-numref">Fig. 1</span></a>) :</p>
 <figure class="align-default" id="angles-euler">
-<a class="reference internal image-reference" href="../_images/2_1.png"><img alt="../_images/2_1.png" src="../_images/2_1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/2_1.png"><img alt="../_images/2_1.png" src="../_images/2_1.png" style="width: 300px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Angles d’Euler : définition des rotations successives</span><a class="headerlink" href="#angles-euler" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Angles d’Euler : définition des rotations successives</span><a class="headerlink" href="#angles-euler" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight">
@@ -485,7 +470,7 @@ document.write(`
 \end{equation}
 \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-2-4">
-<span class="eqno">(3)<a class="headerlink" href="#equation-eq-2-4" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-2-4" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \Leftrightarrow \begin{bmatrix} r_{11} &amp; r_{12} &amp; r_{13} \\ r_{21} &amp; r_{22} &amp; r_{23} \\  r_{31} &amp; r_{32} &amp; r_{33} \end{bmatrix} = 
 \begin{bmatrix} 
@@ -496,11 +481,11 @@ document.write(`
 \end{equation}
 \end{split}\]</div>
 <section id="resolution-inverse">
-<h4>Résolution inverse<a class="headerlink" href="#resolution-inverse" title="Link to this heading">#</a></h4>
+<h4>Résolution inverse<a class="headerlink" href="#resolution-inverse" title="Lien vers cette rubrique">#</a></h4>
 <p>L’objectif est de déterminer les valeurs des trois angles <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> et à partir des cosinus directeurs <span class="math notranslate nohighlight">\(r_{ij}\)</span> la matrice de rotation globale <span class="math notranslate nohighlight">\(\mathbf{R}_{0n}\)</span>.</p>
 <p>La résolution inverse est indéterminée quand <span class="math notranslate nohighlight">\(\theta = 0\)</span> ou <span class="math notranslate nohighlight">\(\pi\)</span>. En dehors de cette singularité de représentation, les angles peuvent être obtenus à l’aide de la fonction <span class="math notranslate nohighlight">\(\text{atan2}\)</span> :</p>
 <ul>
-<li><p>Pour <span class="math notranslate nohighlight">\(r_{33} \neq \pm 1 \, (\theta \neq 0 \text{et } \theta \neq \pi)\)</span>, à l’aide des termes <span class="math notranslate nohighlight">\(_{13}\)</span> et <span class="math notranslate nohighlight">\(_{23}\)</span> de l’équation <a class="reference internal" href="#equation-eq-2-4">(3)</a> il est possible de déterminer l’angle <span class="math notranslate nohighlight">\(\phi\)</span> car <span class="math notranslate nohighlight">\(\theta \in \left[0, 180^{\circ} \right]\)</span> (son sinus est donc positif), d’où :</p>
+<li><p>Pour <span class="math notranslate nohighlight">\(r_{33} \neq \pm 1 \, (\theta \neq 0 \text{et } \theta \neq \pi)\)</span>, à l’aide des termes <span class="math notranslate nohighlight">\(_{13}\)</span> et <span class="math notranslate nohighlight">\(_{23}\)</span> de l’équation <a class="reference internal" href="#equation-eq-2-4">(1)</a> il est possible de déterminer l’angle <span class="math notranslate nohighlight">\(\phi\)</span> car <span class="math notranslate nohighlight">\(\theta \in \left[0, 180^{\circ} \right]\)</span> (son sinus est donc positif), d’où :</p>
 <div class="math notranslate nohighlight">
 \[ 
     \begin{equation}
@@ -542,7 +527,7 @@ document.write(`
 <p>Dans les deux derniers cas, <span class="math notranslate nohighlight">\(\phi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> et restent indéterminés.</p>
 </section>
 <section id="remarque">
-<h4>Remarque<a class="headerlink" href="#remarque" title="Link to this heading">#</a></h4>
+<h4>Remarque<a class="headerlink" href="#remarque" title="Lien vers cette rubrique">#</a></h4>
 <p>Il est important de noter que cette succession de transformations <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_0}, \phi \right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{x_i}, \theta \right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_{ii}}, \psi \right)\)</span> correspond à la notation originale des angles d’Euler. Cependant, il est possible de trouver des variantes de cette succession de rotations sous différents formats, amenant donc à différentes solutions. Le principe des angles d’Euler est d’utiliser le même axe de rotation pour les première et troisième transformations. Les deuxième et troisième rotations sont autour d’axes issus de la rotation précédente. Elles sont donc qualifiées d”<strong>intrinsèques</strong>. Ainsi, six combinaisons sont possibles :</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_0}\right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{x_i}\right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_{ii}}\right)\)</span></p></li>
@@ -564,18 +549,19 @@ document.write(`
 </section>
 </section>
 <section id="angles-de-tait-bryan-roulis-tangage-lacet">
-<h3>Angles de Tait - Bryan : roulis-tangage-lacet<a class="headerlink" href="#angles-de-tait-bryan-roulis-tangage-lacet" title="Link to this heading">#</a></h3>
+<h3>Angles de Tait - Bryan : roulis-tangage-lacet<a class="headerlink" href="#angles-de-tait-bryan-roulis-tangage-lacet" title="Lien vers cette rubrique">#</a></h3>
 <p>La seule différence avec les angles d’Euler est qu’il s’agit de trois rotations consécutives autour d’axes différents :</p>
 <ul class="simple">
 <li><p>une rotation autour de <span class="math notranslate nohighlight">\(\overrightarrow{z_0} \)</span>, d’angle <span class="math notranslate nohighlight">\(\phi\)</span> (angle de Roulis) ;</p></li>
 <li><p>une rotation autour de <span class="math notranslate nohighlight">\(\overrightarrow{y_i} \)</span>, d’angle <span class="math notranslate nohighlight">\(\theta\)</span> (angle de Tangage) ;</p></li>
 <li><p>une rotation autour de <span class="math notranslate nohighlight">\(\overrightarrow{x_{ii}} \)</span>, d’angle <span class="math notranslate nohighlight">\(\psi\)</span> (angle de Lacet).</p></li>
 </ul>
-<p>Ces trois rotations sont aussi nommées « RTL ». L’appellation anglaise de ces rotations successives est « roll, pitch, yaw ». Ce paramétrage est particulièrement utilisé dans l’aéronautique (<a class="reference internal" href="#angles-roulis"><span class="std std-numref">Fig. 9</span></a>).</p>
+<p>Ces trois rotations sont aussi nommées « RTL ». L’appellation anglaise de ces rotations successives est « roll, pitch, yaw ». Ce paramétrage est particulièrement utilisé dans l’aéronautique (<a class="reference internal" href="#angles-roulis"><span class="std std-numref">Fig. 2</span></a>).</p>
 <figure class="align-default" id="angles-roulis">
-<a class="reference internal image-reference" href="../_images/2_2.png"><img alt="../_images/2_2.png" src="../_images/2_2.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/2_2.png"><img alt="../_images/2_2.png" src="../_images/2_2.png" style="width: 400px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Visualisation des angles de Roulis, Tangage, Lacet, en aéronautique</span><a class="headerlink" href="#angles-roulis" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Visualisation des angles de Roulis, Tangage, Lacet, en aéronautique</span><a class="headerlink" href="#angles-roulis" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <p>Lorsque ces rotations sont intrinsèques (basées sur les repères construits à chaque étape), ce paramétrage aboutit à la matrice globale suivante :</p>
@@ -588,7 +574,7 @@ document.write(`
 \end{equation}
 \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-2-11">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eq-2-11" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-2-11" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \Leftrightarrow \begin{bmatrix} r_{11} &amp; r_{12} &amp; r_{13} \\ r_{21} &amp; r_{22} &amp; r_{23} \\  r_{31} &amp; r_{32} &amp; r_{33} \end{bmatrix} = 
 \begin{bmatrix} 
@@ -599,10 +585,10 @@ document.write(`
 \end{equation}
 \end{split}\]</div>
 <section id="id1">
-<h4>Résolution inverse<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<h4>Résolution inverse<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h4>
 <p>Ce paramétrage présente également une singularité de représentation pour <span class="math notranslate nohighlight">\(\theta = \pm \frac{\pi}{2}\)</span>, où la valeur de <span class="math notranslate nohighlight">\(\psi\)</span> est indéterminée.</p>
 <ul>
-<li><p>Pour <span class="math notranslate nohighlight">\(r_{11} \neq  0 \, (\theta \text{et } \phi \neq \pi/2)\)</span>, et <span class="math notranslate nohighlight">\(r_{33} \neq  0 \, (\theta \text{et } \psi \neq \pi/2)\)</span>, à l’aide des termes <span class="math notranslate nohighlight">\(_{11}\)</span> et <span class="math notranslate nohighlight">\(_{21}\)</span> de l’équation <a class="reference internal" href="#equation-eq-2-11">(4)</a> il est possible de déterminer l’angle <span class="math notranslate nohighlight">\(\theta\)</span> :</p>
+<li><p>Pour <span class="math notranslate nohighlight">\(r_{11} \neq  0 \, (\theta \text{et } \phi \neq \pi/2)\)</span>, et <span class="math notranslate nohighlight">\(r_{33} \neq  0 \, (\theta \text{et } \psi \neq \pi/2)\)</span>, à l’aide des termes <span class="math notranslate nohighlight">\(_{11}\)</span> et <span class="math notranslate nohighlight">\(_{21}\)</span> de l’équation <a class="reference internal" href="#equation-eq-2-11">(2)</a> il est possible de déterminer l’angle <span class="math notranslate nohighlight">\(\theta\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[
     \begin{equation}
@@ -647,7 +633,7 @@ document.write(`
 </ul>
 </section>
 <section id="id2">
-<h4>Remarque<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<h4>Remarque<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h4>
 <p>Comme avec les angles d’Euler, il existe six combinaisons possibles pour le paramétrage des angles de Tait Bryan avec des rotations <strong>intrinsèques</strong> :</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{x_0}\right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{y_i}\right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_{ii}}\right)\)</span></p></li>
@@ -669,7 +655,7 @@ document.write(`
 </section>
 </section>
 <section id="relations-entre-rotations-extrinseques-et-rotations-intrinseques">
-<h3>Relations entre rotations extrinsèques et rotations intrinsèques<a class="headerlink" href="#relations-entre-rotations-extrinseques-et-rotations-intrinseques" title="Link to this heading">#</a></h3>
+<h3>Relations entre rotations extrinsèques et rotations intrinsèques<a class="headerlink" href="#relations-entre-rotations-extrinseques-et-rotations-intrinseques" title="Lien vers cette rubrique">#</a></h3>
 <p>A chaque rotation extrinsèque, il est possible de formuler une transformation équivalente sous forme intrinsèque. Pour cela, il faut inverser les rotations successives tout en conservant les mêmes angles.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -680,35 +666,37 @@ document.write(`
 \end{split}\]</div>
 <div class="note admonition">
 <p class="admonition-title">Exemple</p>
-<p>La <a class="reference internal" href="#exemple-euler-intrin"><span class="std std-numref">Fig. 10</span></a> avec le paramétrage d’Euler (équation <a class="reference internal" href="#equation-eq-2-20">(5)</a>), la transformation intrinsèque :</p>
+<p>La <a class="reference internal" href="#exemple-euler-intrin"><span class="std std-numref">Fig. 3</span></a> avec le paramétrage d’Euler (équation <a class="reference internal" href="#equation-eq-2-20">(3)</a>), la transformation intrinsèque :</p>
 <figure class="align-default" id="exemple-euler-intrin">
-<a class="reference internal image-reference" href="../_images/2_3.png"><img alt="../_images/2_3.png" src="../_images/2_3.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/2_3.png"><img alt="../_images/2_3.png" src="../_images/2_3.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Rotations dans les bases successives : Euler intrinsèque <span class="math notranslate nohighlight">\(-60^{\circ}\)</span>, <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(45^{\circ}\)</span></span><a class="headerlink" href="#exemple-euler-intrin" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Rotations dans les bases successives : Euler intrinsèque <span class="math notranslate nohighlight">\(-60^{\circ}\)</span>, <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(45^{\circ}\)</span></span><a class="headerlink" href="#exemple-euler-intrin" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight" id="equation-eq-2-20">
-<span class="eqno">(5)<a class="headerlink" href="#equation-eq-2-20" title="Link to this equation">#</a></span>\[
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-2-20" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{R}_{0n} = \mathbf{R}_{01}\left(\overrightarrow{z_0},\phi = - 60^{\circ} \right) \mathbf{R}_{12}\left(\overrightarrow{x_1},\theta = 30^{\circ}\right) \mathbf{R}_{2n}\left(\overrightarrow{z_2},\psi=45^{\circ} \right)
 \end{equation}
 \]</div>
-<p>est équivalente à la transformation extrinsèque suivante (<a class="reference internal" href="#exemple-euler-extrin"><span class="std std-numref">Fig. 11</span></a> et équation <a class="reference internal" href="#equation-eq-2-21">(6)</a>) :</p>
+<p>est équivalente à la transformation extrinsèque suivante (<a class="reference internal" href="#exemple-euler-extrin"><span class="std std-numref">Fig. 4</span></a> et équation <a class="reference internal" href="#equation-eq-2-21">(4)</a>) :</p>
 <figure class="align-default" id="exemple-euler-extrin">
-<a class="reference internal image-reference" href="../_images/2_4.png"><img alt="../_images/2_4.png" src="../_images/2_4.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/2_4.png"><img alt="../_images/2_4.png" src="../_images/2_4.png" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Rotations autour d’axes de la base fixe : Euler extrinsèque <span class="math notranslate nohighlight">\(45^{\circ}\)</span>, <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(-60^{\circ}\)</span></span><a class="headerlink" href="#exemple-euler-extrin" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Rotations autour d’axes de la base fixe : Euler extrinsèque <span class="math notranslate nohighlight">\(45^{\circ}\)</span>, <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(-60^{\circ}\)</span></span><a class="headerlink" href="#exemple-euler-extrin" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight" id="equation-eq-2-21">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-2-21" title="Link to this equation">#</a></span>\[
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-2-21" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 \mathbf{R}_{0n} = \mathbf{R}_{01}\left(\overrightarrow{z_0},\psi = 45^{\circ} \right) \mathbf{R}_{12}\left(\overrightarrow{x_0},\theta = 30^{\circ}\right) \mathbf{R}_{2n}\left(\overrightarrow{z_0},\phi=-60^{\circ} \right)
 \end{equation}
 \]</div>
 </div>
 <section id="demonstration">
-<h4>Démonstration<a class="headerlink" href="#demonstration" title="Link to this heading">#</a></h4>
+<h4>Démonstration<a class="headerlink" href="#demonstration" title="Lien vers cette rubrique">#</a></h4>
 <p>Soit les trois rotations associées aux angles d’Euler (forme intrinsèque) :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -784,7 +772,7 @@ document.write(`
 </section>
 </section>
 <section id="les-quaternions">
-<h3>Les quaternions<a class="headerlink" href="#les-quaternions" title="Link to this heading">#</a></h3>
+<h3>Les quaternions<a class="headerlink" href="#les-quaternions" title="Lien vers cette rubrique">#</a></h3>
 <p>Les quaternions sont aussi appelés paramètres d’Euler ou d’Olinde Rodrigues. Dans cette représentation, l’orientation est exprimée à l’aide de quatre paramètres qui décrivent une rotation unique équivalente, d’angle <span class="math notranslate nohighlight">\(\theta \in \left[ 0, 180^{\circ} \right]\)</span> autour d’un axe de vecteur unitaire <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>. Les quaternions sont définis par :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -799,14 +787,14 @@ Q_4 &amp;= u_z \text{S} \theta /2
 \end{split}\]</div>
 <p>Une des propriétés des quaternions est de vérifier la relation :</p>
 <div class="math notranslate nohighlight" id="equation-eq-2-31">
-<span class="eqno">(7)<a class="headerlink" href="#equation-eq-2-31" title="Link to this equation">#</a></span>\[
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-2-31" title="Lien vers cette équation">#</a></span>\[
 \begin{equation}
 Q_1^2 + Q_2^2 + Q_3^2 + Q_4^2 =1
 \end{equation}
 \]</div>
 <p>La matrice de rotation <span class="math notranslate nohighlight">\(\mathbf{R}_{0n}\)</span> pour passer de <span class="math notranslate nohighlight">\(\mathcal{B}_0\)</span> à <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> s’écrit :</p>
 <div class="math notranslate nohighlight" id="equation-eq-2-32">
-<span class="eqno">(8)<a class="headerlink" href="#equation-eq-2-32" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-2-32" title="Lien vers cette équation">#</a></span>\[\begin{split}
 \begin{equation}
 \mathbf{R}_{0n} = \begin{bmatrix}
 2(Q_1^2+Q_2^2)-1 &amp; 2(Q_2 Q_3 - Q_1 Q_4) &amp; 2(Q_2 Q_4 + Q_1 Q_3) \\
@@ -816,7 +804,7 @@ Q_1^2 + Q_2^2 + Q_3^2 + Q_4^2 =1
 \end{equation}
 \end{split}\]</div>
 <section id="id3">
-<h4>Résolution inverse<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<h4>Résolution inverse<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h4>
 <p>En identifiant terme à terme les coefficients de la matrice précédente avec :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -840,11 +828,11 @@ Q_4 = 1/2 \text{sgn}(r_{21}-r_{12})\sqrt{1-r_{11}-r_{22}+r_{33}} \\
 \end{cases}
 \end{equation}
 \end{split}\]</div>
-<p>Bien que l’utilisation de quatre paramètres rende ce formalisme redondant (équation <a class="reference internal" href="#equation-eq-2-31">(7)</a>), il a l’avantage de ne présenter aucune représentation singulière (contrairement aux paramétrages d’Euler et Bryan).</p>
+<p>Bien que l’utilisation de quatre paramètres rende ce formalisme redondant (équation <a class="reference internal" href="#equation-eq-2-31">(5)</a>), il a l’avantage de ne présenter aucune représentation singulière (contrairement aux paramétrages d’Euler et Bryan).</p>
 </section>
 </section>
 <section id="solutions-industrielles">
-<h3>Solutions industrielles<a class="headerlink" href="#solutions-industrielles" title="Link to this heading">#</a></h3>
+<h3>Solutions industrielles<a class="headerlink" href="#solutions-industrielles" title="Lien vers cette rubrique">#</a></h3>
 <p>Diverses conventions sont utilisées dans les modeleurs géométriques et le contrôleurs de robot. Voici quelques exemples :</p>
 <ul class="simple">
 <li><p>Adept et Stäbli : <span class="math notranslate nohighlight">\(\text{rot} \left( \overrightarrow{z_0} \right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{y_i} \right)\)</span>, <span class="math notranslate nohighlight">\(\text{rot} \left(\overrightarrow{z_{ii}}\right)\)</span></p></li>
@@ -884,16 +872,16 @@ Q_4 = 1/2 \text{sgn}(r_{21}-r_{12})\sqrt{1-r_{11}-r_{22}+r_{33}} \\
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="1_Cours_Chapitre_1.html"
+       href="../0_preambule.html"
        title="page précédente">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Éléments mathématiques</p>
+        <p class="prev-next-title">M1 SPA : Systèmes Poly-Articulés</p>
       </div>
     </a>
     <a class="right-next"
@@ -959,7 +947,7 @@ Q_4 = 1/2 \text{sgn}(r_{21}-r_{12})\sqrt{1-r_{11}-r_{22}+r_{33}} \\
   <div class="footer-item">
     
 <p class="component-author">
-Par Kevin Godineau, ENS Paris-Saclay
+Par Emeline Faugere, ENS Paris-Saclay
 </p>
 
   </div>
@@ -969,7 +957,7 @@ Par Kevin Godineau, ENS Paris-Saclay
 
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
@@ -993,8 +981,8 @@ Par Kevin Godineau, ENS Paris-Saclay
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

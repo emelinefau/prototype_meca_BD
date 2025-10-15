@@ -8,9 +8,9 @@
 #######################################################################################
 # Book settings
 
-title            : M1 MIP & MMS - Systèmes Poly-Articulés  # The title of the book 
-author           : Kevin Godineau, ENS Paris-Saclay  # The author of the book
-copyright        : "2024"  # Copyright year to be placed in the footer
+title            : Donnons du sens physique à nos équations  # The title of the book 
+author           : Emeline Faugere, ENS Paris-Saclay  # The author of the book
+copyright        : "2025"  # Copyright year to be placed in the footer
 logo             : ressources/img/image_titre.png  # A path to the book logo
 exclude_patterns : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", README.md]
 
@@ -58,10 +58,11 @@ html:
   google_analytics_id       : ""  # A GA id that can be used to track book views.
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
   baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-  analytics:
+  analytics                 : {}
+  static_path               : _static #ajouté pour les pdf
 
   comments:
-    hypothesis              : false
+    hypothesis              : true
     utterances              : false
   announcement              : "" # A banner announcement at the top of the site.
 
@@ -82,7 +83,7 @@ sphinx:
     latex_elements:  # see https://www.sphinx-doc.org/en/master/latex.html
       papersize: 'a4paper'
       preamble:  '\usepackage{bm} \usepackage{enumitem} \setitemize[0]{label=\textbullet} \usepackage{tikz} \usetikzlibrary {automata,positioning}'
-
+      html_extra_path: ["_static"] #ajouté pour les pdf
 
       
 #######################################################################################

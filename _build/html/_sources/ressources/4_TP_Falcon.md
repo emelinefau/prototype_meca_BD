@@ -56,11 +56,11 @@ Pour les robots à architecture parallèle, le MGD est plus compliqué à déter
 
 **Question 3.5 :** Analyser les arguments d'entrée et de sortie de la fonction "MGD Falcon.m" fournie (il n'est pas demandé de comprendre le code à l'intérieur de la fonction, car complexe).
 
-**Question 3.6 :** Exécuter la fonction "MGD Falcon.m" fournie; observer les résultats numériques affichés dans la ligne de commande Matlab et les représentations graphiques réalisées.
+Exécuter la fonction "MGD Falcon.m" fournie; observer les résultats numériques affichés dans la ligne de commande Matlab et les représentations graphiques réalisées.
 
-**Question 3.7 :** Parmi l'ensemble des positionnements de la plateforme mobile calculées et représentées (la poignée), retrouver la solution recherchée (qui est l'entrée du MGI).
+**Question 3.6 :** Parmi l'ensemble des positionnements de la plateforme mobile calculées et représentées (la poignée), retrouver la solution recherchée (qui est l'entrée du MGI).
 
-**Question 3.8 :** Dans un contexte de commande du robot pour faire décrire à la plateforme mobile une trajectoire particulière, expliquer comment, à chaque temps de cycle du calculateur, choisir la solution parmi toutes celles calculées.
+**Question 3.7 :** Dans un contexte de commande du robot pour faire décrire à la plateforme mobile une trajectoire particulière, expliquer comment, à chaque temps de cycle du calculateur, choisir la solution parmi toutes celles calculées.
 
 
 ### Modèle Géométrique Direct (MGD)
@@ -69,15 +69,17 @@ Il est parfois utile d'avoir recours à des résolutions numériques, plutôt qu
 
 L'objet de cette partie est d'analyser et construire une solution numérique pour le calcul du MGD, en se basant sur le MGI. Pour simplifier l'approche, on considère le système dans une position particulière de la poignée, centrée sur le mécanisme ($X=Y=0$).
 
-**Question 3.9 :** Exprimer la position $Z$ du centre poignée pour une position angulaire moteur donnée. Utiliser les hypothèses définies ci-dessus pour simplifier l'écriture du MGD.
+**Question 3.8 :** Exprimer la position $Z$ du centre poignée pour une position angulaire moteur donnée. Utiliser les hypothèses définies ci-dessus pour simplifier l'écriture du MGD.
 
-**Question 3.10 :** Tracer la courbe de la position angulaire du moteur, fonction de la position en $Z$ (de $Z_{min}=0.063 m$ à $Z_{max}=0.183 m$).
+**Question 3.9 :** Tracer la courbe de la position angulaire du moteur, fonction de la position en $Z$ (de $Z_{min}=0.063 m$ à $Z_{max}=0.183 m$).
+
+**Question 3.10 :** En utilisant le code "mesure_codeurs.slx" ainsi qu'un réglet, proposer un protocole expérimental sommaire permettant de rapidement valider la solution obtenue dans la question précédente. Effectuer les mesures et conclure.
 
 **Question 3.11 :** Proposer un algorithme pour déterminer le MGD à partir du MGI.
 
 On considère maintenant que la poignée peut prendre n'importe quelle position $X$,$Y$, $Z$ dans le volume atteignable.
 
-**Question 3.12 :** Quelles sont les conséquences ou modifications par rapport au problème précédent? Proposer des évolutions à apporter à votre algorithme (sans les implémenter).
+**Question 3.12 :** Quelles sont les conséquences ou modifications par rapport au problème précédent ? Proposer des évolutions à apporter à votre algorithme (sans les implémenter).
 
 
 ## Documents ressources

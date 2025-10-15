@@ -1,42 +1,21 @@
 ---
-title: "Systèmes Poly-Articulés"
-author: "Kevin Godineau"
+title: "Meca BD"
+author: "emeline faugere"
 description: "Elements de formation pour l'UE Systèmes Poly-Articulés"
 institute: "ENS Paris-Saclay"
 date: "20/03/2024"
 ---
 
-# M1 SPA : Systèmes Poly-Articulés
+# Facilitation graphique en méca
 
-Ce document sert de support pour l'Unité d'Enseignement intitulé "Systèmes Poly-Articulés" du master Mécanique de l'Université Paris-Saclay parcours MIP (Mécanique et Ingénierie de la Production) et MMS (Mécanique des Matériaux et des Structures)
+Ici vous trouverez les versions de travail des fiches illustrées.
 
-eCampus : [https://ecampus.paris-saclay.fr/course/view.php?id=40554](https://ecampus.paris-saclay.fr/course/view.php?id=40554)
 
 ## Objectifs pédagogiques
 
-Le module Systèmes Poly-Articulés (SPA) traite d'un des deux domaines majeurs de la robotique. Dans ce module on s'intéresse à la modélisation mécanique, cinématique et dynamique des systèmes et structures poly-articulés. Les notions abordées permettent de soutenir un très grand nombre de travaux de recherche en robotique, fabrication additive, fabrication soustractive. De nombreuses passerelles vers le second grand domaine de la robotique (contrôle-commande) sont également soulevées. 
+blablabla
 
-- Acquérir les outils et concepts scientifiques fondamentaux utilisés en modélisation géométrique et cinématique des robots. 
-- Manipuler des robots industriels et comprendre les problématiques techniques associées à la réalisation d'une trajectoire par l'effecteur. 
 
-## Modalités pédagogiques
-
-Le volume horaire de l'UE est découpé en $4 \times 2h$ de cours, $4 \times 2h$ de TD et $3 \times 4h$ de TP. À cela, on peut rajouter, une séance de $2h$ facultative qui est consacré à la réalisation de l'examen de l'année passée. 
-
-- Cours n°1 : Éléments mathématiques, paramétrages des positionnements
-- Cours n°2 : Modélisation géométrique 
-- TD n°1 : Paramétrage - MGI, MGD d'un robot SCARA
-- Cours n°3 : Modèle géométrique inverse
-- TD n°2 : MGI par la méthode de Paul, singularités
-- Cours n°4 : Modèle cinématique
-- TD n°3 : Modélisations cinématiques - Singularités
-- TD n°4 : Modes d'interpolation des trajets
-- Examen de l'année passée (facultative) : TD basée sur l'examen de l'année passée, il s'agit d'une séance de remédiation sur toutes les notions vues dans le cours.
-- TP n°1, n°2 et n°3 : Parmis les quatre TP, l'étudiant est amené a faire trois TP et deux comptes rendus de TP noté. Un compte rendu sur un système sériel et un compte rendu sur un système parallèle. 
-
-## Modalités d'évaluation
-
-La note finale du module est composée pour 50 % de la note de l'examen écrit (d'une durée de $2h$) et pour 50 % de la moyenne des notes des deux comptes rendus de TP.
 
 ## Liste des Travaux Dirigés
 
@@ -48,7 +27,7 @@ La note finale du module est composée pour 50 % de la note de l'examen écrit (
 :class-header: bg-light text-center
 :link: ressources/2_TD_1
 :link-type: doc
-**TD n°1**
+**Méca géné**
 ^^^
 ```{image} https://www.fanuc.eu/~/media/corporate/products/robots/scara/sr-6ia-c/sr-6ia_c_l.png
 :height: 100
@@ -65,7 +44,8 @@ Faire le TD {fas}`arrow-right`
 :class-header: bg-light text-center
 :link: ressources/2_TD_2
 :link-type: doc
-**TD n°2**
+
+**MMC**
 ^^^
 ```{image} https://www.fsi-france.fr/wp-content/uploads/2019/11/csm_tx200-6-axis-robotic-arm-pim-2x-50249-jpg-orig_d32898df3c.jpg
 :height: 100
@@ -82,7 +62,8 @@ Faire le TD {fas}`arrow-right`
 :class-header: bg-light text-center
 :link: ressources/2_TD_3
 :link-type: doc
-**TD n°3**
+
+**Méca flotte**
 ^^^
 ```{image} https://www.evsrobot.com/wp-content/uploads/2024/01/6kg-Payload-600mm-4-Axis-Universal-SCARA-Robot.png
 :height: 100
@@ -99,7 +80,8 @@ Faire le TD {fas}`arrow-right`
 :class-header: bg-light text-center
 :link: ressources/2_TD_4
 :link-type: doc
-**TD n°4**
+
+**asserv**
 ^^^
 ```{image} https://www.usinenouvelle.com/expo/img/fraiseuse-usinage-lourd-whb-1000-012221895-product_zoom.jpg
 :height: 100
