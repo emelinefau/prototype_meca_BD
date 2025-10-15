@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TP : Étude d’un robot parallèle - Falcon &#8212; Donnons du sens physique à nos équations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/4_TP_Falcon';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Examen de Système Poly-Articulés - 2023/2024" href="5_Examen_SPA_2023_2024.html" />
+    <link rel="prev" title="TP : Étude d’un robot parallèle - Spiderbot" href="4_TP_Spiderbot.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    Facilitation graphique en méca
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">méca géné</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_hyperstatisme.html">Hyperstatisme</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">mmc</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="4_TP_UR10.html">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Spiderbot.html">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/4_TP_Falcon.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TP : Étude d’un robot parallèle - Falcon</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-du-mecanisme">Paramétrage du mécanisme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-des-modeles-geometriques-inverses-et-directs">Étude des modèles géométriques inverses et directs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-inverse-mgi">Modèle Géométrique Inverse (MGI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-direct-mgd">Modèle Géométrique Direct (MGD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modèle Géométrique Direct (MGD)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tp-etude-d-un-robot-parallele-falcon">
+<h1>TP : Étude d’un robot parallèle - Falcon<a class="headerlink" href="#tp-etude-d-un-robot-parallele-falcon" title="Lien vers cette rubrique">#</a></h1>
+<p>Le robot Falcon de la société Novint (<a class="reference internal" href="#falcon"><span class="std std-numref">Fig. 29</span></a>) est un système permettant à un opérateur d’interagir avec un environnement virtuel simulé sur un ordinateur. Ce dispositif, appelé « interface haptique », permet de fournir à l’environnement virtuel des informations de type déplacements et efforts, découlant de l’action de l’opérateur. En retour, le système renvoie à l’opérateur des effets de type effort mécanique (retour d’efforts) dont la fréquence et l’amplitude reproduisent les sensations réelles du toucher.</p>
+<p>Ce système est utilisé dans différents contextes comme le jeu vidéo sur ordinateur, les simulateurs (militaire, chirurgicaux, dentaires…) ainsi que la télémanipulation et télérobotique (pilotage à distance par association de deux robots, un maître, l’autre esclave).</p>
+<figure class="align-default" id="falcon">
+<a class="reference internal image-reference" href="../_images/falcon.png"><img alt="../_images/falcon.png" src="../_images/falcon.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">robot haptique Falcon</span><a class="headerlink" href="#falcon" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<section id="decouverte-et-prise-en-main-du-systeme">
+<h2>Découverte et prise en main du système<a class="headerlink" href="#decouverte-et-prise-en-main-du-systeme" title="Lien vers cette rubrique">#</a></h2>
+<p>L’objet de cette partie est de appréhender le système, son utilisation, son fonctionnement et ses potentialités au travers de manipulations élémentaires et analyse de documents ressources.</p>
+<p><strong>Question 1.1 :</strong> Mettre en oeuvre le système par quelques manipulations élémentaires (déplacements de la poignée); observer le comportement des composants.</p>
+<p><strong>Question 1.2 :</strong> A l’aide des documents ressources et du système, repérer les différents composants, décrire leurs fonctions ainsi que le fonctionnement global du système.</p>
+<p><strong>Question 1.3 :</strong> Analyser en détail la solution retenue par le fabricant concernant les capteurs. Expliquer leur principe de fonctionnement. Préciser notamment comment est repéré le « zéro » pour la position angulaire de l’axe.</p>
+</section>
+<section id="parametrage-du-mecanisme">
+<h2>Paramétrage du mécanisme<a class="headerlink" href="#parametrage-du-mecanisme" title="Lien vers cette rubrique">#</a></h2>
+<p>L’objet de cette partie est de mettre en place un paramétrage sur le mécanisme permettant de repérer les positions de chaque composant en vue de la construction des modèles géométriques directs et inverses.</p>
+<p><strong>Question 2.1 :</strong> Proposer un modèle cinématique 3D pour le mécanisme (on ne représentera les liaisons que pour un seul bras).</p>
+<p><strong>Question 2.2 :</strong> Déterminer le degré d’hyperstatisme du modèle cinématique non minimal, pour le système entier constitué des trois bras. Conclure quant aux conséquences sur le système réel et aux solutions constructives.</p>
+<p><strong>Question 2.3 :</strong> A partir de la ~<a class="reference internal" href="#para"><span class="std std-numref">Fig. 33</span></a>, proposer un paramétrage complet.</p>
+<p><strong>Question 2.4 :</strong> Quels sont les paramètres de l’espace des tâches ? Quels sont les paramètres de l’espace articulaire ? Quels sont les paramètres constants ?</p>
+</section>
+<section id="etude-des-modeles-geometriques-inverses-et-directs">
+<h2>Étude des modèles géométriques inverses et directs<a class="headerlink" href="#etude-des-modeles-geometriques-inverses-et-directs" title="Lien vers cette rubrique">#</a></h2>
+<section id="modele-geometrique-inverse-mgi">
+<h3>Modèle Géométrique Inverse (MGI)<a class="headerlink" href="#modele-geometrique-inverse-mgi" title="Lien vers cette rubrique">#</a></h3>
+<p><strong>Question 3.1 :</strong>
+Proposer, sans la mettre en oeuvre totalement, une démarche pour expliciter la position angulaire de chaque moteur en fonction du positionnement de la poignée (cette fonction est le Modèle Géométrique Inverse).</p>
+<p><strong>Question 3.2 :</strong> Analyser les arguments d’entrée et de sortie de la fonction « MGI Falcon.m » fournie (il n’est pas demandé de comprendre le code à l’intérieur de la fonction, car complexe).</p>
+<p><strong>Question 3.3 :</strong> Exécuter la fonction « MGI Falcon.m » fournie ; observer les résultats numériques affichés dans la ligne de commande Matlab et la représentation graphique réalisée.</p>
+<p><strong>Question 3.4 :</strong> Parmi l’ensemble des solutions articulaires calculées et représentées, expliquer comment il est possible de déterminer l’unique solution viable.</p>
+</section>
+<section id="modele-geometrique-direct-mgd">
+<h3>Modèle Géométrique Direct (MGD)<a class="headerlink" href="#modele-geometrique-direct-mgd" title="Lien vers cette rubrique">#</a></h3>
+<p>Pour les robots à architecture parallèle, le MGD est plus compliqué à déterminer que le MGI. Pour l’architecture du robot haptique Falcon, la résolution formelle du MGD fait appel a de multiples solutions issues de polynômes de degrés très élevés. Il est donc nécessaire par la suite de les trier pour ne conserver que la solution physiquement atteignable, en regard de la configuration physique du robot « précédente ».</p>
+<p><strong>Question 3.5 :</strong> Analyser les arguments d’entrée et de sortie de la fonction « MGD Falcon.m » fournie (il n’est pas demandé de comprendre le code à l’intérieur de la fonction, car complexe).</p>
+<p>Exécuter la fonction « MGD Falcon.m » fournie; observer les résultats numériques affichés dans la ligne de commande Matlab et les représentations graphiques réalisées.</p>
+<p><strong>Question 3.6 :</strong> Parmi l’ensemble des positionnements de la plateforme mobile calculées et représentées (la poignée), retrouver la solution recherchée (qui est l’entrée du MGI).</p>
+<p><strong>Question 3.7 :</strong> Dans un contexte de commande du robot pour faire décrire à la plateforme mobile une trajectoire particulière, expliquer comment, à chaque temps de cycle du calculateur, choisir la solution parmi toutes celles calculées.</p>
+</section>
+<section id="id1">
+<h3>Modèle Géométrique Direct (MGD)<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h3>
+<p>Il est parfois utile d’avoir recours à des résolutions numériques, plutôt qu’à des résolutions formelles parfois inexistantes. Dans le cas du robot Falcon, la quantité et la complexité des calculs nécessaires à la résolution « exacte » ne permettent pas une implantation dans de petits processeurs temps-réel.</p>
+<p>L’objet de cette partie est d’analyser et construire une solution numérique pour le calcul du MGD, en se basant sur le MGI. Pour simplifier l’approche, on considère le système dans une position particulière de la poignée, centrée sur le mécanisme (<span class="math notranslate nohighlight">\(X=Y=0\)</span>).</p>
+<p><strong>Question 3.8 :</strong> Exprimer la position <span class="math notranslate nohighlight">\(Z\)</span> du centre poignée pour une position angulaire moteur donnée. Utiliser les hypothèses définies ci-dessus pour simplifier l’écriture du MGD.</p>
+<p><strong>Question 3.9 :</strong> Tracer la courbe de la position angulaire du moteur, fonction de la position en <span class="math notranslate nohighlight">\(Z\)</span> (de <span class="math notranslate nohighlight">\(Z_{min}=0.063 m\)</span> à <span class="math notranslate nohighlight">\(Z_{max}=0.183 m\)</span>).</p>
+<p><strong>Question 3.10 :</strong> En utilisant le code « mesure_codeurs.slx » ainsi qu’un réglet, proposer un protocole expérimental sommaire permettant de rapidement valider la solution obtenue dans la question précédente. Effectuer les mesures et conclure.</p>
+<p><strong>Question 3.11 :</strong> Proposer un algorithme pour déterminer le MGD à partir du MGI.</p>
+<p>On considère maintenant que la poignée peut prendre n’importe quelle position <span class="math notranslate nohighlight">\(X\)</span>,<span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(Z\)</span> dans le volume atteignable.</p>
+<p><strong>Question 3.12 :</strong> Quelles sont les conséquences ou modifications par rapport au problème précédent ? Proposer des évolutions à apporter à votre algorithme (sans les implémenter).</p>
+</section>
+</section>
+<section id="documents-ressources">
+<h2>Documents ressources<a class="headerlink" href="#documents-ressources" title="Lien vers cette rubrique">#</a></h2>
+<p>Les pages suivantes regroupent un certain nombre de documents permettant d’appréhender le fonctionnement du système ainsi que ses composants technologiques.</p>
+<figure class="align-default" id="vue-arriere">
+<a class="reference internal image-reference" href="../_images/vue_arriere.png"><img alt="../_images/vue_arriere.png" src="../_images/vue_arriere.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Vue arrière du robot sans la carte électronique</span><a class="headerlink" href="#vue-arriere" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="carte-elec">
+<a class="reference internal image-reference" href="../_images/carte_elec.png"><img alt="../_images/carte_elec.png" src="../_images/carte_elec.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Détails de la carte électronique</span><a class="headerlink" href="#carte-elec" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="codeur">
+<a class="reference internal image-reference" href="../_images/codeur.png"><img alt="../_images/codeur.png" src="../_images/codeur.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Zoom sur le codeur</span><a class="headerlink" href="#codeur" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="para">
+<a class="reference internal image-reference" href="../_images/para.png"><img alt="../_images/para.png" src="../_images/para.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Schéma de principe et paramétrage partielle</span><a class="headerlink" href="#para" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="vue-cote">
+<a class="reference internal image-reference" href="../_images/vue_cote1.png"><img alt="../_images/vue_cote1.png" src="../_images/vue_cote1.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Vue partielle de côté (plane pour un bras) dans la configuration centre de la poignée <span class="math notranslate nohighlight">\(X=Y=0\)</span>, <span class="math notranslate nohighlight">\(Z\)</span> mini</span><a class="headerlink" href="#vue-cote" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="vue-cote-1">
+<a class="reference internal image-reference" href="../_images/vue_cote_1.png"><img alt="../_images/vue_cote_1.png" src="../_images/vue_cote_1.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Vue partielle de côté (plane pour un bras) dans la configuration centre de la poignée <span class="math notranslate nohighlight">\(X=Y=0\)</span>, <span class="math notranslate nohighlight">\(Z\)</span> mini</span><a class="headerlink" href="#vue-cote-1" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="4_TP_Spiderbot.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">TP : Étude d’un robot parallèle - Spiderbot</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="5_Examen_SPA_2023_2024.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Examen de Système Poly-Articulés - 2023/2024</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-du-mecanisme">Paramétrage du mécanisme</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-des-modeles-geometriques-inverses-et-directs">Étude des modèles géométriques inverses et directs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-inverse-mgi">Modèle Géométrique Inverse (MGI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-geometrique-direct-mgd">Modèle Géométrique Direct (MGD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modèle Géométrique Direct (MGD)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Emeline Faugere, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modélisation géométrique &#8212; Donnons du sens physique à nos équations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/1_Cours_Chapitre_3';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Modèles Géométriques Inverse et Direct - Résolution" href="1_Cours_Chapitre_4.html" />
+    <link rel="prev" title="Paramétrage des positionnements" href="1_Cours_Chapitre_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    M1 SPA : Systèmes Poly-Articulés
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_2.html">Paramétrage des positionnements</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modélisation géométrique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_4.html">Modèles Géométriques Inverse et Direct - Résolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_5.html">Modèle cinématique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_Chapitre_6.html">Modèle statique</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Dirigés</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="4_TP_UR10.html">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Spiderbot.html">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Falcon.html">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/1_Cours_Chapitre_3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Modélisation géométrique</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-geometriques-et-structures-mecaniques">Modèles géométriques et structures mécaniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structures-mecaniques">Structures mécaniques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-structures-ouvertes-simples">Paramétrage des structures ouvertes simples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convention-de-denavit-et-hartenberg-modifiee">Convention de Denavit et Hartenberg modifiée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-structures-fermees">Paramétrage des structures fermées</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problematique">Problématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-geometrique-methode-de-merlet">Modélisation géométrique : Méthode de Merlet</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-geometriques">Relations géométriques</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-de-transformation-homogene">Matrice de transformation homogène</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="modelisation-geometrique">
+<h1>Modélisation géométrique<a class="headerlink" href="#modelisation-geometrique" title="Lien vers cette rubrique">#</a></h1>
+<section id="modeles-geometriques-et-structures-mecaniques">
+<h2>Modèles géométriques et structures mécaniques<a class="headerlink" href="#modeles-geometriques-et-structures-mecaniques" title="Lien vers cette rubrique">#</a></h2>
+<section id="structures-mecaniques">
+<h3>Structures mécaniques<a class="headerlink" href="#structures-mecaniques" title="Lien vers cette rubrique">#</a></h3>
+<p>Les structures mécaniques peuvent être classées en quatre catégories principales (<a class="reference internal" href="#class-struc"><span class="std std-numref">Fig. 5</span></a>) :</p>
+<ul class="simple">
+<li><p>les structures simples ouvertes : il existe une chaîne cinématique ouverte ;</p></li>
+<li><p>les structures simples fermées : il existe une chaîne cinématique fermée ;</p></li>
+<li><p>les structures parallèles : il existe au moins deux chaînes cinématiques fermées ;</p></li>
+<li><p>les structures hybrides (ouvertes) : c’est une composition des catégories précédentes.</p></li>
+</ul>
+<figure class="align-default" id="class-struc">
+<a class="reference internal image-reference" href="../_images/3_1.png"><img alt="../_images/3_1.png" src="../_images/3_1.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Classification des structures mécaniques</span><a class="headerlink" href="#class-struc" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="parametrage-des-structures-ouvertes-simples">
+<h2>Paramétrage des structures ouvertes simples<a class="headerlink" href="#parametrage-des-structures-ouvertes-simples" title="Lien vers cette rubrique">#</a></h2>
+<section id="convention-de-denavit-et-hartenberg-modifiee">
+<h3>Convention de Denavit et Hartenberg modifiée<a class="headerlink" href="#convention-de-denavit-et-hartenberg-modifiee" title="Lien vers cette rubrique">#</a></h3>
+<p>Soient deux solides <span class="math notranslate nohighlight">\(\S_{i-1}\)</span> et <span class="math notranslate nohighlight">\(S_i\)</span> en liaison. On définit le positionnement du repère <span class="math notranslate nohighlight">\(\mathcal{R}_i\)</span> associé au solide <span class="math notranslate nohighlight">\(S_i\)</span> à partir du repère  <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{z_i}\)</span> vecteur unitaire selon l’axe caractéristique de la liaison entre <span class="math notranslate nohighlight">\(S_{i-1}\)</span> et <span class="math notranslate nohighlight">\(S_i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{x_i}\)</span> vecteur unitaire selon la normale commune aux deux liaisons <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{z_{i+1}}\)</span></p>
+<ul>
+<li><p>si les deux axes <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span>,  <span class="math notranslate nohighlight">\(\overrightarrow{z_{i+1}}\)</span> sont parallèles, la normale commune est choisie arbitrairement pour simplifier le paramétrage</p></li>
+<li><p>si les deux axes <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span>,  <span class="math notranslate nohighlight">\(\overrightarrow{z_{i+1}}\)</span> sont confondus, l’orientation de <span class="math notranslate nohighlight">\(\overrightarrow{x_{i}}\)</span> doit être choisie suivant des considérations de simplification</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(y_{i}\)</span> est défini tel que la base <span class="math notranslate nohighlight">\((\overrightarrow{x_{i}}, \overrightarrow{y_{i}}, \overrightarrow{z_{i}})\)</span> soit orthonormée directe</p></li>
+<li><p><span class="math notranslate nohighlight">\(O_i\)</span> est le centre associée à la base <span class="math notranslate nohighlight">\((\overrightarrow{x_{i}}, \overrightarrow{y_{i}}, \overrightarrow{z_{i}})\)</span> pour former le repère <span class="math notranslate nohighlight">\(\mathcal{R}_i\)</span> attaché au corps <span class="math notranslate nohighlight">\(S_i\)</span>. <span class="math notranslate nohighlight">\(O_i\)</span> est défini par l’intersection de <span class="math notranslate nohighlight">\(\overrightarrow{z_i}\)</span> avec <span class="math notranslate nohighlight">\(\overrightarrow{x_i}\)</span>.</p></li>
+</ul>
+<p>Le passage entre les repères  <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> et  <span class="math notranslate nohighlight">\(\mathcal{R}_i\)</span> est donné par les 4 paramètres suivants :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d_i\)</span> : distance entre les axes <span class="math notranslate nohighlight">\(\overrightarrow{z_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span>, mesurée le long de l’axe <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha_i\)</span> : angles entre les axes <span class="math notranslate nohighlight">\(\overrightarrow{z_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span>, mesurée autour de l’axe <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(r_i\)</span> : distance entre les axes <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{x_{i}}\)</span>, mesurée le long de l’axe <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_i\)</span> : angle entre les axes <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{x_{i}}\)</span>, mesurée autour de l’axe <span class="math notranslate nohighlight">\(\overrightarrow{z_i}\)</span></p></li>
+</ul>
+<figure class="align-default" id="dhm-vector">
+<a class="reference internal image-reference" href="../_images/3_2.png"><img alt="../_images/3_2.png" src="../_images/3_2.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Paramétrisation selon la convention de DH modifiée</span><a class="headerlink" href="#dhm-vector" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Le passage du repère <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> au repère <span class="math notranslate nohighlight">\(\mathcal{R}_{i}\)</span> fait apparaître 4 transformations :</p>
+<ul class="simple">
+<li><p>une translation <span class="math notranslate nohighlight">\(d_i\)</span> selon <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span></p></li>
+<li><p>une rotation <span class="math notranslate nohighlight">\(\alpha_i\)</span> selon <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span></p></li>
+<li><p>une translation <span class="math notranslate nohighlight">\(r_i\)</span> selon <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span></p></li>
+<li><p>une rotation <span class="math notranslate nohighlight">\(\theta_i\)</span> selon <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span></p></li>
+</ul>
+<p>En regroupant les transformations effectuées selon les axes <span class="math notranslate nohighlight">\(\overrightarrow{x_{i-1}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{z_{i}}\)</span>, il est possible de faire le changement de repère entre <span class="math notranslate nohighlight">\(\mathcal{R}_{i-1}\)</span> et <span class="math notranslate nohighlight">\(\mathcal{R}_{i}\)</span> en associant deux opérateurs homogènes <span class="math notranslate nohighlight">\(\mathbf{T}_{i-1\, int}\)</span> et <span class="math notranslate nohighlight">\(\mathbf{T}_{int\, i}\)</span> qui font transiter par un repère intermédiaire <span class="math notranslate nohighlight">\(\mathcal{R}_{int}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\mathcal{R}_{i-1} \longrightarrow  \mathcal{R}_{int} &amp; \qquad \qquad \text{puis} &amp; \mathcal{R}_{int} \longrightarrow  \mathcal{R}_{i}  \\
+\mathbf{T}_{i-1\, int}(d_i, \alpha_i) &amp;   &amp; \mathbf{T}_{int \, i}(r_i, \theta_i)
+\end{align*}
+\end{split}\]</div>
+<p>avec :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation}
+\mathbf{T}_{i-1\, int} = 
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; d_i \\ 0 &amp; \text{C}\alpha_i &amp; -\text{S}\alpha_i &amp; 0 \\ 0 &amp; \text{S}\alpha_i &amp; \text{C}\alpha_i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix} \qquad
+\mathbf{T}_{int\, i} = 
+\begin{bmatrix}
+ \text{C}\theta_i &amp; -\text{S}\theta_i &amp; 0 &amp; 0 \\ \text{S}\theta_i &amp; \text{C}\theta_i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; r_i \\ 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation}
+\end{split}\]</div>
+<p>Il est alors possible d’exprimer pour chaque liaison un opérateur homogène correspondant :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation}
+\mathbf{T}_{(i-1) i} = \mathbf{T}_{i-1\, int} \mathbf{T}_{int\, i} = 
+\begin{bmatrix}
+\text{C}\theta_i &amp; -\text{S}\theta_i &amp; 0 &amp; d_i \\ 
+\text{C}\alpha_i\text{S}\theta_i &amp; \text{C}\alpha_i\text{C}\theta_i &amp; -\text{S}\alpha_i &amp; -r_i \text{S}\alpha_i  \\ 
+\text{S}\alpha_i\text{S}\theta_i &amp; \text{S}\alpha_i\text{C}\theta_i &amp; \text{C}\alpha_i &amp; r_i \text{C}\alpha_i \\ 
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix} 
+\end{equation}
+\end{split}\]</div>
+<p>Les valeurs des paramètres, constantes géométriques ou variables selon la nature de la liaison, sont souvent formalisées dans un tableau de la forme :</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(d_i\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\alpha_i\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(r_i\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\theta_i\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\mathbf{T}_{01}\)</span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\mathbf{T}_{12}\)</span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\cdots\)</span></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>L’expression d’un point <span class="math notranslate nohighlight">\(P\)</span> appartenant au solide <span class="math notranslate nohighlight">\(n\)</span> (repère <span class="math notranslate nohighlight">\(\mathcal{R}_n\)</span>), peut donc se faire dans le Repère <span class="math notranslate nohighlight">\(\mathcal{R}_0\)</span> (bâti par exemple) par :</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+^0\mathbf{P} = \mathbf{T}_{01}\ \mathbf{T}_{12} \cdots \mathbf{T}_{(n-1)n}\ ^n\mathbf{P}
+\end{equation}
+\]</div>
+<p>Dans le cas d’une architecture sérielle où <span class="math notranslate nohighlight">\(\mathcal{R}_0\)</span> est le repère lié à la pièce et <span class="math notranslate nohighlight">\(\mathcal{R}_n\)</span> celui lié à l’effecteur, nous obtenons ainsi une fonction faisant le lien entre l’extrémité et la base du système sous forme de coordonnées homogènes :</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+^0\mathbf{P} = \mathbf{T}_{0n}\ ^n\mathbf{P} \quad \text{où} \quad \mathbf{T}_{0n} = \text{fct}(d_i, \alpha_i, r_i, \theta_i) \quad i \in \left[1 \cdots n\right]
+\end{equation}
+\]</div>
+<p>On remarque que dans cette écriture ne sont pas différentiées les variables articulaires des paramètres géométriques. Cette différence est faite lors de l’écriture de chaque type de liaison.</p>
+</section>
+</section>
+<section id="parametrage-des-structures-fermees">
+<h2>Paramétrage des structures fermées<a class="headerlink" href="#parametrage-des-structures-fermees" title="Lien vers cette rubrique">#</a></h2>
+<section id="problematique">
+<h3>Problématique<a class="headerlink" href="#problematique" title="Lien vers cette rubrique">#</a></h3>
+<p>Il existe, suivant les structures de machines, plusieurs solutions pour décrire la transformation géométrique directe. Par exemple, pour la plateforme de Gough-Stewart, il en existe quatre, c’est-à-dire qu’à une configuration correspond quatre positionnements différents de l’effecteur. Une approche numérique est nécessaire pour déterminer de proche en proche la solution souhaitée.</p>
+<figure class="align-default" id="meme-config">
+<a class="reference internal image-reference" href="../_images/3_3.png"><img alt="../_images/3_3.png" src="../_images/3_3.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Illustration des 4 solutions existantes pour une même configuration</span><a class="headerlink" href="#meme-config" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Les difficultés de modélisation sont inversées par rapport aux structures sérielles : il est plus aisé de déterminer les valeurs des paramètres articulaires pour respecter un positionnement de l’effecteur que de déterminer le positionnement de l’effecteur pour une configuration articulaire donnée.
+Dans la suite du document, la méthode de Merlet, méthode spécifique aux architectures parallèles, est présentée. Elle permet une démarche systématique pour paramétrer et poser le problème.</p>
+</section>
+<section id="modelisation-geometrique-methode-de-merlet">
+<h3>Modélisation géométrique : Méthode de Merlet<a class="headerlink" href="#modelisation-geometrique-methode-de-merlet" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-default" id="param-struc-para">
+<a class="reference internal image-reference" href="../_images/3_4.png"><img alt="../_images/3_4.png" src="../_images/3_4.png" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Paramétrisation de la structure mécanique</span><a class="headerlink" href="#param-struc-para" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>soit un élément fixe, lié au repère <span class="math notranslate nohighlight">\(\mathcal{R}_m = (O_m,\overrightarrow{x_m},\overrightarrow{y_m},\overrightarrow{z_m})\)</span></p></li>
+<li><p>soit un élément mobile, lié au repère <span class="math notranslate nohighlight">\(\mathcal{R}_p = (O_p,\overrightarrow{x_p},\overrightarrow{y_p},\overrightarrow{z_p})\)</span></p></li>
+<li><p>soit <span class="math notranslate nohighlight">\(A_i\, , i = 1 \cdots n\)</span>, les liaisons liées à l’élément fixe.
+La position et la géométrie de ces liaisons sont supposées fixes et connues (valeurs nominales ou identifiées). Les vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{O_m A_i}\)</span> sont donc des paramètres géométriques du mécanisme notés plus globalement <span class="math notranslate nohighlight">\(\xi\)</span>.</p></li>
+<li><p>soit <span class="math notranslate nohighlight">\(B_i\, , i = 1 \cdots n\)</span>, les liaisons liées à l’élément mobile.
+De même, la géométrie <span class="math notranslate nohighlight">\(\overrightarrow{O_p B_i}\)</span> est fixe et connue et fait partie des paramètres géométriques <span class="math notranslate nohighlight">\(\xi\)</span>.</p></li>
+<li><p>chaque vecteur <span class="math notranslate nohighlight">\(\overrightarrow{A_i B_i}\)</span> est noté « jambe », ce sont les liaisons motorisées de la structure ; les variables de commande dites articulaires sont notées <span class="math notranslate nohighlight">\(q_i\)</span>.</p></li>
+<li><p>soit <span class="math notranslate nohighlight">\(\overrightarrow{X}\)</span> le positionnement de l’effecteur de la plateforme mobile dans <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span></p></li>
+</ul>
+<section id="relations-geometriques">
+<h4>Relations géométriques<a class="headerlink" href="#relations-geometriques" title="Lien vers cette rubrique">#</a></h4>
+<p>L’écriture se fait par fermeture géométrique pour chaque jambe :</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+\overrightarrow{A_i B_i} = \overrightarrow{A_i O_m} + \overrightarrow{O_m O_p} + \overrightarrow{O_p B_i}
+\end{equation}
+\]</div>
+<p>où chaque terme s’exprime en fonction de :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{A_i B_i}\)</span> : <span class="math notranslate nohighlight">\(\xi\)</span> (constantes géométriques pour chaque jambe) et <span class="math notranslate nohighlight">\(q_i\)</span> (variables articulaires)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{A_i O_m}\)</span> : <span class="math notranslate nohighlight">\(\xi\)</span> (constantes géométriques dans <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{O_m O_p}\)</span> : <span class="math notranslate nohighlight">\(\overrightarrow{X}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{O_p B_i}\)</span> : <span class="math notranslate nohighlight">\(\xi\)</span> (constantes géométriques dans <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span>)</p></li>
+</ul>
+<p>ce qui permet d’arriver à une forme générale séparant dans chacun des membres les paramètres articulaires des paramètres de positionnement :</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+\overrightarrow{H}_2(q_i,\xi) = \overrightarrow{H}_2(X,\xi) 
+\end{equation}
+\]</div>
+</section>
+<section id="matrice-de-transformation-homogene">
+<h4>Matrice de transformation homogène<a class="headerlink" href="#matrice-de-transformation-homogene" title="Lien vers cette rubrique">#</a></h4>
+<p>Dans le cas des structures parallèles, il existe une seule transformation <span class="math notranslate nohighlight">\(\mathbf{T}_{mp}\)</span> permettant d’exprimer directement le positionnement du repère associé à la plateforme mobile <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span> par rapport au repère associé à la base fixe <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span>. L’expression du positionnement de l’effecteur <span class="math notranslate nohighlight">\(^m\mathbf{P}_{eff}\)</span> exprimé dans le repère <span class="math notranslate nohighlight">\(\mathcal{R}_m\)</span> s’exprime en fonction de son expression dans <span class="math notranslate nohighlight">\(\mathcal{R}_p\)</span>, <span class="math notranslate nohighlight">\(^p\mathbf{P}_{eff}\)</span> par la relation :</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-7">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-3-7" title="Lien vers cette équation">#</a></span>\[
+\begin{equation}
+^m\mathbf{P}_{eff} = \mathbf{T}_{mp}  \ ^p\mathbf{P}_{eff}
+\end{equation}
+\]</div>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1_Cours_Chapitre_2.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Paramétrage des positionnements</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1_Cours_Chapitre_4.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Modèles Géométriques Inverse et Direct - Résolution</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-geometriques-et-structures-mecaniques">Modèles géométriques et structures mécaniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structures-mecaniques">Structures mécaniques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-structures-ouvertes-simples">Paramétrage des structures ouvertes simples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convention-de-denavit-et-hartenberg-modifiee">Convention de Denavit et Hartenberg modifiée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-structures-fermees">Paramétrage des structures fermées</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problematique">Problématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-geometrique-methode-de-merlet">Modélisation géométrique : Méthode de Merlet</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-geometriques">Relations géométriques</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-de-transformation-homogene">Matrice de transformation homogène</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Emeline Faugere, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

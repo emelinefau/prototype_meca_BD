@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TD n°4 : Modes d’interpolation des trajets &#8212; Donnons du sens physique à nos équations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/2_TD_4';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="TP : Étude d’un robot sériel - UR10" href="4_TP_UR10.html" />
+    <link rel="prev" title="TD n°3 : Modélisations cinématiques - Singularités" href="2_TD_3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    Facilitation graphique en méca
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">méca géné</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_hyperstatisme.html">Hyperstatisme</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">mmc</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="4_TP_UR10.html">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Spiderbot.html">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Falcon.html">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/2_TD_4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TD n°4 : Modes d’interpolation des trajets</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-geometriques-direct-et-inverse">Modèles Géométriques Direct et Inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-d-interpolation">Modes d’interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-du-mode-d-interpolation">Influence du mode d’interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexes">Annexes</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="td-n4-modes-d-interpolation-des-trajets">
+<h1>TD n°4 : Modes d’interpolation des trajets<a class="headerlink" href="#td-n4-modes-d-interpolation-des-trajets" title="Lien vers cette rubrique">#</a></h1>
+<p>On étudie le centre d’usinage 4 axes Realméca de l’atelier de fabrication du DGM. C’est un centre d’usinage à broche horizontale possédant 3 axes de translation de variables <span class="math notranslate nohighlight">\(X_m\)</span>, <span class="math notranslate nohighlight">\(Y_m\)</span>, <span class="math notranslate nohighlight">\(Z_m\)</span> ainsi qu’un axe de rotation au niveau du plateau de variable <span class="math notranslate nohighlight">\(B\)</span>. La modélisation cinématique est donnée en <a class="reference internal" href="#cin-c300h"><span class="std std-numref">Fig. 16</span></a>.</p>
+<figure class="align-default" id="cin-c300h">
+<a class="reference internal image-reference" href="../_images/schema_cin.png"><img alt="../_images/schema_cin.png" src="../_images/schema_cin.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Modélisation cinématique du centre 4 axes C300H</span><a class="headerlink" href="#cin-c300h" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Pour la suite, on ne tiendra pas compte de la rotation de l’outil réalisé par la broche (mouvement de coupe pour l’usinage).</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathcal{R}_p=(O_p, \overrightarrow{x_p}, \overrightarrow{y_p}, \overrightarrow{z_p})\)</span> le repère associé à la pièce posée sur le plateau;</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{R}_m=(O_m, \overrightarrow{x_m}, \overrightarrow{y_m}, \overrightarrow{z_m})\)</span> le repère associé au centre d’usinage, orienté par les différents axes;</p></li>
+<li><p>l’axe <span class="math notranslate nohighlight">\(\overrightarrow{z_m}\)</span> est l’axe de la broche, orienté s’éloignant de la pièce;</p></li>
+<li><p>le point <span class="math notranslate nohighlight">\(O_o\)</span> est l’intersection entre l’axe de rotation B et la face supérieure du plateau.</p></li>
+</ul>
+<p>Dans la configuration de référence du centre d’usinage (notamment l’axe <span class="math notranslate nohighlight">\(B\)</span> à zéro), on positionne la pièce sur le plateau tel que la base du repère pièce <span class="math notranslate nohighlight">\(\mathcal{B}_p\)</span> soit identique à la base machine <span class="math notranslate nohighlight">\(\mathcal{B}_m\)</span>.</p>
+<p>Le paramétrage du système ainsi que les matrices homogènes de transformations entre repères sont données en annexe.</p>
+<p>Le positionnement de l’outil par rapport à la pièce est spécifié par les composantes de position et les cosinus directeurs (<span class="math notranslate nohighlight">\(X_p,Y_p,Z_p,i,k\)</span>).</p>
+<section id="modeles-geometriques-direct-et-inverse">
+<h2>Modèles Géométriques Direct et Inverse<a class="headerlink" href="#modeles-geometriques-direct-et-inverse" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Question 1.1 :</strong> Rappeler les variables de l’espace des tâches et celles de l’espace articulaire.</p>
+<p><strong>Question 1.2 :</strong> À partir de la présentation du sujet et des annexes, déterminer les MGD et MGI du centre d’usinage.</p>
+<p>On souhaite usiner un plan de longueur <span class="math notranslate nohighlight">\(L\)</span>, avec un outil hémisphérique piloté en son centre tout en faisant varier l’orientation de l’axe outil (<a class="reference internal" href="#usinage-piece"><span class="std std-numref">Fig. 17</span></a>). Pour cela, on construit une trajectoire allant du premier positionnement de l’outil <span class="math notranslate nohighlight">\(P_1\)</span> incliné d’un angle <span class="math notranslate nohighlight">\(\alpha\)</span> (<span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>) par rapport à <span class="math notranslate nohighlight">\(\mathbf{z_p}\)</span>, au positionnement outil <span class="math notranslate nohighlight">\(P_2\)</span> incliné d’un angle <span class="math notranslate nohighlight">\(-\alpha\)</span>.</p>
+<figure class="align-default" id="usinage-piece">
+<a class="reference internal image-reference" href="../_images/usinage_piece.png"><img alt="../_images/usinage_piece.png" src="../_images/usinage_piece.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Présentation des différentes configurations de l’outil.</span><a class="headerlink" href="#usinage-piece" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Question 1.3 :</strong> Pour chacun des cas <span class="math notranslate nohighlight">\(P_1\)</span> et <span class="math notranslate nohighlight">\(P_2\)</span>, déterminer les valeurs des variables traduisant le positionnement de l’outil dans l’espace des tâches et dans l’espace articulaire.</p>
+</section>
+<section id="modes-d-interpolation">
+<h2>Modes d’interpolation<a class="headerlink" href="#modes-d-interpolation" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Question 2.1 :</strong> Pour un trajet calculé par mode d’interpolation linéaire dans l’espace des tâches, représenter en fonction de l’abscisse curviligne du trajet, l’évolution des variables des tâches. Comment évoluent qualitativement les variables articulaires ?</p>
+<p><strong>Question 2.2 :</strong> Faire de même pour un mode d’interpolation linéaire dans l’espace articulaire.</p>
+<p>Pour faciliter l’écriture, on définit pour la suite le paramètre d’interpolation <span class="math notranslate nohighlight">\(u\)</span>, variant de 0 à 1.</p>
+<p><strong>Question 2.3 :</strong> Exprimer les deux équations vectorielles fonction de <span class="math notranslate nohighlight">\(u\)</span> qui traduisent l’interpolation linéaire dans l’espace des tâches et l’espace articulaire en fonction des valeurs correspondantes associées à <span class="math notranslate nohighlight">\(P_1\)</span> et <span class="math notranslate nohighlight">\(P_2\)</span></p>
+</section>
+<section id="influence-du-mode-d-interpolation">
+<h2>Influence du mode d’interpolation<a class="headerlink" href="#influence-du-mode-d-interpolation" title="Lien vers cette rubrique">#</a></h2>
+<p>On cherche à déterminer l’effet dans l’espace des tâches du mode d’interpolation dans l’espace articulaire.</p>
+<p><strong>Question 3.1 :</strong> Exprimer l’écart géométrique généré au niveau du point piloté de l’outil pour toute valeur de <span class="math notranslate nohighlight">\(u\)</span>.</p>
+<p><strong>Question 3.2 :</strong> Faire l’application pour <span class="math notranslate nohighlight">\(u=0.5\)</span> (milieu de la trajectoire). Analyser les influences des autres paramètres.</p>
+<p><strong>Question 3.3 :</strong> Aller au bout de l’application et effectuer une représentation du comportement pour un posage de la pièce tel que <span class="math notranslate nohighlight">\(d_x=0\)</span> et <span class="math notranslate nohighlight">\(d_z=\dfrac{L}{2}\)</span>, et dans le cas où <span class="math notranslate nohighlight">\(\alpha = 45^{\circ}\)</span>.</p>
+</section>
+<section id="annexes">
+<h2>Annexes<a class="headerlink" href="#annexes" title="Lien vers cette rubrique">#</a></h2>
+<p>matrices homogènes de transformations entre repères issues du paramétrage</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation}
+	\mathbf{T}_{pm}=
+	\begin{bmatrix}
+          	\text{C}B &amp; 0 &amp; \text{S}B &amp; - d_x - p_x \ \text{C}B - (p_z+j_z) \ \text{S}B \\
+  		0             &amp; 1 &amp; 0             &amp; - d_y - p_y \\
+	        -\text{S}B &amp; 0 &amp; \text{C}B &amp; - d_z + p_x \ \text{S}B - (p_z+j_z) \ \text{C}B \\
+       		0 &amp; 0 &amp; 0 &amp; 1\\
+	\end{bmatrix} \nonumber
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation}
+	\mathbf{T}_{mp}=
+	\begin{bmatrix}
+          	\text{C}B &amp; 0 &amp; -\text{S}B &amp; p_x + d_x \ \text{C}B - d_z \ \text{S}B \\
+  		0             &amp; 1 &amp; 0              &amp; p_y + d_y \\
+	        \text{S}B  &amp; 0 &amp; \text{C}B &amp; (p_z+j_z) +  d_x \ \text{S}B + d_z \ \text{C}B \\
+       		0 &amp; 0 &amp; 0 &amp; 1\\
+	\end{bmatrix} \nonumber
+\end{equation}
+\end{split}\]</div>
+<p>avec</p>
+<ul class="simple">
+<li><p>(<span class="math notranslate nohighlight">\(p_x,p_y,p_z\)</span>) les composantes du vecteur caractéristique machine <span class="math notranslate nohighlight">\(\mathbf{O_m O_o}\)</span>;</p></li>
+<li><p>(<span class="math notranslate nohighlight">\(d_x,d_y,d_z\)</span>) les composantes du vecteur caractéristique de décalage lié au posage de la pièce sur la table <span class="math notranslate nohighlight">\(\mathbf{O_o O_p}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(j_z\)</span> la caractéristique de longueur d’outil.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="2_TD_3.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">TD n°3 : Modélisations cinématiques - Singularités</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="4_TP_UR10.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">TP : Étude d’un robot sériel - UR10</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-geometriques-direct-et-inverse">Modèles Géométriques Direct et Inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-d-interpolation">Modes d’interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-du-mode-d-interpolation">Influence du mode d’interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexes">Annexes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Emeline Faugere, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

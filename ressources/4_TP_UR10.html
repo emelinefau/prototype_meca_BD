@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TP : Étude d’un robot sériel - UR10 &#8212; Donnons du sens physique à nos équations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b8d1da14" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js?v=041d0952"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/4_TP_UR10';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="TP : Étude d’un robot sériel - Misubishi RV-4FL" href="4_TP_Mitsubishi.html" />
+    <link rel="prev" title="TD n°4 : Modes d’interpolation des trajets" href="2_TD_4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0_preambule.html">
+                    Facilitation graphique en méca
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">méca géné</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_hyperstatisme.html">Hyperstatisme</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1_Cours_Annexes.html">Annexes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_1.html">Compléments mathématiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_2.html">Décomposition en valeurs singulières (Singular Value Decomposition - SVD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_3.html">Algorithme de Newton-Raphson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Cours_Annexes_4.html">Équations typiques et solutions associées pour la résolution des MGI</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Cours_References.html">Références bibliographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">mmc</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="2_TD_1.html">TD n°1 : Parmétrage - MGI, MGD d’un robot SCARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_2.html">TD n°2 : MGI par la méthode de Paul, singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_3.html">TD n°3 : Modélisations cinématiques - Singularités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_TD_4.html">TD n°4 : Modes d’interpolation des trajets</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TP : Étude d’un robot sériel - UR10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Mitsubishi.html">TP : Étude d’un robot sériel - Misubishi RV-4FL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Spiderbot.html">TP : Étude d’un robot parallèle - Spiderbot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_TP_Falcon.html">TP : Étude d’un robot parallèle - Falcon</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examens</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="5_Examen_SPA_2023_2024.html">Examen de Système Poly-Articulés - 2023/2024</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Projet_1_Robot_Axis.html">Projet 1 : Modélisation du robot « Axis »</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ressources/4_TP_UR10.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TP : Étude d’un robot sériel - UR10</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-geometrique">Modélisation géométrique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-cinematique">Schéma cinématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-dhm">Paramétrage DHm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confrontation-a-la-modelisation-dans-l-application-robodk">Confrontation à la modélisation dans l’application RoboDK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Confrontation à la modélisation dans l’application RoboDK</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-du-modele-geometrique-direct-mgd">construction du Modèle Géométrique Direct (MGD)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-du-modele-cinematique-direct-mcd-s-il-reste-du-temps">construction du Modèle Cinématique Direct (MCD) - (S’il reste du temps …)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tp-etude-d-un-robot-seriel-ur10">
+<h1>TP : Étude d’un robot sériel - UR10<a class="headerlink" href="#tp-etude-d-un-robot-seriel-ur10" title="Lien vers cette rubrique">#</a></h1>
+<p>Le robot UR10 est un robot collaboratif, pouvant travailler en cohabitation avec l’humain sans protection particulière. Il est dimensionné pour exécuter des tâches de grande dimension (portée allant jusqu’à <span class="math notranslate nohighlight">\(1300 mm\)</span>), avec des poids allant jusqu’à <span class="math notranslate nohighlight">\(10 kg\)</span> en bout de structure. Les applications ciblées sont le conditionnement, la palettisation, l’assemblage et le pick and place. Ses principaux atouts sont la facilité et rapidité de configuration, de programmation et son côté collaboratif, rendant son amortissement rapide.</p>
+<figure class="align-default" id="ur10">
+<a class="reference internal image-reference" href="../_images/UR10.png"><img alt="../_images/UR10.png" src="../_images/UR10.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">robot UR10</span><a class="headerlink" href="#ur10" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<section id="decouverte-et-prise-en-main-du-systeme">
+<h2>Découverte et prise en main du système<a class="headerlink" href="#decouverte-et-prise-en-main-du-systeme" title="Lien vers cette rubrique">#</a></h2>
+<p>L’objectif de cette partie est de découvrir la structure et le fonctionnement du robot par quelques manipulations.</p>
+<p><strong>Question 1.1 :</strong> Effectuer la procédure de démarrage du robot fournie dans les documents ressource à la fin du sujet.</p>
+<p>Réaliser quelques déplacements manuels pour assimiler les différents corps et liaisons du robot :</p>
+<ul class="simple">
+<li><p>dans le mode articulaire ;</p></li>
+<li><p>dans le repère de base du robot ;</p></li>
+<li><p>dans le repère associé à l’outil (effecteur).</p></li>
+</ul>
+<p><strong>Question 1.2 :</strong> En déduire comment sont situés le référentiel de base du robot et le référentiel associé à l’outil.</p>
+<p><strong>Question 1.3 :</strong> Réaliser quelques déplacements en mode apprentissage pour découvrir le côté « collaboratif ».</p>
+<p><strong>Question 1.4 :</strong> En effectuant des manipulations, découvrir comment sont orientées :</p>
+<ul class="simple">
+<li><p>la base dite « de référence » attaché à la base du robot ;</p></li>
+<li><p>la base attachée à l’extrémité ou effecteur du robot.</p></li>
+</ul>
+<p>Déterminer de façon analogue où sont situées les origines.</p>
+<p><strong>Question 1.5 :</strong> Pour ce robot :</p>
+<ul class="simple">
+<li><p>le paramétrage en position est-il de type cartésien ? polaire ? sphérique ?</p></li>
+<li><p>le paramétrage en orientation est-il de type Euler ? Bryan ? quaternions ? extrinsèque ? intrinsèque ?</p></li>
+</ul>
+</section>
+<section id="modelisation-geometrique">
+<h2>Modélisation géométrique<a class="headerlink" href="#modelisation-geometrique" title="Lien vers cette rubrique">#</a></h2>
+<p>L’objectif de cette partie est de développer un modèle géométrique pour le robot, et confronter ce résultat à deux données :</p>
+<ul class="simple">
+<li><p>la description des paramètres constructeurs;</p></li>
+<li><p>la modélisation effectuée pour l’UR10 dans l’application RoboDK.</p></li>
+</ul>
+<section id="schema-cinematique">
+<h3>Schéma cinématique<a class="headerlink" href="#schema-cinematique" title="Lien vers cette rubrique">#</a></h3>
+<p><strong>Question 2.1 :</strong> Mettre le robot dans la configuration où toutes les valeurs des axes valent 0°. Réaliser un schéma cinématique, en 3D, dans cette configuration (dessin avec couleurs sur une page A4). Y positionner le référentiel de base du robot ainsi que celui de l’effecteur déterminé précédemment.</p>
+</section>
+<section id="parametrage-dhm">
+<h3>Paramétrage DHm<a class="headerlink" href="#parametrage-dhm" title="Lien vers cette rubrique">#</a></h3>
+<p><strong>Question 2.2 :</strong> En effectuant des manipulations axe par axe, déterminer l’orientation puis le sens de chaque axe
+<span class="math notranslate nohighlight">\(Z_i\)</span> des liaisons, afin qu’il corresponde au signe positif donné par le pilotage du contrôleur.</p>
+<p><strong>Question 2.3 :</strong> Sur le schéma cinématique précédent, effectuer l’ensemble des tracés et paramétrage selon la convention dite de Denavit et Hartenberg modifiée. Synthétiser les résultats dans le tableau approprié. Mesurer, si besoin au réglet, les constantes géométriques.</p>
+</section>
+<section id="confrontation-a-la-modelisation-dans-l-application-robodk">
+<h3>Confrontation à la modélisation dans l’application RoboDK<a class="headerlink" href="#confrontation-a-la-modelisation-dans-l-application-robodk" title="Lien vers cette rubrique">#</a></h3>
+<p>Le fabricant, fourni dans la documentation technique un tableau de paramètres servant de référence à la calibration du robot (<a class="reference internal" href="#ur10para"><span class="std std-numref">Fig. 19</span></a>).</p>
+<p><strong>Question 2.4 :</strong> Analyser les paramètres constructeurs et retrouver les différences et similitudes par rapport au paramétrage construit. Expliquer les différences de paramétrage.</p>
+</section>
+<section id="id1">
+<h3>Confrontation à la modélisation dans l’application RoboDK<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h3>
+<p>Depuis un fichier vierge, puis importer, depuis la librairie en ligne, un robot UR10. Éditer les paramètres du robot en double-cliquant sur le robot.</p>
+<p><strong>Question 2.5 :</strong> En masquant les référentiels inutiles et en agrandissant les flèches (menu « View - Make reference
+frames bigger »), déterminer le paramétrage et système d’axes du modèle de l’UR10 dans le logiciel.</p>
+</section>
+</section>
+<section id="construction-du-modele-geometrique-direct-mgd">
+<h2>construction du Modèle Géométrique Direct (MGD)<a class="headerlink" href="#construction-du-modele-geometrique-direct-mgd" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Question 3.1 :</strong> A partir du paramétrage DHm proposé, expliciter chacune des matrices homogènes de transformation entre les différents corps solides. En déduire, sans le développer l’expression du MGD.</p>
+<p><strong>Question 3.2 :</strong> A l’aide d’une fonction dédiée, implémenter sous Matlab le MGD. Dans un script dédié, comparer les résultats simulés sur quelques configurations :</p>
+<ul class="simple">
+<li><p>aux valeurs affichées sur le panel de contrôle du robot ;</p></li>
+<li><p>aux valeurs simulées dans RoboDK.</p></li>
+</ul>
+</section>
+<section id="construction-du-modele-cinematique-direct-mcd-s-il-reste-du-temps">
+<h2>construction du Modèle Cinématique Direct (MCD) - (S’il reste du temps …)<a class="headerlink" href="#construction-du-modele-cinematique-direct-mcd-s-il-reste-du-temps" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Question 4.1 :</strong> A partir de la formulation différentielle (variationnelle) du MGD, formuler le MCD.</p>
+<p><strong>Question 4.2 :</strong> Implémenter sousMatlab dans une fonction dédiée à cet effet le MCD, en se basant uniquement sur la fonction MGD précédemment développée.</p>
+</section>
+<section id="documents-ressources">
+<h2>Documents ressources<a class="headerlink" href="#documents-ressources" title="Lien vers cette rubrique">#</a></h2>
+<p>Les pages suivantes regroupent un certain nombre de documents permettant d’appréhender le fonctionnement du système ainsi que ses composants technologiques.</p>
+<p><a class="reference download internal" download="" href="../_downloads/ee4c6615e8430b87bd80e2e93e67cec2/UR10dem.pdf"><span class="xref download myst">Notice d’allumage/arrêt du robot UR10</span></a></p>
+<figure class="align-default" id="ur10para">
+<a class="reference internal image-reference" href="../_images/UR10para.png"><img alt="../_images/UR10para.png" src="../_images/UR10para.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Paramètres donnés par le constructeur</span><a class="headerlink" href="#ur10para" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="ur10joint">
+<a class="reference internal image-reference" href="../_images/UR10joint.png"><img alt="../_images/UR10joint.png" src="../_images/UR10joint.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Configuration et dénomination des corps et liaisons</span><a class="headerlink" href="#ur10joint" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="ur10doc">
+<a class="reference internal image-reference" href="../_images/UR10doc.png"><img alt="../_images/UR10doc.png" src="../_images/UR10doc.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Extrait de la documentation utilisateur</span><a class="headerlink" href="#ur10doc" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="2_TD_4.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">TD n°4 : Modes d’interpolation des trajets</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="4_TP_Mitsubishi.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">TP : Étude d’un robot sériel - Misubishi RV-4FL</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decouverte-et-prise-en-main-du-systeme">Découverte et prise en main du système</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-geometrique">Modélisation géométrique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-cinematique">Schéma cinématique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-dhm">Paramétrage DHm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confrontation-a-la-modelisation-dans-l-application-robodk">Confrontation à la modélisation dans l’application RoboDK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Confrontation à la modélisation dans l’application RoboDK</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-du-modele-geometrique-direct-mgd">construction du Modèle Géométrique Direct (MGD)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#construction-du-modele-cinematique-direct-mcd-s-il-reste-du-temps">construction du Modèle Cinématique Direct (MCD) - (S’il reste du temps …)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documents-ressources">Documents ressources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Emeline Faugere, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
