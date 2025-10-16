@@ -1,23 +1,40 @@
 ---
 title: "Meca BD"
-author: "emeline faugere"
-description: "Elements de formation pour l'UE Systèmes Poly-Articulés"
+author: "Emeline Faugere"
+description: "Ressources graphiques pour comprendre physiquement les outils mathématiques de la mécanique"
 institute: "ENS Paris-Saclay"
 date: "20/03/2024"
 ---
 
-# Facilitation graphique en méca
+# Avant propos
 
-Ici vous trouverez les versions de travail des fiches illustrées.
+ <br><br>
+
+<div style="display: flex; align-items: flex-start;">
+  <img src="_static/images/WM_wolvermimine.jpg" alt="WM" width="200" style="margin-right: 20px;">
+  <p style="max-width: 800px; line-height: 1.5;">Les fiches illustrées que vous trouverez sur ce site ont pour but de vous aider à poser un autre regard sur les outils mathématiques que vous manipulez pour traiter des problèmes de mécaniques (parfois à l'aveugle ou en apnée... on le sait, nous aussi on a déjà passé des concours !). 
+  <br><br>
+  Certain.es parleront de BD, d'autres d'illustrations ou de facilitation graphique. Quelle que soit la terminologie employée, le but n'est pas de raconter une histoire vulgarisée. Nous restons dans les sciences post bac et il y aura des équations mais cela ne nous empêche pas de parler de tout cela avec humour. 
+ <br><br>
+  Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le sens physique derrière les variables, équations et outils que vous utilisez.
+  </p>
+</div>
+
+## Travail collectif
+
+Pour que ce projet soit vraiment adapté à vos besoins, il faut que nous collaborions car je ne connais pas l'ensemble des difficultés de compréhension que vous rencontrez, même si j'en connais un peu quand même à force de vous cotoyer en cours, en TD, en BE, en TP et de corriger vos copies ^^ 
+
+Alors n'hésitez pas à : 
+
+- cliquer sur l'un des mots entre chaque page et à cliquer sur 'annotate' puis 'post to public' (sinon, il n'y a que vous qui verrez le commentaire) <mark> il faudra juste donner une fois un mail </mark>  
+- exprimer si vous pensez que le manque vient des programmes des filières que vous avez suivi dans votre scolarité
+- dire dans quelle filière vous êtes (L3, M1, M2, méca, GC, etc etc)
+- être force de proposition sur des sujets que nous n'aurions pas identifié (attention, on ne refait pas un cours complet, on fait ici des zoom sur des notions)
+
+Merci d'avance !
 
 
-## Objectifs pédagogiques
-
-blablabla
-
-
-
-## Liste des Travaux Dirigés
+## Liste des champs abordés (non exhaustive, elle évoluera avec vous grâce à vos commentaires!)
 
 ::::{card-carousel} 3
 
@@ -25,209 +42,79 @@ blablabla
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ressources/2_TD_1
+:link: ressources/MG__index
 :link-type: doc
 **Méca géné**
 ^^^
-```{image} https://www.fanuc.eu/~/media/corporate/products/robots/scara/sr-6ia-c/sr-6ia_c_l.png
+```{image} _static/images/mg.jpg
 :height: 100
 ```
 
-Paramétrage - MGI, MGD d'un robot SCARA
+torseurs, manipulation vecteurs et matrices, propriétés inertielles ...
 +++
-Faire le TD {fas}`arrow-right`
+Détail des sujets {fas}`arrow-right`
 :::
 
 :::{card}
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ressources/2_TD_2
+:link: ressources/MMC__index
 :link-type: doc
 
 **MMC**
 ^^^
-```{image} https://www.fsi-france.fr/wp-content/uploads/2019/11/csm_tx200-6-axis-robotic-arm-pim-2x-50249-jpg-orig_d32898df3c.jpg
+```{image} _static/images/mmc.jpg
 :height: 100
 ```
 
-Paramétrage - MGI par la méthoe de Paul, singularités
+tenseurs, contraintes, déformation, énergie, RdM...
 +++
-Faire le TD {fas}`arrow-right`
+Détail des sujets {fas}`arrow-right`
 :::
 
 :::{card}
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ressources/2_TD_3
+:link: ressources/MF__index
 :link-type: doc
 
-**Méca flotte**
+**Méca fluides**
 ^^^
-```{image} https://www.evsrobot.com/wp-content/uploads/2024/01/6kg-Payload-600mm-4-Axis-Universal-SCARA-Robot.png
+```{image} _static/images/WM_wolvermimine.jpg
 :height: 100
 ```
 
-Modélisations cinématiques - Singularités
+sujets ... 
 +++
-Faire le TD {fas}`arrow-right`
+Détail des sujets {fas}`arrow-right`
 :::
 
 :::{card}
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ressources/2_TD_4
+:link: ressources/AS__index
 :link-type: doc
 
 **asserv**
 ^^^
-```{image} https://www.usinenouvelle.com/expo/img/fraiseuse-usinage-lourd-whb-1000-012221895-product_zoom.jpg
+```{image} _static/images/as.png
 :height: 100
 ```
 
-Modes d'interpolation des trajets
+Correcteurs, critères de stabilité
 +++
-Faire le TD {fas}`arrow-right`
-:::
-
-::::
-
-## Liste des Travaux Pratiques
-
-::::{card-carousel} 3
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/4_TP_Mitsubishi
-:link-type: doc
-**TP sériel Mitsubishi**
-^^^
-```{image} ressources/img/TP_Mitsubishi/RV4FL.jpg
-:height: 100
-```
-Paramétrage, singularités, nombre solution MGI, Flag, types de trajets
-+++
-Lire le TP {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/4_TP_UR10
-:link-type: doc
-**TP sériel UR10**
-^^^
-```{image} ressources/img/TP_UR10/UR10.png
-:height: 100
-```
-Paramétrage, MGD, convention de DH et DHm, MCD
-+++
-Lire le TP {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/4_TP_Spiderbot
-:link-type: doc
-**TP parallèle Spiderbot**
-^^^
-```{image} ressources/img/TP_Spiderbot/PhotoSupport.png
-:height: 100
-```
-MGI d'un architecture parallèle, influence d'un défaut géométrique
-+++
-Lire le TP {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/4_TP_Falcon
-:link-type: doc
-**TP parallèle Falcon**
-^^^
-```{image} ressources/img/TP_Falcon/falcon.png
-:height: 100
-```
-Robot haptique, nombre de solution MGD MGI, recherche de solutions
-+++
-Lire le TP {fas}`arrow-right`
-:::
-
-::::
-
-## Liste des Examens des années passées
-
-::::{card-carousel} 3
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/5_Examen_SPA_2022_2023
-:link-type: doc
-**Examen 2022/2023**
-^^^
-```{image} ressources/img/Examen_2022_2023/xArm7.jpg
-:height: 100
-```
-Etude du robot xArm 6
-+++
-Faire l'examen {fas}`arrow-right`
-:::
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/5_Examen_SPA_2023_2024
-:link-type: doc
-**Examen 2023/2024**
-^^^
-```{image} ressources/img/Examen_2023_2024/spot-payloads-mobile.png
-:height: 100
-```
-Etude du robot Spot
-+++
-Faire l'examen {fas}`arrow-right`
-:::
-
-::::
-
-
-## Liste des Projets (pour aller plus loin)
-
-::::{card-carousel} 3
-
-:::{card}
-:margin: 3
-:class-body: text-center
-:class-header: bg-light text-center
-:link: ressources/10_Projet_1_Robot_Axis
-:link-type: doc
-**Projet n°1**
-^^^
-```{image} ressources/img/Projet1/P1_Axis.jpg
-:height: 100
-```
-Modélisation du robot "Axis", loi de commandes des actionneurs
-+++
-Lire le Projet {fas}`arrow-right`
+Détail des sujets {fas}`arrow-right`
 :::
 
 ::::
 
 ## À propos de ce document
 
-L'auteur principal de cette édition du module est Kevin Godineau, mais le contenu du cours et une partie de celui des TD et TP est une réécriture du cours de Sylvain Lavernhe.
+L'autrice principale de ces fiches est Emeline Faugere. 
+Le travail se fait en collaboration avec les enseignant.es et élèves de l'ENS Paris-Saclay. 
 
 
 

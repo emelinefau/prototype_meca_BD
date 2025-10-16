@@ -10,48 +10,57 @@ root: 0_preambule.md  # The first page of your book, all paths for chapters/sect
 # numbered: true
 
 parts:
-  - caption: méca géné
+  - caption: facilitation en méca géné
     chapters:
-      - file: ressources/1_hyperstatisme.md
-
-      - file: ressources/1_Cours_Annexes.md
+      - file: ressources/MG__index.md  
+      - file: ressources/MG_inerties/MG_inerties0.md
         sections:
-          - file: ressources/1_Cours_Annexes_1.md
-          - file: ressources/1_Cours_Annexes_2.md
-          - file: ressources/1_Cours_Annexes_3.md
-          - file: ressources/1_Cours_Annexes_4.md
-      - file: ressources/1_Cours_References.md
-  - caption: mmc
+          - file: ressources/MG_inerties/MG_inerties1.md
+          - file: ressources/MG_inerties/MG_inerties2.md
+          - file: ressources/MG_inerties/MG_inerties3.md
+          - file: ressources/MG_inerties/MG_inerties4.md
+          - file: ressources/MG_inerties/MG_inerties5.md
+          - file: ressources/MG_inerties/MG_inerties6.md
+          - file: ressources/MG_inerties/MG_inerties7.md
+          - file: ressources/MG_inerties/MG_inerties8.md
+          - file: ressources/MG_inerties/MG_inerties9.md
+          - file: ressources/MG_inerties/MG_inerties10.md
+          - file: ressources/MG_inerties/MG_inerties11.md
+
+      - file: ressources/MG_der_vectorielles.md
+
+      - file: ressources/MG_hyperstatisme0.md
+        sections:
+          - file: ressources/MG_hyperstatisme1.md
+          - file: ressources/MG_hyperstatisme2.md
+          - file: ressources/MG_hyperstatisme3.md
+          - file: ressources/MG_hyperstatisme4.md
+          - file: ressources/MG_hyperstatisme5.md
+          
+
+  - caption: facilitation en mmc
     chapters:
-      - file: ressources/2_TD_1.md
-#        sections: 
-#          - file: ressources/2_TD_1_corrige.md
-      - file: ressources/2_TD_2.md
-#        sections: 
-#          - file: ressources/2_TD_2_corrige.md
-      - file: ressources/2_TD_3.md
-#        sections: 
-#          - file: ressources/2_TD_3_corrige.md
-      - file: ressources/2_TD_4.md
-#        sections: 
-#          - file: ressources/2_TD_4_corrige.md
-  - caption: Travaux Pratiques
+      - file: ressources/MMC__index.md 
+      - file: ressources/MMC_vect_contrainte.md
+      - file: ressources/MMC_sujet2.md
+      - file: ressources/MMC_sujet3.md  
+
+
+  - caption: facilitation en mécanique des fluides
     chapters:
-      - file: ressources/4_TP_UR10.md
-      - file: ressources/4_TP_Mitsubishi.md
-      - file: ressources/4_TP_Spiderbot.md
-      - file: ressources/4_TP_Falcon.md
-  - caption: Examens
+      - file: ressources/MF__index.md  
+      - file: ressources/MF_sujet1.md
+      - file: ressources/MF_sujet2.md
+      - file: ressources/MF_sujet3.md
+  
+  - caption: facilitation en asservissement
     chapters:
-#      - file: ressources/5_Examen_SPA_2022_2023.md
-#        sections: 
-#          - file: ressources/5_Examen_SPA_2022_2023_corrige.md
-      - file: ressources/5_Examen_SPA_2023_2024.md
-#        sections: 
-#          - file: ressources/5_Examen_SPA_2023_2024_corrige.md
-  - caption: Projets
-    chapters:
-      - file: ressources/10_Projet_1_Robot_Axis.md
+      - file: ressources/AS__index.md  
+      - file: ressources/AS_sujet1.md
+      - file: ressources/AS_sujet2.md
+      - file: ressources/AS_sujet3.md
+
+
 # examen 
 # exercice
 # projets
