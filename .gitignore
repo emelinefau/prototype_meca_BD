@@ -27,3 +27,10 @@ _build/.doctrees
 *.idx
 *.ilg
 *.ind
+
+
+#pour éviter de traiter les images en créant le git
+_build/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
