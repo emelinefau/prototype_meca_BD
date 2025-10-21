@@ -1,11 +1,26 @@
-<mark> WARNING : version de travail - copyright Emeline Faugere 2025 - usage interne, ne pas diffuser tel quel merci ! </mark> 
 
-<mark style="background-color: #c8ee3eff;"> vos commentaires nous aideront à vous proposer des fiches adaptées autant que possible à vos besoins! <mark> 
+<div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Document en cours de développement à ne pas diffuser tel quel.
+  </span>
+</div>
 
-# MG inerties : centre de masse
+<div style="background-color: #e8f5e9; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+  💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
+</div>
 
-## objectifs pédagogique de la fiche
-Ici on parle de ...
+
+# in.8 - centre de masse
+*Objectif de cette fiche : comment localiser G avec du sens physique. Utilité des plans de symétrie pour cette réflexion*
+
+
+![Page 17 droite](../../ressources/img/MG_inerties/page_17_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+
 
 <!--
 ## Test affichage Page par page
@@ -65,14 +80,14 @@ vide
 
 centre de masse
 
---> 
+
 
 ![Page 17 droite](../img/inerties/page_17_droite.png)
 
 <div style="text-align: center;"> Vos retours/besoins/demandes sont bienvenu.es! <mark style="background-color: #fbdaffff;"> <-- Clique sur un mot et commente !<mark> </div>
 
 
-<!--
+
 base principale
 ![Page 18 gauche](../ressources/img/inerties/page_18_gauche.png)
 ![Page 18 droite](../ressources/img/inerties/page_18_droite.png)

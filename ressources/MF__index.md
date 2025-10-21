@@ -1,15 +1,108 @@
-# index des fiches MF
-Dans cette section vous trouverez les fiches utiles aux concepts vus dans les sujets de mécanique des fluides
+# index des fiches de facilitation graphique en Mécanique des fluides
+Dans cette section vous trouverez les fiches illustrant les concepts manipulés en Mécanique des Fluides
 
-N'hésitez pas à proposer vos propres sujets à partir de vos difficultés ou de ceslles de votre entourage, nous essaierons d'y répondre au mieux !
+<div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Détail de la thématique en cours de construction.
+  </span>
+</div>
 
-## sujet1
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 15px;text-align: left;">
+   Vous pouvez proposer une nouvelle thématique ou vous exprimer en surlignant du texte et en cliquant sur 'annotate'/'public'
+</p>
 
 
-## sujet2
+<div class="card-container">
+
+  <!-- Carte 1: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      MF sujet 1 (à définir)
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/MF_sujet1.png" alt="MF1" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="MF_sujet1/MF_sujet1_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      MF sujet 2 (à définir)
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/MF_sujet2.png" alt="MF2" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="MF_sujet2/MF_sujet2_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte n: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      MF sujet n (à définir)
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/MF_sujetn.png" alt="MFn" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="MF_sujetn/MF_sujetn_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
 
-## sujet3
+  <!-- Carte n: you -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Vos demandes / besoins / Suggestions
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/YOU.png" alt="you_MF" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="You/MF_You1.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+</div>
 
 
-## sujet4
+
+
+## À propos de ce document
+
+L'autrice principale de ces fiches est Emeline Faugere. 
+Le travail se fait en collaboration avec les enseignant.es et élèves de l'ENS Paris-Saclay. 
+
+
+
+
+
