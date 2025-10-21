@@ -1,11 +1,45 @@
-<mark> WARNING : version de travail - copyright Emeline Faugere 2025 - usage interne, ne pas diffuser tel quel merci ! </mark> 
 
-<mark style="background-color: #c8ee3eff;"> vos commentaires nous aideront à vous proposer des fiches adaptées autant que possible à vos besoins! <mark> 
+<div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Document en cours de développement à ne pas diffuser tel quel.
+  </span>
+</div>
 
-# MG inerties : Huyggens
+<div style="background-color: #e8f5e9; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+  💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
+</div>
 
-## objectifs pédagogique de la fiche
-Ici on parle de ...
+
+# in.6 - huyggens
+*Objectif de cette fiche : pourquoi on rajoute un terme et où?*
+
+
+![Page 11 droite](../../ressources/img/MG_inerties/page_11_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 12 gauche](../../ressources/img/MG_inerties/page_12_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 12 droite](../../ressources/img/MG_inerties/page_12_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 13 gauche](../../ressources/img/MG_inerties/page_13_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+
+![Page 13 droite](../../ressources/img/MG_inerties/page_13_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
 
 <!--
 ## Test affichage Page par page
@@ -45,7 +79,7 @@ vide
 
 huyggens
 
--->
+
 
 ![Page 11 droite](../img/inerties/page_11_droite.png)
 
@@ -68,7 +102,7 @@ huyggens
 <div style="text-align: center;"> Vos retours/besoins/demandes sont bienvenu.es! <mark style="background-color: #fbdaffff;"> <-- Clique sur un mot et commente !<mark> </div>
 
 
-<!--
+
 vide
 ![Page 14 gauche](../ressources/img/inerties/page_14_gauche.png)
 

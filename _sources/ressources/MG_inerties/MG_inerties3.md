@@ -1,11 +1,43 @@
-<mark> WARNING : version de travail - copyright Emeline Faugere 2025 - usage interne, ne pas diffuser tel quel merci ! </mark> 
 
-<mark style="background-color: #c8ee3eff;"> vos commentaires nous aideront à vous proposer des fiches adaptées autant que possible à vos besoins! <mark> 
+<div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Document en cours de développement à ne pas diffuser tel quel.
+  </span>
+</div>
 
-# MG inerties : produit d'inertie
+<div style="background-color: #e8f5e9; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+  💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
+</div>
 
-## objectifs pédagogique de la fiche
-Ici on parle de ...
+
+# in.3 - Produit d'inertie
+*Objectif de cette fiche : couples parasites (normaux à l'axe de rotation). Variation de ce couple dans le temps (rotation de l'axe). Retrouver rapidement l'expression en mdR*
+
+![Page 4 gauche](../../ressources/img/MG_inerties/page_4_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 4 droite](../../ressources/img/MG_inerties/page_4_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 5 gauche](../../ressources/img/MG_inerties/page_5_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 5 droite](../../ressources/img/MG_inerties/page_5_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 6 gauche](../../ressources/img/MG_inerties/page_6_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
 
 <!--
 ## Test affichage Page par page
@@ -22,7 +54,7 @@ moment d'inertie
 
 produits d'inertie
 
--->
+
 
 ![Page 4 gauche](../img/inerties/page_4_gauche.png)
 
@@ -45,7 +77,7 @@ produits d'inertie
 <div style="text-align: center;"> Vos retours/besoins/demandes sont bienvenu.es! <mark style="background-color: #fbdaffff;"> <-- Clique sur un mot et commente !<mark> </div>
 
 
-<!--
+
 symétrie matrice d'inertie
 ![Page 6 droite](../ressources/img/inerties/page_6_droite.png)
 ![Page 7 gauche](../ressources/img/inerties/page_7_gauche.png)

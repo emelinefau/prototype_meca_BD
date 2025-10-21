@@ -33,7 +33,8 @@ plusieurs boucles
 
 mise en équation
 -->
-![Page 8 gauche](../ressources/img/hyperstatisme/page_8_gauche.png)<div style="text-align: center;"> Vos retours/besoins/demandes sont bienvenu.es! <mark style="background-color: #fbdaffff;"> <-- Clique sur un mot et commente !<mark> </div>
+![Page 8 gauche](../ressources/img/hyperstatisme/page_8_gauche.png)
+<div style="text-align: center;"> Vos retours/besoins/demandes sont bienvenu.es! <mark style="background-color: #fbdaffff;"> <-- Clique sur un mot et commente !<mark> </div>
 
 
 ![Page 8 droite](../ressources/img/hyperstatisme/page_8_droite.png)

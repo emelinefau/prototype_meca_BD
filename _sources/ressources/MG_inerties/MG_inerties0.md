@@ -1,13 +1,62 @@
-<mark> WARNING : version de travail - copyright Emeline Faugere 2025 - usage interne, ne pas diffuser tel quel merci ! </mark> 
+<div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Document en cours de développement à ne pas diffuser tel quel.
+  </span>
+</div>
 
-<mark style="background-color: #c8ee3eff;"> vos commentaires nous aideront à vous proposer des fiches adaptées autant que possible à vos besoins! <mark> 
-
-# MG inerties
-
-## objectifs pédagogique de la fiche
-Ici on parle de ...
+<div style="background-color: #e8f5e9; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+  💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
+</div>
 
 
+# MG Propriétés inertielles
+Comprendre physiquement les phénomènes qui créent des termes nuls ou non nums dans la matrice d'inertie. 
+Comprendre aussi physiquement cette histoire de point de calcul et ce que raconte Hyuggens
+
+## in.1 : la masse
+- comprendre le lien entre masse et efforts à fournir pour mettre en translation  
+
+## in.2 : moment d'inertie d'une masse
+- comprendre le lien entre moment d'inertie et couple à fournir pour mettre en rotation
+- role de la distance à l'axe
+- retrouver physiquement l'expression en mR2
+
+## in.3 : produit d'inertie d'une masse
+- couples parasites (normaux à l'axe de rotation)
+- variation de ce couple dans le temps (rotation de l'axe)  
+- retrouver rapidement l'expression en mdR
+
+## in.4 : symétrie des produits d'inertie
+- pour une masse, comprendre pourquoi Imn=Inm
+
+## in.5 : lien produit et couple dans la liaison
+- les produits d'inertie dans la matrice représentent physiquement les effets de couples parasites (mais c'est croisé et vigilence aux signes)  
+
+## in.6 : huyggens
+- pourquoi on rajoute un terme et où?  
+
+## in.7 : plans et axes de symétrie
+- pourquoi physiquement un plan de symétrie a un effet sur les produits d'inertie (et sur lesquels)  
+- pourquoi une symétrie axiale garantit une matrice diagonale
+
+## in.8 : centre de masse
+- comment localiser G avec du sens physique
+- utilité des plans de symétrie pour cette réflexion
+
+## in.9 : base principale d'inertie
+- que veut dire une matrice diagonale
+- analogie avec le centre de masse  
+
+## in.10 : force centrifuge
+- c'est quoi cette force qui en fait représente des effets dynamique
+- utilisation pour réaliser des essais statiques représentant des actions dynamiques
+
+## in.11 : résumé / lexique
+- résumé 
+- un peu de culture techno  
+
+<!--
 ## Test affichage Page par page
 
 ![Page 1 droite](../img/inerties/page_1_droite.png)
@@ -121,3 +170,4 @@ force centrifuge
 
 <iframe src="../_static/pdfs/inerties_A4_2ppf_v3.pdf" width="100%" height="600px"></iframe>
 
+-->

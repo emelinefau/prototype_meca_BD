@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>sn.1 - … &#8212; Donnons du sens physique à nos équations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc7262a9" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/translations.js?v=041d0952"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ressources/HY_sujetn/HY_sujetn_1';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="sn.2 - …" href="HY_sujetn_2.html" />
+    <link rel="prev" title="HY Sujetn" href="HY_sujetn_0.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../0_preambule.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/image_titre.png" class="logo__image only-light" alt="Donnons du sens physique à nos équations - Home"/>
+    <script>document.write(`<img src="../../_static/image_titre.png" class="logo__image only-dark" alt="Donnons du sens physique à nos équations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../0_preambule.html">
+                    Avant propos : le projet !
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en méca géné</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MG_inerties/MG_inerties0.html">MG Propriétés inertielles</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties1.html">in.1 - La masse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties2.html">in.2 - Moment d’inertie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties3.html">in.3 - Produit d’inertie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties4.html">in.4 - Symétrie produits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties5.html">in.5 - lien produits / couples liaison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties6.html">in.6 - huyggens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties7.html">in.7 - plans et axes de symétrie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties8.html">in.8 - centre de masse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties9.html">in.9 - base principale d’inertie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties10.html">in.10 - force centrifuge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_inerties/MG_inerties11.html">in.resumé/lexique</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme0.html">MG hyperstatisme</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme1.html">h.1 - Le sens physique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme2.html">h.2 - comparer iso et hyper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme3.html">h.3 - boucles parallèles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme4.html">h.4 - retrouver la formule sans fatigue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_hyperstatisme/MG_hyperstatisme5.html">h.5 - mu ou mi ?</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MG_dervectorielle/MG_der_vectorielles0.html">MG dérivées vectorielles</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MG_dervectorielle/MG_der_vectorielles1.html">dv.1 - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MG_Ec/MG_Ec_0.html">MG Energie cinétique</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MG_Ec/MG_Ec_1.html">ec.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_Ec/MG_Ec_2.html">ec.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_Ec/MG_Ec_n.html">ec.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MG_torseurs/MG_Torseur_0.html">MG Torseurs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MG_torseurs/MG_Torseur_1.html">t.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_torseurs/MG_Torseur_2.html">t.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MG_torseurs/MG_Torseur_n.html">t.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../MG_You/MG_You1.html">you.1 - L…</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en mmc</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte0.html">MMC Contraintes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte1.html">cont.1 - Vecteur contrainte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte2.html">cont.2 - Tenseur contrainte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte3.html">cont.3 - div sigma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte4.html">cont.4 - Symétrie tenseur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte5.html">cont.5 - Cisaillement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte6.html">cont.6 - tenseur cylindrique/cartésien</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_contraintes/MMC_vect_contrainte7.html">cont.7 - équilibre MMC-&gt; RDM</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MMC_Def/MMC_Def0.html">MMC Déformation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Def/MMC_Def1.html">Def.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Def/MMC_Def2.html">Def.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Def/MMC_Defn.html">Def.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MMC_Ed/MMC_Ed0.html">MMC Energie de déformation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Ed/MMC_Ed1.html">Ed.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Ed/MMC_Ed2.html">Ed.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MMC_Ed/MMC_Edn.html">Ed.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en mécanique des fluides</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MF_sujet1/MF_sujet1_0.html">MF Sujet1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet1/MF_sujet1_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet1/MF_sujet1_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet1/MF_sujet1_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MF_sujet2/MF_sujet2_0.html">MF Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet2/MF_sujet2_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet2/MF_sujet2_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujet2/MF_sujet2_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MF_sujetn/MF_sujetn_0.html">MF Sujetn</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujetn/MF_sujetn_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujetn/MF_sujetn_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MF_sujetn/MF_sujetn_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en systèmes asservis</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SA_PID/SA_PID_0.html">SA PID</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SA_PID/SA_PID_1.html">pid.1 : correction proportionnelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_PID/SA_PID_2.html">pid.2 : correction dérivée</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_PID/SA_PID_n.html">pid.n : correction intégrale</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SA_sujet1/SA_sujet1_0.html">SA Sujet1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet1/SA_sujet1_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet1/SA_sujet1_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet1/SA_sujet1_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SA_sujet2/SA_sujet2_0.html">SA Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet2/SA_sujet2_1.html">s2.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet2/SA_sujet2_2.html">s2.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujet2/SA_sujet2_n.html">s2.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SA_sujetn/SA_sujetn_0.html">SA Sujetn</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujetn/SA_sujetn_1.html">sn.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujetn/SA_sujetn_2.html">sn.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SA_sujetn/SA_sujetn_n.html">sn.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en methodes numériques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MN_MEF/MN_MEF_0.html">MN Methodes des Elements Finis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MN_MEF/MN_MEF_1.html">mef.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_MEF/MN_MEF_2.html">mef.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_MEF/MN_MEF_n.html">mef.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MN_sujet2/MN_sujet2_0.html">MN Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujet2/MN_sujet2_1.html">s2.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujet2/MN_sujet2_2.html">s2.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujet2/MN_sujet2_n.html">s2.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../MN_sujetn/MN_sujetn_0.html">MN Sujetn</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujetn/MN_sujetn_1.html">sn.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujetn/MN_sujetn_2.html">sn.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MN_sujetn/MN_sujetn_n.html">sn.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en sciences des matériaux</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SM_sujet1/SM_sujet1_0.html">SM Sujet1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet1/SM_sujet1_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet1/SM_sujet1_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet1/SM_sujet1_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SM_sujet2/SM_sujet2_0.html">SM Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet2/SM_sujet2_1.html">s2.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet2/SM_sujet2_2.html">s2.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujet2/SM_sujet2_n.html">s2.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../SM_sujetn/SM_sujetn_0.html">SM Sujetn</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujetn/SM_sujetn_1.html">sn.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujetn/SM_sujetn_2.html">sn.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SM_sujetn/SM_sujetn_n.html">sn.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en hydraulique</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../HY_sujet1/HY_sujet1_0.html">HY Sujet1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet1/HY_sujet1_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet1/HY_sujet1_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet1/HY_sujet1_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../HY_sujet2/HY_sujet2_0.html">HY Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet2/HY_sujet2_1.html">s2.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet2/HY_sujet2_2.html">s2.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HY_sujet2/HY_sujet2_n.html">s2.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="HY_sujetn_0.html">HY Sujetn</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">sn.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HY_sujetn_2.html">sn.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HY_sujetn_n.html">sn.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">facilitation en vibrations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../VIB_sujet1/VIB_sujet1_0.html">VIB Sujet1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet1/VIB_sujet1_1.html">s1.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet1/VIB_sujet1_2.html">s1.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet1/VIB_sujet1_n.html">s1.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../VIB_sujet2/VIB_sujet2_0.html">VIB Sujet2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet2/VIB_sujet2_1.html">s2.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet2/VIB_sujet2_2.html">s2.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujet2/VIB_sujet2_n.html">s2.n - …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../VIB_sujetn/VIB_sujetn_0.html">VIB Sujetn</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujetn/VIB_sujetn_1.html">sn.1 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujetn/VIB_sujetn_2.html">sn.2 - …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VIB_sujetn/VIB_sujetn_n.html">sn.n - …</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ressources/HY_sujetn/HY_sujetn_1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>sn.1 - …</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="background-color: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 8px 12px; margin: 15px 0; text-align: center;">
+  <strong style="color: #856404; font-size: 14px;">⚠️ VERSION DE TRAVAIL</strong>
+  <span style="color: #856404; margin-left: 10px; font-size: 13px;">
+    Document en cours de développement à ne pas diffuser tel quel.
+  </span>
+</div>
+<div style="background-color: #e8f5e9; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+  💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="sn-1">
+<h1>sn.1 - …<a class="headerlink" href="#sn-1" title="Lien vers cette rubrique">#</a></h1>
+<p><em>Objectif de cette fiche : …</em></p>
+<p><img alt="Page 1 droite" src="../../_images/page_1_droite14.png" /></p>
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ressources\HY_sujetn"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="HY_sujetn_0.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">HY Sujetn</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="HY_sujetn_2.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">sn.2 - …</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Emeline Faugere, ENS Paris-Saclay
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
