@@ -12,7 +12,6 @@ root: 0_preambule.md  # The first page of your book, all paths for chapters/sect
 parts:
   - caption: facilitation en méca géné
     chapters:
-      - file: ressources/MG__index.md  
       - file: ressources/MG_inerties/MG_inerties0.md
         sections:
           - file: ressources/MG_inerties/MG_inerties1.md
@@ -27,38 +26,228 @@ parts:
           - file: ressources/MG_inerties/MG_inerties10.md
           - file: ressources/MG_inerties/MG_inerties11.md
 
-      - file: ressources/MG_der_vectorielles.md
-
-      - file: ressources/MG_hyperstatisme0.md
+      - file: ressources/MG_hyperstatisme/MG_hyperstatisme0.md
         sections:
-          - file: ressources/MG_hyperstatisme1.md
-          - file: ressources/MG_hyperstatisme2.md
-          - file: ressources/MG_hyperstatisme3.md
-          - file: ressources/MG_hyperstatisme4.md
-          - file: ressources/MG_hyperstatisme5.md
+          - file: ressources/MG_hyperstatisme/MG_hyperstatisme1.md
+          - file: ressources/MG_hyperstatisme/MG_hyperstatisme2.md
+          - file: ressources/MG_hyperstatisme/MG_hyperstatisme3.md
+          - file: ressources/MG_hyperstatisme/MG_hyperstatisme4.md
+          - file: ressources/MG_hyperstatisme/MG_hyperstatisme5.md
           
+      - file: ressources/MG_dervectorielle/MG_der_vectorielles0.md
+        sections:
+          - file: ressources/MG_dervectorielle/MG_der_vectorielles1.md
+
+      - file: ressources/MG_Ec/MG_Ec_0.md
+        sections:
+          - file: ressources/MG_Ec/MG_Ec_1.md
+          - file: ressources/MG_Ec/MG_Ec_2.md
+          - file: ressources/MG_Ec/MG_Ec_n.md
+          
+
+      - file: ressources/MG_rotation/MG_Rotation_0.md
+        sections:
+          - file: ressources/MG_rotation/MG_Rotation_1.md
+          - file: ressources/MG_rotation/MG_Rotation_2.md
+          - file: ressources/MG_rotation/MG_Rotation_n.md
+
+      - file: ressources/MG_torseurs/MG_Torseur_0.md
+        sections:
+          - file: ressources/MG_torseurs/MG_Torseur_1.md
+          - file: ressources/MG_torseurs/MG_Torseur_2.md
+          - file: ressources/MG_torseurs/MG_Torseur_n.md
+
+      - file: ressources/You/MG_You1.md
 
   - caption: facilitation en mmc
     chapters:
-      - file: ressources/MMC__index.md 
-      - file: ressources/MMC_vect_contrainte.md
-      - file: ressources/MMC_sujet2.md
-      - file: ressources/MMC_sujet3.md  
+      - file: ressources/MMC_contraintes/MMC_vect_contrainte0.md
+        sections:
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte1.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte2.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte3.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte4.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte5.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte6.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte7.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte8.md
+          - file: ressources/MMC_contraintes/MMC_vect_contrainte9.md
 
+      - file: ressources/MMC_Def/MMC_Def0.md
+        sections:
+          - file: ressources/MMC_Def/MMC_Def1.md
+          - file: ressources/MMC_Def/MMC_Def2.md
+          - file: ressources/MMC_Def/MMC_Defn.md
 
+      - file: ressources/MMC_Ed/MMC_Ed0.md
+        sections:
+          - file: ressources/MMC_Ed/MMC_Ed1.md
+          - file: ressources/MMC_Ed/MMC_Ed2.md
+          - file: ressources/MMC_Ed/MMC_Edn.md
+
+      - file: ressources/MMC_RDC/MMC_RDC0.md
+        sections:
+          - file: ressources/MMC_RDC/MMC_RDC1.md
+          - file: ressources/MMC_RDC/MMC_RDC2.md
+          - file: ressources/MMC_RDC/MMC_RDCn.md
+
+      - file: ressources/You/MMC_You1.md
+ 
   - caption: facilitation en mécanique des fluides
     chapters:
-      - file: ressources/MF__index.md  
-      - file: ressources/MF_sujet1.md
-      - file: ressources/MF_sujet2.md
-      - file: ressources/MF_sujet3.md
+      - file: ressources/MF_sujet1/MF_sujet1_0.md
+        sections:
+          - file: ressources/MF_sujet1/MF_sujet1_1.md
+          - file: ressources/MF_sujet1/MF_sujet1_2.md
+          - file: ressources/MF_sujet1/MF_sujet1_n.md
+
+      - file: ressources/MF_sujet2/MF_sujet2_0.md
+        sections:
+          - file: ressources/MF_sujet2/MF_sujet2_1.md
+          - file: ressources/MF_sujet2/MF_sujet2_2.md
+          - file: ressources/MF_sujet2/MF_sujet2_n.md
+
+      - file: ressources/MF_sujetn/MF_sujetn_0.md
+        sections:
+          - file: ressources/MF_sujetn/MF_sujetn_1.md
+          - file: ressources/MF_sujetn/MF_sujetn_2.md
+          - file: ressources/MF_sujetn/MF_sujetn_n.md
+
+      - file: ressources/You/MF_You1.md
+
+
+
   
-  - caption: facilitation en asservissement
+  - caption: facilitation en systèmes asservis
     chapters:
-      - file: ressources/AS__index.md  
-      - file: ressources/AS_sujet1.md
-      - file: ressources/AS_sujet2.md
-      - file: ressources/AS_sujet3.md
+      - file: ressources/SA_PID/SA_PID_0.md
+        sections:
+          - file: ressources/SA_PID/SA_PID_1.md
+          - file: ressources/SA_PID/SA_PID_2.md
+          - file: ressources/SA_PID/SA_PID_n.md
+
+      - file: ressources/SA_sujet1/SA_sujet1_0.md
+        sections:
+          - file: ressources/SA_sujet1/SA_sujet1_1.md
+          - file: ressources/SA_sujet1/SA_sujet1_2.md
+          - file: ressources/SA_sujet1/SA_sujet1_n.md
+
+      - file: ressources/SA_sujet2/SA_sujet2_0.md
+        sections:
+          - file: ressources/SA_sujet2/SA_sujet2_1.md
+          - file: ressources/SA_sujet2/SA_sujet2_2.md
+          - file: ressources/SA_sujet2/SA_sujet2_n.md
+
+      - file: ressources/SA_sujetn/SA_sujetn_0.md
+        sections:
+          - file: ressources/SA_sujetn/SA_sujetn_1.md
+          - file: ressources/SA_sujetn/SA_sujetn_2.md
+          - file: ressources/SA_sujetn/SA_sujetn_n.md
+
+      - file: ressources/You/SA_You1.md
+
+
+
+
+  - caption: facilitation en methodes numériques
+    chapters:
+      - file: ressources/MN_MEF/MN_MEF_0.md
+        sections:
+          - file: ressources/MN_MEF/MN_MEF_1.md
+          - file: ressources/MN_MEF/MN_MEF_2.md
+          - file: ressources/MN_MEF/MN_MEF_n.md
+
+      - file: ressources/MN_sujet2/MN_sujet2_0.md
+        sections:
+          - file: ressources/MN_sujet2/MN_sujet2_1.md
+          - file: ressources/MN_sujet2/MN_sujet2_2.md
+          - file: ressources/MN_sujet2/MN_sujet2_n.md
+
+      - file: ressources/MN_sujetn/MN_sujetn_0.md
+        sections:
+          - file: ressources/MN_sujetn/MN_sujetn_1.md
+          - file: ressources/MN_sujetn/MN_sujetn_2.md
+          - file: ressources/MN_sujetn/MN_sujetn_n.md
+
+      - file: ressources/You/MN_You1.md
+
+
+
+  - caption: facilitation en sciences des matériaux
+    chapters:
+    - file: ressources/SM_sujet1/SM_sujet1_0.md
+      sections:
+        - file: ressources/SM_sujet1/SM_sujet1_1.md
+        - file: ressources/SM_sujet1/SM_sujet1_2.md
+        - file: ressources/SM_sujet1/SM_sujet1_n.md
+
+    - file: ressources/SM_sujet2/SM_sujet2_0.md
+      sections:
+        - file: ressources/SM_sujet2/SM_sujet2_1.md
+        - file: ressources/SM_sujet2/SM_sujet2_2.md
+        - file: ressources/SM_sujet2/SM_sujet2_n.md
+
+    - file: ressources/SM_sujetn/SM_sujetn_0.md
+      sections:
+        - file: ressources/SM_sujetn/SM_sujetn_1.md
+        - file: ressources/SM_sujetn/SM_sujetn_2.md
+        - file: ressources/SM_sujetn/SM_sujetn_n.md
+
+    - file: ressources/You/SM_You1.md
+
+
+  - caption: facilitation en hydraulique
+    chapters:
+      - file: ressources/HY_sujet1/HY_sujet1_0.md
+        sections:
+          - file: ressources/HY_sujet1/HY_sujet1_1.md
+          - file: ressources/HY_sujet1/HY_sujet1_2.md
+          - file: ressources/HY_sujet1/HY_sujet1_n.md
+
+      - file: ressources/HY_sujet2/HY_sujet2_0.md
+        sections:
+          - file: ressources/HY_sujet2/HY_sujet2_1.md
+          - file: ressources/HY_sujet2/HY_sujet2_2.md
+          - file: ressources/HY_sujet2/HY_sujet2_n.md
+
+      - file: ressources/HY_sujetn/HY_sujetn_0.md
+        sections:
+          - file: ressources/HY_sujetn/HY_sujetn_1.md
+          - file: ressources/HY_sujetn/HY_sujetn_2.md
+          - file: ressources/HY_sujetn/HY_sujetn_n.md
+
+      - file: ressources/You/HY_You1.md
+
+
+
+  - caption: facilitation en vibrations
+    chapters:
+      - file: ressources/VIB_sujet1/VIB_sujet1_0.md
+        sections:
+          - file: ressources/VIB_sujet1/VIB_sujet1_1.md
+          - file: ressources/VIB_sujet1/VIB_sujet1_2.md
+          - file: ressources/VIB_sujet1/VIB_sujet1_n.md
+
+      - file: ressources/VIB_sujet2/VIB_sujet2_0.md
+        sections:
+          - file: ressources/VIB_sujet2/VIB_sujet2_1.md
+          - file: ressources/VIB_sujet2/VIB_sujet2_2.md
+          - file: ressources/VIB_sujet2/VIB_sujet2_n.md
+
+      - file: ressources/VIB_sujetn/VIB_sujetn_0.md
+        sections:
+          - file: ressources/VIB_sujetn/VIB_sujetn_1.md
+          - file: ressources/VIB_sujetn/VIB_sujetn_2.md
+          - file: ressources/VIB_sujetn/VIB_sujetn_n.md
+
+      - file: ressources/You/VIB_You1.md
+
+
+
+  - caption: vos demandes
+    chapters:
+      - file: ressources/You/tout_You1.md
+
 
 
 # examen 
