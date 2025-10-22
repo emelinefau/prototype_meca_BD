@@ -11,10 +11,98 @@
 
 
 # MG hyperstatisme
-Ahhh la formule magique... et les justification apprises par coeur, toi-m^mee tu sais ;)
+Ahhh la formule magique... et les justification apprises par coeur, toi-même tu sais ;)
 
+
+
+<div class="card-container">
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      h.1 : le sens physique
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Hyperstatisme/hyperstatisme_chapo.png" alt="h_sens_phy" class="img-responsive">
+      <p> calculer et identifier h SANS CALCUL </p>
+      <p class="card-footer-link">
+        <a href="../MG_hyperstatisme/MG_hyperstatisme1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      h.2 : comparer iso et hyper
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Hyperstatisme/hyperstatisme3.jpg" alt="iso_vs_hyper" class="img-responsive">
+      <p> Justifier (ou choisir) de façon pertinente un système iso ou hyperstatique. Faire le lien avec la dimension des jeux et les modèles de liaisons </p>
+      <p class="card-footer-link">
+        <a href="../MG_hyperstatisme/MG_hyperstatisme2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 3 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      h.3 : boucles parallèles
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Hyperstatisme/hyperstatisme12.jpg" alt="boucles_paralleles" class="img-responsive">
+      <p> Localiser h. Gérer de façon physique le calcul de h. Identifier où lacher des contraintes de façon pertinente </p>
+      <p class="card-footer-link">
+        <a href="../MG_hyperstatisme/MG_hyperstatisme3.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 4 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      h.4 : retrouver la formule sans fatigue
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Hyperstatisme/hyperstatisme5.jpg" alt="boucles_paralleles" class="img-responsive">
+      <p> En statique ou en cinématique. En se souvenant des deux méthodes. Comprendre les risques de singularité </p>
+      <p class="card-footer-link">
+        <a href="../MG_hyperstatisme/MG_hyperstatisme4.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 5 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      h.5 : mu ou mi ?
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Hyperstatisme/hyperstatisme1.jpg" alt="boucles_paralleles" class="img-responsive">
+      <p> Distinguer mu et mi </p>
+      <p class="card-footer-link">
+        <a href="../MG_hyperstatisme/MG_hyperstatisme5.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!--
 ## h.1 : le sens physique
 - calculer et identifier h SANS CALCUL  
+
 
 ## h.2 : comparer iso et hyper
 - justifier (ou choisir) de façon pertinente un système iso ou hyperstatique
@@ -32,7 +120,7 @@ Ahhh la formule magique... et les justification apprises par coeur, toi-m^mee tu
 
 ## h.5 : mu ou mi ?
 - distinguer mu et mi
-
+-->
 <!--
 ## Test affichage Page par page
 

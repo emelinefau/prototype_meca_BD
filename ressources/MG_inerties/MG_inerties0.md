@@ -14,8 +14,193 @@
 Comprendre physiquement les phénomènes qui créent des termes nuls ou non nums dans la matrice d'inertie. 
 Comprendre aussi physiquement cette histoire de point de calcul et ce que raconte Hyuggens
 
+
+<div class="card-container">
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.1 : la masse
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties8.jpg" alt="masse" class="img-responsive">
+      <p> comprendre le lien entre masse et efforts à fournir pour mettre en translation </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.2 : moment d'inertie d'une masse
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties42.jpg" alt="moment" class="img-responsive">
+      <p> comprendre le lien entre moment d'inertie et couple à fournir pour mettre en rotation. Role de la distance à l'axe. Retrouver physiquement l'expression en mR2 </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 3 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.3 : produit d'inertie d'une masse
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties40.jpg" alt="produit" class="img-responsive">
+      <p> Couples parasites (normaux à l'axe de rotation). Variation de ce couple dans le temps (rotation de l'axe). Retrouver rapidement l'expression en mdR </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties3.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  
+  <!-- Carte 4 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.4 : symétrie des produits d'inertie
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties40.jpg" alt="sym" class="img-responsive">
+      <p> pour une masse, comprendre pourquoi Imn=Inm </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties4.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 5 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.5 : lien produit et couple dans la liaison
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties45.png" alt="produit_couple" class="img-responsive">
+      <p> les produits d'inertie dans la matrice représentent physiquement les effets de couples parasites (mais c'est croisé et vigilence aux signes) </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties5.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 6 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.6 : huyggens
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties53.png" alt="huyggens" class="img-responsive">
+      <p> pourquoi on rajoute un terme et où? </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties6.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 7 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.7 : plans et axes de symétrie
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties65.png" alt="plans/axes" class="img-responsive">
+      <p> Pourquoi physiquement un plan de symétrie a un effet sur les produits d'inertie (et sur lesquels). Pourquoi une symétrie axiale garantit une matrice diagonale </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties7.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 8 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.8 : centre de masse
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties66.png" alt="centre G" class="img-responsive">
+      <p> comment localiser G avec du sens physique. Utilité des plans de symétrie pour cette réflexion </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties8.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 9 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.9 : base principale d'inertie
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties76.png" alt="base ppale" class="img-responsive">
+      <p> Que veut dire une matrice diagonale. Analogie avec le centre de masse </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties9.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 10 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.10 : force centrifuge
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Inerties/inerties51.png" alt="Fcentrifuge" class="img-responsive">
+      <p> c'est quoi cette force qui en fait représente des effets dynamique. Utilisation pour réaliser des essais statiques représentant des actions dynamiques </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties10.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 11 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      in.11 : résumé / lexique
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/wolver_inprogress.png" alt="resume" class="img-responsive">
+      <p> Résumé. Un peu de culture techno </p>
+      <p class="card-footer-link">
+        <a href="../MG_inerties/MG_inerties11.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--
 ## in.1 : la masse
 - comprendre le lien entre masse et efforts à fournir pour mettre en translation  
+
 
 ## in.2 : moment d'inertie d'une masse
 - comprendre le lien entre moment d'inertie et couple à fournir pour mettre en rotation
@@ -35,7 +220,7 @@ Comprendre aussi physiquement cette histoire de point de calcul et ce que racont
 
 ## in.6 : huyggens
 - pourquoi on rajoute un terme et où?  
-
+-->
 ## in.7 : plans et axes de symétrie
 - pourquoi physiquement un plan de symétrie a un effet sur les produits d'inertie (et sur lesquels)  
 - pourquoi une symétrie axiale garantit une matrice diagonale

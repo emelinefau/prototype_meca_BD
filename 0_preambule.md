@@ -125,7 +125,7 @@ Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le s
       Systèmes <br> asservis
     </div>
     <div class="card-body">
-      <img src="_static/images/SA.png" alt="SA" class="img-responsive">
+      <img src="_static/images/SA2.png" alt="SA" class="img-responsive">
       <p> correcteurs PID, critères de stabilité, BO-BF, ... ...</p>
       <p class="card-footer-link">
         <a href="ressources/SA__index.html" class="card-link">
