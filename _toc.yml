@@ -85,13 +85,21 @@ parts:
         sections:
           - file: ressources/MMC_Ed/MMC_Ed1.md
           - file: ressources/MMC_Ed/MMC_Ed2.md
-          - file: ressources/MMC_Ed/MMC_Edn.md
+          - file: ressources/MMC_Ed/MMC_Ed3.md
+          - file: ressources/MMC_Ed/MMC_Ed4.md
+          - file: ressources/MMC_Ed/MMC_Ed5.md
 
       - file: ressources/MMC_RDC/MMC_RDC0.md
         sections:
           - file: ressources/MMC_RDC/MMC_RDC1.md
           - file: ressources/MMC_RDC/MMC_RDC2.md
           - file: ressources/MMC_RDC/MMC_RDCn.md
+
+      - file: ressources/MMC_PPV/MMC_PPV0.md
+        sections:
+          - file: ressources/MMC_PPV/MMC_PPV1.md
+          - file: ressources/MMC_PPV/MMC_PPV2.md
+          - file: ressources/MMC_PPV/MMC_PPVn.md
 
       - file: ressources/You/MMC_You1.md
  
@@ -230,6 +238,24 @@ parts:
 
   - caption: facilitation en vibrations
     chapters:
+      - file: ressources/VIB_Reyleigh/VIB_Reyleigh_0.md
+        sections:
+          - file: ressources/VIB_Reyleigh/VIB_Reyleigh_1.md
+          - file: ressources/VIB_Reyleigh/VIB_Reyleigh_2.md
+          - file: ressources/VIB_Reyleigh/VIB_Reyleigh_n.md
+
+      - file: ressources/VIB_1ddl/VIB_1ddl_0.md
+        sections:
+          - file: ressources/VIB_1ddl/VIB_1ddl_1.md
+          - file: ressources/VIB_1ddl/VIB_1ddl_2.md
+          - file: ressources/VIB_1ddl/VIB_1ddl_n.md
+
+      - file: ressources/VIB_translation_rotation/VIB_translation_rotation_0.md
+        sections:
+          - file: ressources/VIB_translation_rotation/VIB_translation_rotation_1.md
+          - file: ressources/VIB_translation_rotation/VIB_translation_rotation_2.md
+          - file: ressources/VIB_translation_rotation/VIB_translation_rotation_n.md
+
       - file: ressources/VIB_sujet1/VIB_sujet1_0.md
         sections:
           - file: ressources/VIB_sujet1/VIB_sujet1_1.md

@@ -10,11 +10,10 @@
 </div>
 
 
-# Ed.1 - dans un ressort, compression
-*Objectif de cette fiche : ...*
+# Ed. - pourquoi 1/2
+*Objectif de cette fiche : billes pour le ppv*
 
 ![Page 1 droite](../../ressources/img/MMC_Ed/page_1_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>
-

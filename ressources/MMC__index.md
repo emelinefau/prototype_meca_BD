@@ -97,7 +97,23 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
     </div>
   </div>
 
-
+  <!-- Carte n: PPV... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      PPV
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/MMC_PPV.png" alt="RdC" class="img-responsive">
+      <p> 
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="MMC_PPV/MMC_PPV0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
   <!-- Carte n: you -->
   <div class="card">

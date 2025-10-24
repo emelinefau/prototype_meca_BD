@@ -10,7 +10,7 @@
 </div>
 
 
-# Ed.2 - ...
+# Ed.2 - dans une poutre, compression
 *Objectif de cette fiche : ...*
 
 ![Page 1 droite](../../ressources/img/MMC_Ed/page_1_droite.png)
