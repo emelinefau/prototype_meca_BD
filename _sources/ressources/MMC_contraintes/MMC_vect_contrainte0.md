@@ -9,36 +9,167 @@
   💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
 </div>
 
-
 # MMC Contraintes
 Comprendre physiquement ce qui se passe dans la matière pour écrire les composantes des tenseurs des contraintes au bon endroit, mettre correctement le problème en données et analyser les résultats de calculs en comprenant le sens physique.
 
-## Cont.1 : Vecteur contrainte
-- c'est juste un petit effort surfacique dans la matière
-- comprendre cette notion de facette qui n'est rien d'autre que la tranche de découpage
 
-## Cont.2 : Tenseur contrainte
-- l'armoire à ranger les actinos mécaniques 3D sur chaque petit bout de matière 
 
-## Cont.3 : div sigma
-- l'équilibre en résultante d'un petit bout de matière sous l'effet des AM appliquées. 
-- comprendre ça c'est comprendre ce qu'on écrit dans le terme d'actions volumiques et dans le membre représentant la dynamique inertielle du petit bout
+<div class="card-container">
 
-## Cont.4 : Symétrie du tenseur
-- l'effet direct de l'équilibre en moment d'un petit bout de matière
 
-## Cont.5 : Cisaillement
-- physiquement les actions qui empêchent de glisser 
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.1 : Vecteur contrainte
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte10.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> c'est juste un petit effort surfacique dans la matière. Comprendre cette notion de facette qui n'est rien d'autre que la tranche de découpage </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
-## Cont.6 : tenseur cylindrique/cartésien
-- se représenter les découpages de matière en part de tarte ou en poireaux/oignons pour comprendre physiquement les termes du tenseur exprimé dans une base cylindrique ou sphérique 
 
-## Cont.7 : Equilibre MMC -> RdM
-- retrouver tout pareil les équations d'équilibre de la rdm
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.2 : Tenseur contrainte
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte7.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> l'armoire à ranger les actinos mécaniques 3D sur chaque petit bout de matière </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
-## Cont.8 : Base principale 
-- comprendre physiquement ce que représente la base principale du tenseur des contrainte 
+  <!-- Carte 3 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.3 : div sigma
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte28.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> l'équilibre en résultante d'un petit bout de matière sous l'effet des AM appliquées. Comprendre ça c'est comprendre ce qu'on écrit dans le terme d'actions volumiques et dans le membre représentant la dynamique inertielle du petit bout </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte3.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
-## Cont.9 : Trace de sigma 
-- variation de volume 
+  <!-- Carte 4 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.4 : Symétrie du tenseur
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte28.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> l'effet direct de l'équilibre en moment d'un petit bout de matière </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte4.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 5 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.5 : Cisaillement
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte3.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> physiquement les actions qui empêchent de glisser </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte5.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 6 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.6 : tenseur cylindrique/cartésien
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte25.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> se représenter les découpages de matière en part de tarte ou en poireaux/oignons pour comprendre physiquement les termes du tenseur exprimé dans une base cylindrique ou sphérique </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte6.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 7 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.7 : Equilibre MMC -> RdM
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/verteurcontrainte2.jpg" alt="h_sens_phy" class="img-responsive">
+      <p> retrouver tout pareil les équations d'équilibre de la rdm </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte7.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 8 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.8 : Base principale 
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre physiquement ce que représente la base principale du tenseur des contrainte </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte8.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 9 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Cont.9 : Trace de sigma  
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/contraintes/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> variation de volume </p>
+      <p class="card-footer-link">
+        <a href="../MMC_contraintes/MMC_vect_contrainte9.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
 

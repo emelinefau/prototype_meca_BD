@@ -17,6 +17,27 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
 
 <div class="card-container">
 
+
+  <!-- Carte 1: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      HY pertes de charges
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/HY_sujet1.png" alt="hy1" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="HY_PertesCharges/HY_PertesCharges_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
   <!-- Carte 1: ... -->
   <div class="card">
     <div class="card-header" style="text-align: center;">

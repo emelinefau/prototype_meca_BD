@@ -11,12 +11,61 @@
 
 
 # SA PID
-objectifs généraux du sujet 1
+objectifs généraux du sujet 
 
-## pid.1 : correction proportionnelle
-- objectifs de l'item 1 du sujet 1 
 
-## pid.2 : correction dérivée
-- objectifs de l'item 2 du sujet 1 
 
-## pid.n : correction intégrale
+<div class="card-container">
+
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+    pid.1 : correction proportionnelle
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/SA/PID/pid_2m.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../SA_PID/SA_PID_1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      pid.2 : correction dérivée
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/SA/PID/pid_2m.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item  </p>
+      <p class="card-footer-link">
+        <a href="../SA_PID/SA_PID_2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      pid.3 : correction intégrale
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/SA/PID/pid_2m.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../SA_PID/SA_PID_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>

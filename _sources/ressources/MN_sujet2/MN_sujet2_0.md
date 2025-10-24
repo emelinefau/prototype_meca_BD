@@ -11,12 +11,59 @@
 
 
 # MN Sujet2
-objectifs généraux du sujet 2
+objectifs généraux du sujet 
 
-## sujet2.1 : ...
-- objectifs de l'item 1 du sujet 2 
+<div class="card-container">
 
-## sujet2.2 : ...
-- objectifs de l'item 2 du sujet 2 
 
-## sujet2.n : ...
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+    suj.1 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MN/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MN_sujet2/MN_sujet2_1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      suj.2 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MN/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item  </p>
+      <p class="card-footer-link">
+        <a href="../MN_sujet2/MN_sujet2_2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      suj.3 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MN/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MN_sujet2/MN_sujet2_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>

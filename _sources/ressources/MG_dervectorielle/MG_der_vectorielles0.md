@@ -13,11 +13,62 @@
 # MG dérivées vectorielles
 Une simple figure permet d'écrire les dérivées de vecteurs la plupart du temps sans écrire de formule !
 
-## dv.1 : variation de norme
-- quand la direction du vecteur ne change pas, en général on ne se pose pas de question 
 
-## dv.2 : variation d'orientation
-- le mini dessin à faire quand l'orientation du vecteur change 
 
-## dv.3 : retrouver la formule vectorielle
-- en repartant d'un cas simple et maitrisé on peut retrouver les termes de la formule vectorielle en s'assurant qu'elle est juste
+<div class="card-container">
+
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      dv.1 : variation de norme
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/der_vectorielle/illu5.png" alt="h_sens_phy" class="img-responsive">
+      <p> quand la direction du vecteur ne change pas, en général on ne se pose pas de question </p>
+      <p class="card-footer-link">
+        <a href="../MG_dervectorielle/MG_der_vectorielles1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      dv.2 : variation d'orientation
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/der_vectorielle/illu5.png" alt="h_sens_phy" class="img-responsive">
+      <p> le mini dessin à faire quand l'orientation du vecteur change </p>
+      <p class="card-footer-link">
+        <a href="../MG_dervectorielle/MG_der_vectorielles2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      dv.3 : retrouver la formule vectorielle
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/der_vectorielle/illu5.png" alt="h_sens_phy" class="img-responsive">
+      <p> en repartant d'un cas simple et maitrisé on peut retrouver les termes de la formule vectorielle en s'assurant qu'elle est juste </p>
+      <p class="card-footer-link">
+        <a href="../MG_dervectorielle/MG_der_vectorielles3.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+
+

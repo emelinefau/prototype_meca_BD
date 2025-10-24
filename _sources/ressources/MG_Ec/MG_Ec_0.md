@@ -13,12 +13,62 @@
 # MG Energie cinétique
 Comprendre physiquement les analogies translation/rotation pour retrouver très rapidement et sans erreur ou oubli les expressions de l'énergie cinétique d'un solide en mouvement
 
-## ec.1 : solide en translation
-- comprendre l'expression de Ec 
 
-## ec.2 : solide en rotation
-- comprendre et retrouver par analogie l'expression de Ec 
 
-## ec.3 : solide en mouvement combiné
-- ne pas faire n'importe quoi dans le comoment
-- comprendre pourquoi il faut additionner deux termes
+
+
+<div class="card-container">
+
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      ec.1 : solide en translation
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre l'expression de Ec </p>
+      <p class="card-footer-link">
+        <a href="../MG_Ec/MG_Ec_1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      ec.2 : solide en rotation
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre et retrouver par analogie l'expression de Ec  </p>
+      <p class="card-footer-link">
+        <a href="../MG_Ec/MG_Ec_2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      ec.3 : solide en mouvement combiné
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> ne pas faire n'importe quoi dans le comoment. Comprendre pourquoi il faut additionner deux termes </p>
+      <p class="card-footer-link">
+        <a href="../MG_Ec/MG_Ec_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+

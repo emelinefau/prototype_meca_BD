@@ -11,12 +11,59 @@
 
 
 # MMC Energie de déformation
-objectifs généraux du sujet 1
+objectifs généraux du sujet
 
-## Ed.1 : ...
-- objectifs de l'item 1 du sujet 1 
+<div class="card-container">
 
-## Ed.2 : ...
-- objectifs de l'item 2 du sujet 1 
 
-## Ed.n : ...
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Ed.1 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Ed/MMC_Ed1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Ed.2 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item  </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Ed/MMC_Ed2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Ed.3 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Ed/MMC_Edn.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>
