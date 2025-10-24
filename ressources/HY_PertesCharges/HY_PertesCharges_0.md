@@ -9,14 +9,61 @@
   💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
 </div>
 
+# HY Pertes de Charges
+objectifs généraux du sujet 
 
-# HY Sujet1
-objectifs généraux du sujet 1
+<div class="card-container">
 
-## sujet1.1 : ...
-- objectifs de l'item 1 du sujet 1 
 
-## sujet1.2 : ...
-- objectifs de l'item 2 du sujet 1 
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      pc.1 : Avec d.pression imposé
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item 1 du sujet 1  </p>
+      <p class="card-footer-link">
+        <a href="../HY_PertesCharges/HY_PertesCharges_1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
-## sujet1.n : ...
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      pc.2 : Avec débit imposé
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item 2 du sujet 1 </p>
+      <p class="card-footer-link">
+        <a href="../HY_PertesCharges/HY_PertesCharges_2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      pc.n : Dans les composants
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> calculer et identifier h SANS CALCUL </p>
+      <p class="card-footer-link">
+        <a href="../HY_PertesCharges/HY_PertesCharges_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+

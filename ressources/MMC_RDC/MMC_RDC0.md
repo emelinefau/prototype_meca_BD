@@ -11,12 +11,60 @@
 
 
 # MMC Relations de Comportement
-objectifs généraux du sujet 1
+objectifs généraux du sujet 
 
-## RdC.1 : ...
-- objectifs de l'item 1 du sujet 1 
 
-## RdC.2 : ...
-- objectifs de l'item 2 du sujet 1 
+<div class="card-container">
 
-## RdC.n : ...
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      RdC.1 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_RDC/MMC_RDC1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      RdC.2 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item  </p>
+      <p class="card-footer-link">
+        <a href="../MMC_RDC/MMC_RDC2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      RdC.3 : ...
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_RDC/MMC_RDCn.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>

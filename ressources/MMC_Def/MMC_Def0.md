@@ -11,12 +11,62 @@
 
 
 # MMC Déformation
-objectifs généraux du sujet 1
+objectifs généraux du sujet 
 
-## Def.1 : ...
-- objectifs de l'item 1 du sujet 1 
 
-## Def.2 : ...
-- objectifs de l'item 2 du sujet 1 
 
-## Def.n : ...
+<div class="card-container">
+
+
+  <!-- Carte 1 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      def.1 : solide en translation
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Def/MMC_Def1.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      def.2 : solide en rotation
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item  </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Def/MMC_Def2.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  
+  <!-- Carte n -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      def.3 : solide en mouvement combiné
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MMC/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
+      <p> objectifs de l'item </p>
+      <p class="card-footer-link">
+        <a href="../MMC_Def/MMC_Defn.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+

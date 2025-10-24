@@ -37,6 +37,8 @@ parts:
       - file: ressources/MG_dervectorielle/MG_der_vectorielles0.md
         sections:
           - file: ressources/MG_dervectorielle/MG_der_vectorielles1.md
+          - file: ressources/MG_dervectorielle/MG_der_vectorielles2.md
+          - file: ressources/MG_dervectorielle/MG_der_vectorielles3.md
 
       - file: ressources/MG_Ec/MG_Ec_0.md
         sections:
@@ -198,6 +200,12 @@ parts:
 
   - caption: facilitation en hydraulique
     chapters:
+      - file: ressources/HY_PertesCharges/HY_PertesCharges_0.md
+        sections:
+          - file: ressources/HY_sujet1/HY_PertesCharges_1.md
+          - file: ressources/HY_sujet1/HY_PertesCharges_2.md
+          - file: ressources/HY_sujet1/HY_PertesCharges_n.md
+
       - file: ressources/HY_sujet1/HY_sujet1_0.md
         sections:
           - file: ressources/HY_sujet1/HY_sujet1_1.md

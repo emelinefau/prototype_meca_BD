@@ -30,7 +30,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
         ...
         </p>
       <p class="card-footer-link">
-        <a href="MMC_contraintes/MMC_vect_contrainte1.html" class="card-link">
+        <a href="MMC_contraintes/MMC_vect_contrainte0.html" class="card-link">
           j'y vais ! <i class="fas fa-arrow-right"></i>
         </a>
       </p>
@@ -90,7 +90,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
         ...
         </p>
       <p class="card-footer-link">
-        <a href="MMC_Ed/MMC_RDC0.html" class="card-link">
+        <a href="MMC_RDC/MMC_RDC0.html" class="card-link">
           j'y vais ! <i class="fas fa-arrow-right"></i>
         </a>
       </p>
