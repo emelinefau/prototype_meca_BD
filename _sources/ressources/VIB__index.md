@@ -15,6 +15,65 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
 
 <div class="card-container">
 
+
+
+  <!-- Carte 1: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      VIB 1ddl
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/VIB_1ddl.png" alt="Vib1" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="VIB_1ddl/VIB_1ddl_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 1: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      VIB reyleigh
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/VIB_Reyleigh.png" alt="Vib1" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="VIB_Reyleigh/VIB_Reyleigh_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 1: ... -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      VIB translation_rotation
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/VIB_translation_rotation.png" alt="Vib1" class="img-responsive">
+      <p>
+        Texte,
+        ...
+        </p>
+      <p class="card-footer-link">
+        <a href="VIB_translation_rotation/VIB_translation_rotation_0.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
   <!-- Carte 1: ... -->
   <div class="card">
     <div class="card-header" style="text-align: center;">

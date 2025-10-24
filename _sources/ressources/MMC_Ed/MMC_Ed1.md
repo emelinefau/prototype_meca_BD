@@ -10,7 +10,7 @@
 </div>
 
 
-# Ed.1 - ...
+# Ed.1 - dans un ressort, compression
 *Objectif de cette fiche : ...*
 
 ![Page 1 droite](../../ressources/img/MMC_Ed/page_1_droite.png)
