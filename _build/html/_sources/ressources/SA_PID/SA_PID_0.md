@@ -25,7 +25,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
     pid.1 : notion de correcteur
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive1.png" alt="correcteur" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive1.png" alt="correcteur" class="img-responsive">
       <p> comprendre le role de chaque élément dans un schéma bloc. Découvrir le formalisme graphique si tu ne l'as jamais vu </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_1.html" class="card-link">
@@ -41,7 +41,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.2 : boucles et schémas blocs
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive2.png" alt="boucles" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive2.png" alt="boucles" class="img-responsive">
       <p> distinguer les boucles de correction dans un schéma bloc un peu complexe  </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_2.html" class="card-link">
@@ -58,7 +58,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.3 : PID correction proportionnelle
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive3.png" alt="proportionnel" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive3.png" alt="proportionnel" class="img-responsive">
       <p> comprendre l'influence du coefficient P ou Kp. Comprendre son rôle sur la vitesse de la réponse et les raisons qui font qu'il crée des oscillations </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_3.html" class="card-link">
@@ -74,7 +74,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.4 : influence de m et k 
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive4.png" alt="k_et_m" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive4.png" alt="k_et_m" class="img-responsive">
       <p> se convaincre physiquement de l'influence de k et m sur la fréquence d'oscillation, ne plus se tromper sur le sens de l'écriture de la pulsation </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_4.html" class="card-link">
@@ -90,7 +90,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.5 : correction dérivée
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive5.png" alt="derivee" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive5.png" alt="derivee" class="img-responsive">
       <p> comprendre le role du coefficient D ou Kd. Comprendre que la forme de la réponse amortie globale est liée à la fois à Kd mais aussi à sa valeur par rapport à Kp et m </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_5.html" class="card-link">
@@ -106,7 +106,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.6 : temps de réponse 
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive6.png" alt="temps_rep" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive6.png" alt="temps_rep" class="img-responsive">
       <p> comprendre le critère de temps de réponse et l'analyser pour des systèmes très amortis ou oscillants </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_6.html" class="card-link">
@@ -122,7 +122,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.7 : causalité
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive7.png" alt="causalite" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive7.png" alt="causalite" class="img-responsive">
       <p> comprendre les limites physiques (la vraie vie) d'un modèle analytique qui s'appuie sur v(t). Comprendre aussi pourquoi dans une fonction de transfert le polynome du dénominateur est toujours d'ordre plus grand que le numérateur </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_7.html" class="card-link">
@@ -138,7 +138,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.8 : capteurs
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive8.png" alt="capteur" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive8.png" alt="capteur" class="img-responsive">
       <p> comprendre les risques associés aux capteurs réels et la nécessité de filtrages des signaux avant l'entrée dans le bloc de correction </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_8.html" class="card-link">
@@ -154,7 +154,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.9 : equation amortie
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive9.png" alt="ksi" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive9.png" alt="ksi" class="img-responsive">
       <p> rappeler la définition de l'amortissement analytique ski et le comportement de part et d'autre de ses seuils (1 et 0,7) </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_9.html" class="card-link">
@@ -170,7 +170,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.10 : erreur statique 
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive10.png" alt="err_stat" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive10.png" alt="err_stat" class="img-responsive">
       <p> comprendre pourquoi sans correction integral il reste souvent une erreur statique et la logique physique du signe de cette erreur résiduelle </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_10.html" class="card-link">
@@ -186,7 +186,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.11 : correction intégrale
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive11.png" alt="integral" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive11.png" alt="integral" class="img-responsive">
       <p> Comprendre le rôle du coefficient I ou Ki. Comprendre les risques de destabilisation associés à un I trop grand </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_11.html" class="card-link">
@@ -202,7 +202,7 @@ Tu verras aussi des points d'attention associés aux comportements des capteurs,
       pid.12 : une conclusion sur les PID
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SA/PID/Diapositive12.png" alt="yoda" class="img-responsive">
+      <img src="../../_static/images/SA/PID/PID_Diapositive12.png" alt="yoda" class="img-responsive">
       <p> une conclusion </p>
       <p class="card-footer-link">
         <a href="../SA_PID/SA_PID_12.html" class="card-link">
