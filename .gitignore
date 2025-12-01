@@ -30,7 +30,7 @@ _build/.doctrees
 
 
 #pour éviter de traiter les images en créant le git
-_build/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
+#_build/
+#__pycache__/
+#*.pyc
+#.ipynb_checkpoints/

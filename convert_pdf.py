@@ -1,6 +1,6 @@
-nom_pdf = 'derivee_vectorielle_A4_2ppf.pdf'
+nom_pdf = 'inerties A4 2ppf - v3_v2.pdf'
 pdf_chemin = f'_static/pdfs/{nom_pdf}'
-dossier_sortie = 'ressources/img/derivee_vectorielle/'
+dossier_sortie = 'ressources/img/MG_inerties/'
 
 from pdf2image import convert_from_path
 

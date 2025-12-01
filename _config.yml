@@ -11,7 +11,7 @@
 title            : Donnons du sens physique à nos équations  # The title of the book 
 author           : Emeline Faugere, ENS Paris-Saclay  # The author of the book
 copyright        : "2025"  # Copyright year to be placed in the footer
-logo             : ressources/img/image_titre.png  # A path to the book logo
+logo             : ressources/img/indexWM_v2.png  # A path to the book logo
 exclude_patterns : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", README.md]
 
 #######################################################################################
@@ -49,7 +49,7 @@ bibtex_bibfiles:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : ressources/img/favicon.png  # A path to a favicon image
+  favicon                   : ressources/img/logoWM_v3.png  # A path to a favicon image
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : false  # Whether to add a link to your repository button
   use_issues_button         : false  # Whether to add an "open an issue" button

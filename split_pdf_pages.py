@@ -2,7 +2,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 # Convertir le PDF en images
-images = convert_from_path('_static/hyperstatisme/hyperstatisme_A4_2ppf.pdf')
+images = convert_from_path('_static/pdfs/PID_p1.pdf')
 
 for i, image in enumerate(images, start=1):
     width, height = image.size
