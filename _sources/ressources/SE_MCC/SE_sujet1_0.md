@@ -24,7 +24,7 @@ objectifs généraux du sujet
     MCC.1 - intro
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive1.png" alt="blocMCC" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive1.png" alt="blocMCC" class="img-responsive">
       <p> le schéma bloc complet </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_1.html" class="card-link">
@@ -40,7 +40,7 @@ objectifs généraux du sujet
       MCC.2 - la partie mécanique
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive2.png" alt="MCC_meca" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive2.png" alt="MCC_meca" class="img-responsive">
       <p> comprendre les différentes façons d'écrire la même chose. que mettre dans Cr, que mettre dans Jeq  </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_2.html" class="card-link">
@@ -57,7 +57,7 @@ objectifs généraux du sujet
       MCC.3 - inertie équivalente 
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive3.png" alt="Jeq" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive3.png" alt="Jeq" class="img-responsive">
       <p> anticiper l'amplification ou la réduction de J pour analyser la valeur de Jeq </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_3.htmll" class="card-link">
@@ -73,7 +73,7 @@ objectifs généraux du sujet
       MCC.4 - Volant d'inertie
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive4.png" alt="VolantI" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive4.png" alt="VolantI" class="img-responsive">
       <p> utilité de Jeq pour machines d'essai dynamique </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_4.html" class="card-link">
@@ -89,7 +89,7 @@ objectifs généraux du sujet
       MCC.5 - la partie électrique : dU et i
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive5.png" alt="U_i" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive5.png" alt="U_i" class="img-responsive">
       <p> sens de circulation logique du flux avec une différence de potentiel </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_5.html" class="card-link">
@@ -105,7 +105,7 @@ objectifs généraux du sujet
       MCC.6 - Résistance R
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive6.png" alt="resistance" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive6.png" alt="resistance" class="img-responsive">
       <p> phénomènes résistifs électriques et hydrauliques </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_6.html" class="card-link">
@@ -121,7 +121,7 @@ objectifs généraux du sujet
       MCC.7 - Inductance L
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive7.png" alt="inductance" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive7.png" alt="inductance" class="img-responsive">
       <p> comprendre l'inertie de mise en place d'un courant et le principe d'un électroaimant </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_7.html" class="card-link">
@@ -137,7 +137,7 @@ objectifs généraux du sujet
       MCC.8 - mémo sens de b et i
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive8.png" alt="sens_b" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive8.png" alt="sens_b" class="img-responsive">
       <p> représentation graphique pour se souvenir du sens du champ magnétique tournant autour d'un cable alimenté </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_8.html" class="card-link">
@@ -153,7 +153,7 @@ objectifs généraux du sujet
       MCC.9 - métaphore méca pour l'inductance
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive9.png" alt="Inductance_inertie" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive9.png" alt="Inductance_inertie" class="img-responsive">
       <p> avec une métaphore mécanique se représenter les effets dissipatifs et inertiels dans le circuit RL de la bobine. Comprendre la représentation 'série' du circuit </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_9.html" class="card-link">
@@ -169,7 +169,7 @@ objectifs généraux du sujet
       MCC.10 - Force de Lorentz
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive10.png" alt="Lorentz" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive10.png" alt="Lorentz" class="img-responsive">
       <p> donner du sens à la force de Lorentz sur une charge et moyen mnémo </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_10.html" class="card-link">
@@ -185,7 +185,7 @@ objectifs généraux du sujet
       MCC.11 - couplage électromécanique I-Cm
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive11.png" alt="I-CM" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive11.png" alt="I-CM" class="img-responsive">
       <p> comprendre physiquement pourquoi et dans quel sens un courant i permet un couple Cm </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_11.html" class="card-link">
@@ -201,7 +201,7 @@ objectifs généraux du sujet
       MCC.12 - couplage W-e, FEM
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive12.png" alt="W_FEM" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive12.png" alt="W_FEM" class="img-responsive">
       <p> comprendre pourquoi une rotation du rotor crée une FEM et son impact sur la circulation des charges dans la bobine </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_12.html" class="card-link">
@@ -217,7 +217,7 @@ objectifs généraux du sujet
       MCC.13 - conclusion musicale
     </div>
     <div class="card-body">
-      <img src="../../_static/images/SE/MCC/Diapositive13.png" alt="maracasses_e" class="img-responsive">
+      <img src="../../_static/images/SE/MCC/MCC_Diapositive13.png" alt="maracasses_e" class="img-responsive">
       <p> si tu te souviens des maracasses à électrons, t'auras la fem ! </p>
       <p class="card-footer-link">
         <a href="../SE_MCC/SE_sujet1_13.html" class="card-link">

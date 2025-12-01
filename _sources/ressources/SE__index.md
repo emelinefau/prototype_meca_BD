@@ -23,7 +23,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
       MCC machines à courant continu
     </div>
     <div class="card-body">
-      <img src="../_static/images/SE/MCC/Diapositive14.png" alt="MCC" class="img-responsive">
+      <img src="../_static/images/SE/MCC/MCC_Diapositive14.png" alt="MCC" class="img-responsive">
       <p>
         description de chaque bloc : partie mécanique (Jeq et Cr notamment), partie électrique (R et L), partie couplage (induction, b, fem). 
         </p>
