@@ -172,4 +172,36 @@ Comprendre physiquement ce qui se passe dans la matière pour écrire les compos
 </div>
 
 
+<br>
+<br>
 
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <a href="../MMC__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'mmc solides'
+  </a>
+</div>
+
+<br>
+<br>
+
+## Le pdf du sujet complet dans sa version livre (2 pages cote à cote)
+*Version de travail , ne pas diffuser tel quel, merci à vous.* 
+
+
+<iframe 
+  src="../../_static/pdfs/vecteur_contrainte_A4_2ppf_v2.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+  style="width:100%; height:600px;"
+  title="Document PDF">
+</iframe>
+
+
+<br>
+
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <span style="color: #333; font-weight: normal;">Sujet</span>
+  <a href="../MMC__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'mmc solides'
+  </a>
+  <span style="margin-left: auto; color: #333; font-weight: normal;">Sujet</span>
+</div>

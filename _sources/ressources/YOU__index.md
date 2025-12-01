@@ -39,7 +39,13 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
 </div>
 
 
-
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <a href="../0_preambule.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour au menu général
+  </a>
+</div>
 
 ## À propos de ce document
 

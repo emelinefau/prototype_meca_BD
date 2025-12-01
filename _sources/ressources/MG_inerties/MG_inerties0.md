@@ -15,6 +15,24 @@ Comprendre physiquement les phénomènes qui créent des termes nuls ou non nums
 Comprendre aussi physiquement cette histoire de point de calcul et ce que raconte Hyuggens
 
 
+
+<!--
+<iframe 
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://emelinefau.github.io/prototype_meca_BD/_static/pdfs/inerties_A4_2ppf_v3.pdf#toolbar=0&disableDownload=true&disablePrint=true&pagemode=none" 
+  style="width:100%; height:800px; border:none;">
+</iframe>
+
+#toolbar=0&navpanes=0&scrollbar=0" 
+
+<iframe
+  src="/pdfjs/web/viewer.html?file=/_static/pdfs/inerties_A4_2ppf_v3.pdf#toolbar=0&disableDownload=true&disablePrint=true&pagemode=none"
+  style="width:100%; height:600px; border:none; background:#ffffff;"
+  title="Document PDF"
+></iframe>
+
+-->
+
+
 <div class="card-container">
 
   <!-- Carte 1 -->
@@ -197,6 +215,53 @@ Comprendre aussi physiquement cette histoire de point de calcul et ce que racont
 
 
 
+
+
+
+
+<!--
+
+## Le pdf dans sa version livre (2 pages cote à cote)
+version téléchargeable
+
+<iframe src="../../_static/pdfs/inerties_A4_2ppf_v3.pdf" width="100%" height="600px"></iframe>
+
+
+version vaec mozilla pdf/js emppeche le telechargement brutal du pdf
+-->
+<!--
+<iframe 
+  src="../../_static/pdfjs-dist/web/viewer.html?file=../../pdfs/inerties_A4_2ppf_v3.pdf" 
+  style="width:100%; height:800px; border:none;">
+</iframe>
+
+
+<iframe 
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://emelinefau.github.io/prototype_meca_BD/_static/pdfs/inerties_A4_2ppf_v3.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+  style="width:100%; height:800px; border:none;">
+</iframe>
+
+<iframe 
+  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://emelinefau.github.io/prototype_meca_BD/_static/pdfs/inerties_A4_2ppf_v3.pdf" 
+  style="width:100%; height:800px;">
+</iframe>
+-->
+
+
+<!--
+cette version masque l'icone de telechargement mais on peut encore clic droit et télécharger
+
+
+<iframe 
+  src="../../_static/pdfs/inerties_A4_2ppf_v3.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+  style="width:100%; height:600px;"
+  title="Document PDF">
+</iframe>
+-->
+
+
+
+
 <!--
 ## in.1 : la masse
 - comprendre le lien entre masse et efforts à fournir pour mettre en translation  
@@ -220,7 +285,7 @@ Comprendre aussi physiquement cette histoire de point de calcul et ce que racont
 
 ## in.6 : huyggens
 - pourquoi on rajoute un terme et où?  
--->
+
 ## in.7 : plans et axes de symétrie
 - pourquoi physiquement un plan de symétrie a un effet sur les produits d'inertie (et sur lesquels)  
 - pourquoi une symétrie axiale garantit une matrice diagonale
@@ -240,7 +305,7 @@ Comprendre aussi physiquement cette histoire de point de calcul et ce que racont
 ## in.11 : résumé / lexique
 - résumé 
 - un peu de culture techno  
-
+-->
 <!--
 ## Test affichage Page par page
 
@@ -355,4 +420,46 @@ force centrifuge
 
 <iframe src="../_static/pdfs/inerties_A4_2ppf_v3.pdf" width="100%" height="600px"></iframe>
 
+
+<iframe 
+  src="../_static/pdfs/inerties_A4_2ppf_v3.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+  sandbox="allow-scripts allow-same-origin"
+  style="width:100%; height:600px;">
+</iframe>
+
+
+<iframe src="../../_static/pdfs/inerties_A4_2ppf_v3_v2.pdf" width="100%" height="600px"></iframe>
 -->
+
+
+<br>
+<br>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <a href="../MG__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'mécanique générale'
+  </a>
+</div>
+
+<br>
+<br>
+
+## Le pdf du sujet complet dans sa version livre (2 pages cote à cote)
+*Version de travail , ne pas diffuser tel quel, merci à vous.* 
+
+
+<iframe 
+  src="../../_static/pdfs/inerties_A4_2ppf_v3_v2.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+  style="width:100%; height:600px;"
+  title="Document PDF">
+</iframe>
+
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <span style="color: #333; font-weight: normal;">Sujet</span>
+  <a href="../MG__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'mécanique générale'
+  </a>
+  <span style="margin-left: auto; color: #333; font-weight: normal;">Sujet</span>
+</div>

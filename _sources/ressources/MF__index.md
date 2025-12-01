@@ -18,7 +18,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
   <!-- Carte 1: ... -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      MF sujet 1 (à définir)
+      MF Formalisme Eulérien / Lagrangien 
     </div>
     <div class="card-body">
       <img src="../_static/images/MF_sujet1.png" alt="MF1" class="img-responsive">
@@ -34,7 +34,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
     </div>
   </div>
 
-  <!-- Carte 2: ... -->
+  <!-- Carte 2: ... 
   <div class="card">
     <div class="card-header" style="text-align: center;">
       MF sujet 2 (à définir)
@@ -53,7 +53,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
     </div>
   </div>
 
-  <!-- Carte n: ... -->
+ Carte n: ... 
   <div class="card">
     <div class="card-header" style="text-align: center;">
       MF sujet n (à définir)
@@ -71,7 +71,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
       </p>
     </div>
   </div>
-
+-->
 
   <!-- Carte n: you -->
   <div class="card">
@@ -81,8 +81,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
     <div class="card-body">
       <img src="../_static/images/YOU.png" alt="you_MF" class="img-responsive">
       <p>
-        Texte,
-        ...
+        S'il y a des sujets que tu voudrais voir traiter, c'est ici que tu t'exprimes !
         </p>
       <p class="card-footer-link">
         <a href="You/MF_You1.html" class="card-link">
@@ -95,7 +94,13 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
 </div>
 
 
-
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <a href="../0_preambule.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour au menu général
+  </a>
+</div>
 
 ## À propos de ce document
 

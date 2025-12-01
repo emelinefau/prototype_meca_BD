@@ -10,10 +10,25 @@
 </div>
 
 
-# pid.2 : correction dérivée
-*Objectif de cette fiche : ...*
+# pid.2 : boucles et schémas blocs 
+*Objectif de cette fiche : distinguer les boucles de correction dans un schéma bloc un peu complexe*
 
-![Page 1 droite](../../ressources/img/SA_PID/page_1_droite.png)
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_3_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_3_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_4_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_4_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>

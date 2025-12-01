@@ -10,14 +10,42 @@
   💬 <strong>Améliorons ensemble la proposition !</strong> Surlignez du texte et cliquez sur "Annotate"
 </div>
 
+<div style="background-color: #f5e8f0ff; padding: 8px 12px; margin: 15px 0; border-radius: 5px; text-align: center; font-size: 14px;">
+L'idée est d'identifier une liste de <strong>points clefs</strong>, de <strong>zooms</strong> à faire. <br>
+Les fiches réalisées ne remplacent donc pas un cours, mais apporte une vision complémentaire, imagée, appréhendable avec les mains. <br>
+N'hésitez donc pas à êre précise ou précis sur ce que vous ne comprenez pas si vous souhaitez compléter la liste.<br>
+<br>
+Il est aussi possible que vous ayez sur certaines notions vécu l'éffet 
+<span style="color: blue;">"aaaaaaaaaaaahhh mais c'est ça !!!"</span>, n'hésitez pas à partager vos petites recettes! Je pourrai peut-être en faire bénéficier un plus grand nombre en la partageant !
+</div>
 
-# Vos besoins en mécanique générale
+
+# Sujets amorcés en mécanique générale
+ * torseurs et déplacement de champ de moment (Varignon) 
+ * CIR et axe central
+ * énergie cinétique
+ * matrices de rotation / changement de base
+ * énergie cinétique
+ * comparer PFD/Lagrange/TEC/PPV/etc + systématisme de la démarche (isoler + bilan avant résolution)
+ * multiplicateurs de lagrange
+ * torseurs réciproques pour hyperstatisme ?
+ * frottement, adhérence, AM de contact (linéique/surfacique)
+ * liaisons équivalentes classiques (robots parallèles ou série)
+ * ....
+ * .... 
+
+# Vos suggestions/besoins en mécanique générale
  * 
  * 
  * 
 
-# Vos suggestions en mécanique générale
- * 
- * 
- * 
-
+<br>
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <span style="color: #333; font-weight: normal;">Sujet</span>
+  <a href="../MG__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'mécanique générale'
+  </a>
+  <span style="margin-left: auto; color: #333; font-weight: normal;">Sujet</span>
+</div>

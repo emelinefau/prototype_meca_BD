@@ -10,10 +10,20 @@
 </div>
 
 
-# pid.1 : correction proportionnelle
-*Objectif de cette fiche : ...*
+# pid.1 : notion de correcteur
+*Objectif de cette fiche : comprendre le role de chaque élément dans un schéma bloc. Découvrir le formalisme graphique si tu ne l'as jamais vu*
 
-![Page 1 droite](../../ressources/img/SA_PID/page_1_droite.png)
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_1_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_2_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/SA_PID_p1/page_2_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>

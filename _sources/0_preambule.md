@@ -89,7 +89,7 @@ Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le s
   <!-- Carte 2 -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      Mécanique des milieux continus
+      Mécanique des milieux continus solides
     </div>
     <div class="card-body">
       <img src="_static/images/mmc.jpg" alt="MMC" class="img-responsive">
@@ -102,21 +102,7 @@ Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le s
     </div>
   </div>
 
-  <!-- Carte 3 -->
-  <div class="card">
-    <div class="card-header" style="text-align: center;">
-      Mécanique des fluides
-    </div>
-    <div class="card-body">
-      <img src="_static/images/MF.png" alt="MF" class="img-responsive">
-      <p> contenu en construction </p>
-      <p class="card-footer-link">
-        <a href="ressources/MF__index.html" class="card-link">
-          Détail des sujets <i class="fas fa-arrow-right"></i>
-        </a>
-      </p>
-    </div>
-  </div>
+
 
 
   <!-- Carte 4 -->
@@ -135,6 +121,55 @@ Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le s
     </div>
   </div>
 
+  <!-- Carte 4 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Systèmes <br> électriques
+    </div>
+    <div class="card-body">
+      <img src="_static/images/SE.png" alt="SE" class="img-responsive">
+      <p> machines électriques, U, i, R, L, Lorentz ...</p>
+      <p class="card-footer-link">
+        <a href="ressources/SE__index.html" class="card-link">
+          Détail des sujets <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Carte 9 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Vos suggestions / Besoins
+    </div>
+    <div class="card-body">
+      <img src="_static/images/wolverwantsyou.png" alt="You" class="img-responsive">
+      <p> liste à construire avec vos demandes </p>
+      <p class="card-footer-link">
+        <a href="ressources/You/tout_You1.html" class="card-link">
+          Détail des sujets <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Carte 3 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Mécanique des fluides
+    </div>
+    <div class="card-body">
+      <img src="_static/images/MF.png" alt="MF" class="img-responsive">
+      <p> contenu en construction </p>
+      <p class="card-footer-link">
+        <a href="ressources/MF__index.html" class="card-link">
+          Détail des sujets <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
   <!-- Carte 5 : methodes numériques -->
   <div class="card">
@@ -203,21 +238,6 @@ Par le dessin, je souhaite vous permettre de mieux comprendre et mémoriser le s
   </div>
 
 
-  <!-- Carte 9 -->
-  <div class="card">
-    <div class="card-header" style="text-align: center;">
-      Vos suggestions / Besoins
-    </div>
-    <div class="card-body">
-      <img src="_static/images/wolverwantsyou.png" alt="You" class="img-responsive">
-      <p> liste à construire avec vos demandes </p>
-      <p class="card-footer-link">
-        <a href="ressources/You/tout_You1.html" class="card-link">
-          Détail des sujets <i class="fas fa-arrow-right"></i>
-        </a>
-      </p>
-    </div>
-  </div>
 
 
 </div>

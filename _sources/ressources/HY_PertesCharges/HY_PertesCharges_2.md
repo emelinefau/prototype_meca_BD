@@ -10,10 +10,10 @@
 </div>
 
 
-# s1.2 - ...
+# pc.2 - Avec débit imposé
 *Objectif de cette fiche : ...*
 
-![Page 1 droite](../../ressources/img/HY_sujet1/page_1_droite.png)
+![Page 1 droite](../../ressources/img/HY_PertesCharges/page_1_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>

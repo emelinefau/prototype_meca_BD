@@ -22,7 +22,7 @@ objectifs généraux du sujet
     </div>
     <div class="card-body">
       <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> objectifs de l'item 1 du sujet 1  </p>
+      <p> objectifs de l'item  </p>
       <p class="card-footer-link">
         <a href="../HY_PertesCharges/HY_PertesCharges_1.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -38,7 +38,7 @@ objectifs généraux du sujet
     </div>
     <div class="card-body">
       <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> objectifs de l'item 2 du sujet 1 </p>
+      <p> objectifs de l'item  </p>
       <p class="card-footer-link">
         <a href="../HY_PertesCharges/HY_PertesCharges_2.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -55,7 +55,7 @@ objectifs généraux du sujet
     </div>
     <div class="card-body">
       <img src="../../_static/images/HY/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> calculer et identifier h SANS CALCUL </p>
+      <p> objectif de l'item </p>
       <p class="card-footer-link">
         <a href="../HY_PertesCharges/HY_PertesCharges_n.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -65,5 +65,17 @@ objectifs généraux du sujet
   </div>
 
 
+
 </div>
 
+
+<br>
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <span style="color: #333; font-weight: normal;">Sujet</span>
+  <a href="../HY__index.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour aux thématiques <br> 'hydraulique'
+  </a>
+  <span style="margin-left: auto; color: #333; font-weight: normal;">Sujet</span>
+</div>

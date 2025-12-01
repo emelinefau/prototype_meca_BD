@@ -89,23 +89,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
   </div>
 
 
-  <!-- Carte 4 : matrices de rotation -->
-  <div class="card">
-    <div class="card-header" style="text-align: center;">
-      Matrice de rotation
-    </div>
-    <div class="card-body">
-      <img src="../_static/images/MG_rotation.png" alt="MG_rotation" class="img-responsive">
-      <p> Rotation simple, 
-          Rotation multiaxiale
-          Changement de Base ...</p>
-      <p class="card-footer-link">
-        <a href="MG_rotation/MG_Rotation_0.html" class="card-link">
-          Détail des sujets <i class="fas fa-arrow-right"></i>
-        </a>
-      </p>
-    </div>
-  </div>
+
 
 
   <!-- Carte 5 : dérivée vectorielle -->
@@ -125,6 +109,28 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
       </p>
     </div>
   </div>
+
+
+
+  <!-- Carte n: you -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      Vos demandes / besoins / Suggestions
+    </div>
+    <div class="card-body">
+      <img src="../_static/images/YOU.png" alt="you_MG" class="img-responsive">
+      <p>
+        S'il y a des sujets que tu voudrais voir traiter, c'est ici que tu t'exprimes !
+        </p>
+      <p class="card-footer-link">
+        <a href="You/MG_You1.html" class="card-link">
+          j'y vais ! <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+
 
 
   <!-- Carte 6 : Energie cinétique -->
@@ -147,31 +153,35 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
     </div>
   </div>
 
-  <!-- Carte n: you -->
+
+  <!-- Carte 4 : matrices de rotation -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      Vos demandes / besoins / Suggestions
+      Matrice de rotation
     </div>
     <div class="card-body">
-      <img src="../_static/images/YOU.png" alt="you_MG" class="img-responsive">
-      <p>
-        Texte,
-        ...
-        </p>
+      <img src="../_static/images/MG_rotation.png" alt="MG_rotation" class="img-responsive">
+      <p> Rotation simple, 
+          Rotation multiaxiale
+          Changement de Base ...</p>
       <p class="card-footer-link">
-        <a href="You/MG_You1.html" class="card-link">
-          j'y vais ! <i class="fas fa-arrow-right"></i>
+        <a href="MG_rotation/MG_Rotation_0.html" class="card-link">
+          Détail des sujets <i class="fas fa-arrow-right"></i>
         </a>
       </p>
     </div>
   </div>
 
-
-
 </div>
 
 
-
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <a href="../0_preambule.html" style="display: inline-block; padding: 6px 30px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour au menu général
+  </a>
+</div>
 
 ## À propos de ce document
 

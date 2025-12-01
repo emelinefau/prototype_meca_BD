@@ -100,3 +100,14 @@ mu mi
 
 
 
+
+<br>
+<br>
+<br>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; position: relative;">
+  <span style="flex: 1;"></span>
+  <a href="MG_hyperstatisme0.html" style="display: inline-block; padding: 12px 24px; background-color: #bec9dcff; color: white; text-decoration: none; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; text-align: center; position: absolute; left: 50%; transform: translateX(-50%);">
+    🔄 Retour au menu de la page <br> 'hyperstatisme'
+  </a>
+  <span style="margin-left: auto; color: #333; font-weight: normal;">Sujet</span>
+</div>
