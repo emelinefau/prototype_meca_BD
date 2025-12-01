@@ -23,7 +23,7 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
       PID partie 1
     </div>
     <div class="card-body">
-      <img src="../_static/images/SA/PID/PID_Diapositive13.png" alt="PID" class="img-responsive">
+      <img src="../_static/images/SA/PID/PID_Diapositive13_.png" alt="PID" class="img-responsive">
       <p>
         Schéma bloc et boucles. Role concret des coefficients p, I et D. Logique des temps de réponse et erreur statique. Attention comportement des capteurs. 
         ...
