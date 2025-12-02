@@ -22,11 +22,11 @@ Arrêter de tout développer et mettre en colonne !!
   <!-- Carte 1 -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      t.1 : cinématique
+      t.1 - l'outil torseur
     </div>
     <div class="card-body">
-      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> avec du sens physique le moment est forcémet la vitesse de translation. Retrouver sa formule physiquement.  </p>
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive1.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre la force de l'outil torseur pour contenir toutes les informations nécessaires à la description du mouvement d'un solide rigide  </p>
       <p class="card-footer-link">
         <a href="../MG_torseurs/MG_Torseur_1.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -38,11 +38,11 @@ Arrêter de tout développer et mettre en colonne !!
   <!-- Carte 2 -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      t.2 : statique / actions mécaniques
+      t.2 - diversité des torseurs 
     </div>
     <div class="card-body">
-      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> avec du sens physique le moment est forcémet le couple. Retrouver sa formule physiquement </p>
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive2.png" alt="h_sens_phy" class="img-responsive">
+      <p> l'outil sert à décrire du mouvement, des actions mécaniques, couplées, dérivées, etc... </p>
       <p class="card-footer-link">
         <a href="../MG_torseurs/MG_Torseur_2.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -52,14 +52,14 @@ Arrêter de tout développer et mettre en colonne !!
   </div>
 
   
-  <!-- Carte n -->
+  <!-- Carte 3 -->
   <div class="card">
     <div class="card-header" style="text-align: center;">
-      t.3 : Axe centrale
+      t.3 - Torseur cinématique et Torseur d'action mécanique
     </div>
     <div class="card-body">
-      <img src="../../_static/images/MG/wolver_inprogress.png" alt="h_sens_phy" class="img-responsive">
-      <p> si le moment est normal à l'axe de rotation, retrouver l'axe central. C'est un instantané de rotation en cinématique. Si le moment a une composante sur l'axe de rotation, visualiser le sens physique </p>
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive3.png" alt="h_sens_phy" class="img-responsive">
+      <p> retrouver avec les mains les expressions des moments V=RW et C=RF, avec le bon vecteur directeur. </p>
       <p class="card-footer-link">
         <a href="../MG_torseurs/MG_Torseur_n.html" class="card-link">
           Voir la fiche <i class="fas fa-arrow-right"></i>
@@ -68,6 +68,69 @@ Arrêter de tout développer et mettre en colonne !!
     </div>
   </div>
 
+  <!-- Carte 4 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      t.4 - notation vecteur 'tournants' 
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive4.png" alt="h_sens_phy" class="img-responsive">
+      <p> point d'attention sur la notation des vecters tournants </p>
+      <p class="card-footer-link">
+        <a href="../MG_torseurs/MG_Torseur_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 5 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      t.5 - Déplacement de champ de moment
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive5.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre et donc retrouver facilement la formule vectorielle du déplacement de moment : Varignon aka Babar </p>
+      <p class="card-footer-link">
+        <a href="../MG_torseurs/MG_Torseur_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 6 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      t.6 - Axe central 
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive6.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre les situations ou il est possible ou non de trouver un axe central à moment nul </p>
+      <p class="card-footer-link">
+        <a href="../MG_torseurs/MG_Torseur_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Carte 7 -->
+  <div class="card">
+    <div class="card-header" style="text-align: center;">
+      t.7 - notation ligne ou colonne
+    </div>
+    <div class="card-body">
+      <img src="../../_static/images/MG/Torseurs/T_Diapositive7.png" alt="h_sens_phy" class="img-responsive">
+      <p> comprendre pourquoi la notation ligne est largement à favoriser </p>
+      <p class="card-footer-link">
+        <a href="../MG_torseurs/MG_Torseur_n.html" class="card-link">
+          Voir la fiche <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
 </div>
 

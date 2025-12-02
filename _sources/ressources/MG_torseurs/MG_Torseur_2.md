@@ -10,10 +10,10 @@
 </div>
 
 
-# t.2 - statique / actions mécaniques
-*Objectif de cette fiche : avec du sens physique le moment est forcémet le couple. Retrouver sa formule physiquement*
+# t.2 - diversité des torseurs 
+*Objectif de cette fiche : l'outil sert à décrire du mouvement, des actions mécaniques, couplées, dérivées, etc...*
 
-![Page 1 droite](../../ressources/img/MG_Torseurs/page_1_droite.png)
+![Page 1 droite](../../ressources/img/MG_Torseurs/page_3_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>

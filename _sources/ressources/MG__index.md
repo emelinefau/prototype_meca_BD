@@ -71,14 +71,12 @@ Dans cette section vous trouverez les fiches illustrant les concepts manipulés 
       Torseurs
     </div>
     <div class="card-body">
-      <img src="../_static/images/MG_torseur.jpg" alt="MG_torseurs" class="img-responsive">
+      <img src="../_static/images/MG/Torseurs/T_Diapositive8.png" alt="MG_torseurs" class="img-responsive">
       <p>
         Changement de point (Varignon), 
         Torseur cinématique, 
         Axe instantané de rotation,
         Torseur d'actions mécaniques, 
-        Torseur cinétique
-        Torseur Dynamique
         </p>
       <p class="card-footer-link">
         <a href="MG_torseurs/MG_Torseur_0.html" class="card-link">

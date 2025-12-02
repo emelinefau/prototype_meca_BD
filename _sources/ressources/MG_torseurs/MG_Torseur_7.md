@@ -10,10 +10,10 @@
 </div>
 
 
-# t.3 - Axe centrale
-*Objectif de cette fiche : si le moment est normal à l'axe de rotation, retrouver l'axe central. C'est un instantané de rotation en cinématique. Si le moment a une composante sur l'axe de rotation, visualiser le sens physique*
+# t.7 - notation ligne ou colonne
+*Objectif de cette fiche : comprendre pourquoi la notation ligne est largement à favoriser*
 
-![Page 1 droite](../../ressources/img/MG_Torseurs/page_1_droite.png)
+![Page 1 droite](../../ressources/img/MG_Torseurs/page_8_gauche.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>

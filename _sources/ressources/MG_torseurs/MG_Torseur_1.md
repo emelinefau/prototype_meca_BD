@@ -10,11 +10,25 @@
 </div>
 
 
-# t.1 - cinématique
-*Objectif de cette fiche : avec du sens physique le moment est forcémet la vitesse de translation. retrouver sa formule physiquement*
+# t.1 - l'outil torseur
+*Objectif de cette fiche : comprendre la force de l'outil torseur pour contenir toutes les informations nécessaires à la description du mouvement d'un solide rigide*
 
 ![Page 1 droite](../../ressources/img/MG_Torseurs/page_1_droite.png)
 <p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
    Surlignez ce texte pour commenter la page     👆       - 
 </p>
 
+![Page 1 droite](../../ressources/img/MG_Torseurs/page_2_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/MG_Torseurs/page_2_droite.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
+
+![Page 1 droite](../../ressources/img/MG_Torseurs/page_3_gauche.png)
+<p style="color: #0066cc; font-style: italic; margin: 15px 0; font-size: 13px;text-align: right;">
+   Surlignez ce texte pour commenter la page     👆       - 
+</p>
